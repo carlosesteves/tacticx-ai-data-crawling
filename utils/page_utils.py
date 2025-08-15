@@ -1,5 +1,6 @@
 import re
 import time
+import requests
 from requests.exceptions import Timeout
 from bs4 import BeautifulSoup
 from config.constants import HEADERS
@@ -12,22 +13,17 @@ def get_soup(url, session) -> etree._Element:
     for attempt in range(retries):
         try:
             response = session.get(url, headers=HEADERS, timeout=60)
-            response.raise_for_status()  # Handle HTTP errors
-            return convert_bsoup_to_page(BeautifulSoup(response.text, 'html.parser'))
-        except Timeout as e:  # Timeout error handling
-            print("Timeout error fetching {}: {}. Retrying ({}/{})...".format(url, str(e), attempt + 1, retries))
-            if attempt < retries - 1:
-                time.sleep(1)  # Wait 1 second before retrying
-            else:
-                print("Failed to fetch {} after {} attempts.".format(url, retries))
-                return None
-        except Exception as e:  # General error handling
-            print("Error fetching {}: {}. Retrying ({}/{})...".format(url, str(e), attempt + 1, retries))
-            if attempt < retries - 1:
-                time.sleep(1)  # Wait 1 second before retrying
-            else:
-                print("Failed to fetch {} after {} attempts.".format(url, retries))
-                return None
+            response.raise_for_status()
+            return convert_bsoup_to_page(BeautifulSoup(response.text, "html.parser"))
+        except requests.Timeout as e:
+            print(f"Timeout error fetching {url}: {e}. Retrying ({attempt + 1}/{retries})...")
+        except Exception as e:
+            print(f"Error fetching {url}: {e}. Retrying ({attempt + 1}/{retries})...")
+        if attempt < retries - 1:
+            time.sleep(1)
+        else:
+            print(f"Failed to fetch {url} after {retries} attempts.")
+            return None
 
 def convert_bsoup_to_page(bsoup) -> etree._Element:
     """Converts BeautifulSoup object to lxml tree (Python 2.7 compatible)."""
@@ -53,10 +49,14 @@ def extract_date_from_href(href):
 
 # Extract attendance from text like "Attendance: 35,928"
 def extract_attendance_from_text(text):
-    # Extract attendance from text
-    attendance_match = re.search(r'Attendance:\s*([\d\.]+)', text)
+    # Match only if the number has no spaces inside it
+    attendance_match = re.search(r'Attendance:\s*(\d[\d\.,]*)\b', text)
     if attendance_match:
-        return attendance_match.group(1).replace('.', '')
+        number_str = attendance_match.group(1)
+        # Reject if number contains spaces
+        if ' ' in number_str:
+            return None
+        return number_str.replace('.', '').replace(',', '').strip()
     return None
 
 # Extract goals from score such as "2:1"
