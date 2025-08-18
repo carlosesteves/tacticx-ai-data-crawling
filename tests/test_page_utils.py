@@ -6,6 +6,7 @@ import requests
 from requests.exceptions import Timeout
 
 from utils.page_utils import (
+    convert_to_yyyy_mm_dd,
     get_soup,
     convert_bsoup_to_page,
     extract_coach_id,
@@ -151,3 +152,28 @@ def test_extract_goals_from_score(score, expected):
 ])
 def test_get_points_from_score(score, expected):
     assert get_points_from_score(score) == expected
+
+# -------------------------
+# convert_to_yyyy_mm_dd
+# -------------------------
+def test_convert_with_parentheses():
+    assert convert_to_yyyy_mm_dd("Sep 30, 1967 (57)") == "1967-09-30"
+    assert convert_to_yyyy_mm_dd("Jan 1, 2000 (23)") == "2000-01-01"
+    assert convert_to_yyyy_mm_dd("Mar 2, 1947 (78)") == "1947-03-02"
+    assert convert_to_yyyy_mm_dd("02.03.1947 (78)") == "1947-03-02"
+    
+
+def test_convert_without_parentheses():
+    assert convert_to_yyyy_mm_dd("Feb 28, 1995") == "1995-02-28"
+    assert convert_to_yyyy_mm_dd("Dec 31, 2020") == "2020-12-31"
+
+def test_convert_with_prefix_and_parentheses():
+    assert convert_to_yyyy_mm_dd("22/23 (May 19, 2023)") == "2023-05-19"
+    assert convert_to_yyyy_mm_dd("Season 21/22 (June 1, 2020)") == "2020-06-01"
+
+def test_invalid_date_format():
+    assert convert_to_yyyy_mm_dd("") is None
+    assert convert_to_yyyy_mm_dd(None) is None
+    assert convert_to_yyyy_mm_dd("No date here") is None
+
+

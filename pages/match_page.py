@@ -5,17 +5,22 @@ from utils.page_utils import (
     extract_attendance_from_text,
     extract_coach_id,
     extract_date_from_href,
+    extract_goals_from_score,
     extract_team_id,
+    get_points_from_score,
     get_soup
 )
 
 class MatchPage(Page):
-    def __init__(self, match_id: str, html_content: str = None):
+    def __init__(self, match_id: str, league_id: str, season_id: str, html_content: str = None):
         """
         If html_content is provided, it will be used instead of fetching from the network.
         """
         self.url = f"{TM_BASE_URL}-/index/spielbericht/{match_id}"
         self.page = None
+        self.match_id = match_id
+        self.league_id = league_id
+        self.season_id = season_id
 
         if html_content:
             self.load_html(html_content)
@@ -66,3 +71,21 @@ class MatchPage(Page):
         if not result_text:
             return None
         return result_text[0].strip()
+    
+    def get_match_data(self):
+        match_score = self.get_match_result()
+        return {                        
+                "tm_match_id": self.match_id,
+                "home_club_id": self.get_team(home=True),
+                "away_club_id": self.get_team(home=False),
+                "season_id": self.season_id,
+                "league_id": self.league_id,
+                "date": self.get_match_date(),
+                "home_coach_id": self.get_coaches_ids()[0],
+                "away_coach_id": self.get_coaches_ids()[1],
+                "attendance": self.get_attendance(),
+                "home_team_score": extract_goals_from_score(match_score)[0],
+                "away_team_score": extract_goals_from_score(match_score)[1],            
+                "home_team_points": get_points_from_score(match_score)[0],
+                "away_team_points": get_points_from_score(match_score)[1],
+            }

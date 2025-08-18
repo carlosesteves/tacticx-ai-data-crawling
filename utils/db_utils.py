@@ -56,7 +56,19 @@ def get_matches_from_db(client: Client, league_id: str, season_id: int) -> pd.Da
     )
     return pd.DataFrame(response.data)
 
-
 def get_coaches_from_db(client: Client) -> pd.DataFrame:
     response = client.table("Coach").select("*").execute()
+    return pd.DataFrame(response.data)
+
+def insert_coach_data(client: Client, coach_data: dict):
+    response = client.table("Coach").insert(coach_data).execute()
+    return response.data
+
+def insert_coach_tenure_data(client: Client, tenure_data: dict):
+    response = client.table("Coach_tenure").insert(tenure_data).execute()
+    return response.data
+
+
+def get_clubs_from_db(client: Client) -> pd.DataFrame:
+    response = client.table("Club").select("*").execute()
     return pd.DataFrame(response.data)

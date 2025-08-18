@@ -10,7 +10,7 @@ def match_page_html():
 
 @pytest.fixture
 def match_page(match_page_html):
-    return MatchPage(match_id="12345", html_content=match_page_html)
+    return MatchPage(match_id="12345", season_id="2020", league_id="1", html_content=match_page_html)
 
 def test_get_team_home(match_page):
     home_team = match_page.get_team(home=True)

@@ -1,3 +1,4 @@
+from datetime import datetime
 import re
 import time
 import requests
@@ -80,3 +81,42 @@ def get_points_from_score(score):
     else:
         return 1, 1  # Draw
     return None, None  # Invalid score format
+
+
+def convert_to_yyyy_mm_dd(date_str: str) -> str:
+    """
+    Convert various date string formats to 'yyyy-mm-dd'.
+    Examples:
+        'Sep 30, 1967 (57)' -> '1967-09-30'
+        '22/23 (May 19, 2023)' -> '2023-05-19'
+        'May 19, 2023' -> '2023-05-19'
+        '02.03.1947 (78)' -> '1947-03-02'
+    """
+    if not date_str:
+        return None
+
+    # Patterns to try
+    patterns = [
+        r'([A-Za-z]{3,9} \d{1,2}, \d{4})',  # Month Day, Year
+        r'(\d{2}\.\d{2}\.\d{4})'            # DD.MM.YYYY
+    ]
+
+    candidate = None
+    for pat in patterns:
+        match = re.search(pat, date_str)
+        if match:
+            candidate = match.group(1)
+            break
+
+    if not candidate:
+        return None
+
+    # Try multiple date formats
+    for fmt in ("%b %d, %Y", "%B %d, %Y", "%d.%m.%Y"):
+        try:
+            date_obj = datetime.strptime(candidate, fmt)
+            return date_obj.strftime("%Y-%m-%d")
+        except ValueError:
+            continue
+
+    return None

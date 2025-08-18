@@ -12,7 +12,7 @@
             "name": "Run TM Data Fetch",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/scripts/main.py",
+            "program": "${workspaceFolder}/main.py",
             "console": "integratedTerminal"
         },
         {
