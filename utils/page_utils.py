@@ -11,6 +11,7 @@ from lxml import etree
 def get_soup(url, session) -> etree._Element:
     """Fetches and parses the HTML page with retry logic for timeouts."""
     retries = 3  # Maximum retries
+    sleep_time = 3
     for attempt in range(retries):
         try:
             response = session.get(url, headers=HEADERS, timeout=60)
@@ -19,9 +20,9 @@ def get_soup(url, session) -> etree._Element:
         except requests.Timeout as e:
             print(f"Timeout error fetching {url}: {e}. Retrying ({attempt + 1}/{retries})...")
         except Exception as e:
-            print(f"Error fetching {url}: {e}. Retrying ({attempt + 1}/{retries})...")
+            print(f"Error fetching {url}: {e}. Retrying ({attempt + 1}/{retries}) while waiting for {sleep_time*(attempt+1)*(attempt+1)}...")
         if attempt < retries - 1:
-            time.sleep(1)
+            time.sleep(sleep_time*(attempt+1)*(attempt+1))
         else:
             print(f"Failed to fetch {url} after {retries} attempts.")
             return None

@@ -5,6 +5,9 @@ from supabase import create_client
 
 from pages.coach_page import CoachPage
 from pipelines.coach_pipeline import run_coach_pipeline
+from pipelines.season_pipeline import run_season_pipeline
+from utils.db_utils import get_league_seasons
+from utils.file_utils import write_csv
 
 
 # Add project root (../) to PYTHONPATH at runtime
@@ -15,43 +18,22 @@ import math
 from datetime import datetime
 from config.settings import CLUB_DATA_PATH
 from services.supabase_service import create_supabase_client
-from utils.db_utils import (
-    fetch_club_data,
-    fetch_league_data,
-    insert_club_data,
-    insert_club_season_data,
-    is_club_id_in_db,
-    is_season_club_in_db,
-    get_league_seasons
-)
-from utils.logic_utils import league_data_by_league_code
-from scripts.fetch_match_data import fech_year_match_data
-from pipelines.season_pipeline import run_season_pipeline
-from repositories.coach_repository import SupabaseCoachRepository
+
+from repositories.coach.supabase_coach_repository import SupabaseCoachRepository
 from config.settings import SUPABASE_URL, SUPABASE_KEY
 
 def main():
+    ERR_FILE_PATH = 'csv/err_match_ids.csv'
     client = create_supabase_client()
 
-    repo = SupabaseCoachRepository(client)
+    db_league_seasons = get_league_seasons(create_supabase_client(), 1)  # Example league_id
+    db_league_seasons=db_league_seasons.drop_duplicates()
 
-
-    # Load cache once
-    cache = repo.fetch_all_ids()
-
-    run_coach_pipeline(61477, repo, cache, CoachPage(61477))
-
-    # run_season_pipeline(1, 2018)
-    # supabase = create_supabase_client()
-
-    # db_league_seasons = get_league_seasons(supabase, 1)  # Example league_id
-    # db_league_seasons=db_league_seasons.drop_duplicates()
-
-    # for row in db_league_seasons.itertuples():
-    #     print(f"League: {row.name}, Season ID: {row.season_id}, Country: {row.country}, TM Code: {row.tm_code}")
-    #     league_year_match_data = fech_year_match_data(supabase, row.tm_code, row.tm_league_id, row.season_id)
-    #     print(f"Fetched {len(league_year_match_data)} matches for league {row.name} in season {row.season_id}.")
-    #     print("--------------------------------------")
+    for row in db_league_seasons.itertuples():
+        print(f"\n----------------------")
+        print(f"League: {row.name}, Season ID: {row.season_id}, Country: {row.country}, TM Code: {row.tm_code}")
+        err_match_ids = run_season_pipeline(league_id=row.tm_league_id, league_code=row.tm_code, season_id=row.season_id)        
+        write_csv(err_match_ids, ERR_FILE_PATH)            
 
 if __name__ == "__main__":
     main()

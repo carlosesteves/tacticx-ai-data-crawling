@@ -65,18 +65,6 @@ class CoachPage(Page):
     def get_preferred_formation(self):
         return self._get_td_text_by_th("Preferred formation")
     
-    # def get_coach_data(self) -> dict:
-    #     return {
-    #         "general_info": {
-    #             "name": self.get_coach_name(),
-    #             "coaching_license": self.get_coaching_license(),
-    #             "country": self.get_citizenship_country(),
-    #             "dob": self.get_dob(),    
-    #             "tm_coach_id": self.coach_id,
-    #         },        
-    #         "tenures": self.get_tenures()
-    #     }    
-    
     def get_tenures(self):
         tenures = []
         if self.page is None:
@@ -86,7 +74,6 @@ class CoachPage(Page):
         team_id = None
         start_date = None
         end_date = None
-        print(f"Found {len(row_tenures)} tenure rows for coach id {self.coach_id}")
 
         for row in row_tenures:
             cols = row.xpath('.//td')

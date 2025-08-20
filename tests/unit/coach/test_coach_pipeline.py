@@ -1,6 +1,6 @@
 import pytest
 from pages.coach_page import CoachPage
-from repositories.fake_coach_repository import FakeCoachRepository
+from repositories.coach.fake_coach_repository import FakeCoachRepository
 from pipelines.coach_pipeline import run_coach_pipeline
 from models.coach import Coach
 

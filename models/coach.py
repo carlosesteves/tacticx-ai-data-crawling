@@ -6,6 +6,6 @@ from datetime import date
 class Coach(BaseModel):
     tm_coach_id: int
     name: str
-    dob: Optional[date]
-    country: Optional[str]
-    coaching_license: Optional[str]
+    dob: date
+    country: str
+    coaching_license: str

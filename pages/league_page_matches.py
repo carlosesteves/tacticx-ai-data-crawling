@@ -21,6 +21,7 @@ class LeaguePageMatches(Page):
         if self.page is None:
             self.fetch_page()
         match_links = self.page.xpath('//a[contains(@class, "ergebnis-link")]//@id')
+        print(f"Found {len(match_links)} matches in {self.url}")
         if not match_links:
             print("No match links found on the page.")
             return []

@@ -1,0 +1,19 @@
+from supabase import create_client, Client
+from models.match import Match
+from repositories.match.match_base_repository import IMatchRepository
+
+class SupabaseMatchRepository(IMatchRepository):
+    def __init__(self, client: Client):
+        self.client = client
+
+    def save(self, match: Match):
+        try:
+            data = match.model_dump(mode="json")
+            response = self.client.table("Match").upsert(data).execute()
+            return response.data  # APIResponse has .data
+        except Exception as e:
+            raise Exception(f"Supabase save error: {e}")
+        
+    def fetch_all_ids(self) -> set[int]:
+        response = self.client.table("Match").select("tm_match_id").execute()
+        return {row["tm_match_id"] for row in response.data}

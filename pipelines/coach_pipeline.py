@@ -1,21 +1,27 @@
 from supabase import create_client
 from pages.coach_page import CoachPage
+from repositories.pipeline_context import PipelineContext
 from services.coach_service import CoachService
-from repositories.coach_repository import ICoachRepository
+from repositories.coach.supabase_coach_repository import ICoachRepository
 
 
-def run_coach_pipeline(coach_id: int, repo: ICoachRepository, cache: set[int], page: CoachPage):
-    url = "https://your-project.supabase.co"
-    key = "your-anon-or-service-role-key"
-    client = create_client(url, key)
+def run_coach_pipeline(coach_id: int, context: PipelineContext, page: CoachPage = None):
+    if coach_id in context.coach_cache:
+        print(f"Skipping coach {coach_id}")
+        return
 
-    if coach_id in cache:
-        print(f"Skipping coach {coach_id}, already in DB")
-        return None
+    if(page is None):
+        page = CoachPage(coach_id)
 
-    coach = CoachService.parse(page)
-    result = repo.save(coach)
-    cache[coach.tm_coach_id] = coach  # update cache after successful insert
+    coach = CoachService.parse_general_info(page)
+    context.coach_repo.save(coach)
+    context.coach_cache.add(coach.tm_coach_id)
+    
+    print(f"✅ Saved coach {coach.name} ({coach.tm_coach_id}, with {len(CoachService.parse_tenures(page))} tenures)")
+    for tenure in CoachService.parse_tenures(page):        
+        if (tenure.coach_id, tenure.club_id) not in context.tenure_cache:            
+            context.tenure_repo.save(tenure)
+            context.tenure_cache.add((tenure.coach_id, tenure.club_id))
 
-    print(f"✅ Saved coach {coach.name} with ID={coach.tm_coach_id}")
-    return result
+    
+    

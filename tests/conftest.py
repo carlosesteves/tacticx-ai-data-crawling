@@ -1,5 +1,5 @@
 import pytest
-from repositories.fake_coach_repository import FakeCoachRepository
+from repositories.coach.fake_coach_repository import FakeCoachRepository
 from models.coach import Coach
 
 

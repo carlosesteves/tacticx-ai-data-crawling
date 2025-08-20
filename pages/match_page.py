@@ -12,15 +12,13 @@ from utils.page_utils import (
 )
 
 class MatchPage(Page):
-    def __init__(self, match_id: str, league_id: str, season_id: str, html_content: str = None):
+    def __init__(self, match_id: int, html_content: str = None):
         """
         If html_content is provided, it will be used instead of fetching from the network.
         """
         self.url = f"{TM_BASE_URL}-/index/spielbericht/{match_id}"
         self.page = None
         self.match_id = match_id
-        self.league_id = league_id
-        self.season_id = season_id
 
         if html_content:
             self.load_html(html_content)
@@ -43,10 +41,10 @@ class MatchPage(Page):
     def get_match_date(self):
         if self.page is None:
             self.fetch_page()
-        date_links = self.page.xpath('//div[contains(@class, "sb-spieldaten")]//a/@href')
-        if not date_links or len(date_links) < 2:
+        date_links = self.page.xpath('//a[contains(@href, "datum")]/@href')
+        if not date_links:
             return None
-        return extract_date_from_href(date_links[1])
+        return extract_date_from_href(date_links[0])
 
     def get_attendance(self):
         if self.page is None:
@@ -54,7 +52,13 @@ class MatchPage(Page):
         attendance_text = self.page.xpath('//*[contains(text(), "Attendance")]//text()')
         if not attendance_text:
             return None
-        return extract_attendance_from_text(attendance_text[0].strip())
+        return int(extract_attendance_from_text(attendance_text[0].strip()))
+
+    def get_home_coach_id(self):
+        return int(self.get_coaches_ids()[0])
+
+    def get_away_coach_id(self):
+        return int(self.get_coaches_ids()[1])
 
     def get_coaches_ids(self):
         if self.page is None:
@@ -72,14 +76,25 @@ class MatchPage(Page):
             return None
         return result_text[0].strip()
     
+    def get_home_team_score(self):
+        return extract_goals_from_score(self.get_match_result())[0]
+    
+    def get_away_team_score(self):
+        return extract_goals_from_score(self.get_match_result())[1]
+    
+    def get_home_team_points(self):
+        return get_points_from_score(self.get_match_result())[0]
+    
+    def get_away_team_points(self):
+        return get_points_from_score(self.get_match_result())[1]
+
+    
     def get_match_data(self):
         match_score = self.get_match_result()
         return {                        
                 "tm_match_id": self.match_id,
                 "home_club_id": self.get_team(home=True),
                 "away_club_id": self.get_team(home=False),
-                "season_id": self.season_id,
-                "league_id": self.league_id,
                 "date": self.get_match_date(),
                 "home_coach_id": self.get_coaches_ids()[0],
                 "away_coach_id": self.get_coaches_ids()[1],

@@ -1,6 +1,6 @@
 from typing import List
 from models.coach import Coach
-from repositories.base_repository import ICoachRepository
+from repositories.coach.coach_base_repository import ICoachRepository
 
 class FakeCoachRepository(ICoachRepository):
     def __init__(self, initial_coaches=None):

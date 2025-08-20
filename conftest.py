@@ -2,8 +2,8 @@
 import sys, os
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 import pytest
-from repositories.fake_coach_repository import FakeCoachRepository
-from repositories.coach_repository import SupabaseCoachRepository
+from repositories.coach.fake_coach_repository import FakeCoachRepository
+from repositories.coach.supabase_coach_repository import SupabaseCoachRepository
 
 @pytest.fixture
 def coach_repo(request):

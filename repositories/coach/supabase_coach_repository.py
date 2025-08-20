@@ -1,10 +1,10 @@
 from supabase import create_client, Client
 from models.coach import Coach
-from repositories.base_repository import ICoachRepository
+from repositories.coach.coach_base_repository import ICoachRepository
 import os
 
 class SupabaseCoachRepository(ICoachRepository):
-    def __init__(self, client):
+    def __init__(self, client: Client):
         self.client = client
 
     def save(self, coach: Coach):
