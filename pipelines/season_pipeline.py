@@ -25,14 +25,14 @@ def run_season_pipeline(league_id: int, league_code: str, season_id: int) -> lis
     league_match_ids = LeaguePageMatches(league_code=league_code, season_id=season_id).get_match_ids()
     for match_id in league_match_ids:
         try:         
+            match_counter+=1
             print(f"💬 Processing match={match_id} {match_counter}/{len(league_match_ids)}")   
             run_match_pipeline(
                 match_id=match_id,
                 league_id=league_id,
                 season_id=season_id,
                 context=context
-            )
-            match_counter+=1
+            )            
         except Exception as e:
             err_match_ids.append(match_id)
             print(f"❌ Error processing match {match_id}: {e}")

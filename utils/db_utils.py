@@ -30,6 +30,7 @@ def get_league_seasons(client: Client, league_id: int) -> pd.DataFrame:
         client.table("Season")
         .select("season_id, League(tm_league_id, name, country, tier, region, tm_code)")
         .eq("league_id", league_id)
+        .order("season_id", desc=False)
         .execute()
     )
     df = pd.DataFrame(response.data)

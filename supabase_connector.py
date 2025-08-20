@@ -60,7 +60,8 @@ club_data = pd.read_csv(CLUB_DATA_PATH)
 error_log = []
 
 for row in club_data.itertuples():
-    try:
+    # try:
+        print(row.league_id)
         league_data_code = league_data_by_league_code(row.league_id, db_league_data)
         club_name = row.club_name
         club_id = int(row.club_id)
@@ -115,11 +116,11 @@ for row in club_data.itertuples():
             
 
         print("--------------------------------------")
-    except Exception as e:
-        print(f"Error processing club {row.club_name} with ID {row.club_id}: {e}")
-        # add to array to log errors
-        error_log.append(row._asdict())        
-        continue
+    # except Exception as e:
+    #     print(f"Error processing club {row.club_name} with ID {row.club_id}: {e}")
+    #     # add to array to log errors
+    #     error_log.append(row._asdict())        
+    #     continue
 
 # Save error log to a CSV file
 if error_log:
