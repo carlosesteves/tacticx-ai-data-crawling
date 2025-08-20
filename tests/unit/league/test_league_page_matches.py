@@ -1,7 +1,7 @@
 import pathlib
 from pages.league_page_matches import LeaguePageMatches
 
-FIXTURES = pathlib.Path(__file__).parent / "fixtures"
+FIXTURES = pathlib.Path(__file__).parent.parent.parent / "fixtures"
 
 def load_fixture(filename):
     return (FIXTURES / filename).read_text(encoding="utf-8")

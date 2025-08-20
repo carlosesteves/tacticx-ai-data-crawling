@@ -5,8 +5,9 @@ from repositories.pipeline_context import PipelineContext
 from services.match_service import MatchService
 
 def run_match_pipeline(match_id: int, league_id: int, season_id: int, context: PipelineContext, page: MatchPage = None):
-    if match_id in context.match_cache:
-        print(f"Skipping match {match_id}")
+    db_match_ids = context.match_repo.fetch_all_ids()
+    if int(match_id) in context.match_cache or int(match_id) in db_match_ids:
+        print(f"⏭️ Skipping match={match_id}")
         return
 
     if(page is None):

@@ -6,8 +6,8 @@ from repositories.coach.supabase_coach_repository import ICoachRepository
 
 
 def run_coach_pipeline(coach_id: int, context: PipelineContext, page: CoachPage = None):
-    if coach_id in context.coach_cache:
-        print(f"Skipping coach {coach_id}")
+    if coach_id in context.coach_cache or int(coach_id) in context.coach_repo.fetch_all_ids():
+        print(f"⏭️ Skipping coach {coach_id}")
         return
 
     if(page is None):

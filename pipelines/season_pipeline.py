@@ -21,16 +21,20 @@ def run_season_pipeline(league_id: int, league_code: str, season_id: int) -> lis
         tenure_cache=set(),
     )
     
-    for match_id in LeaguePageMatches(league_code=league_code, season_id=season_id).get_match_ids():
-        try:            
+    match_counter = 1
+    league_match_ids = LeaguePageMatches(league_code=league_code, season_id=season_id).get_match_ids()
+    for match_id in league_match_ids:
+        try:         
+            print(f"💬 Processing match={match_id} {match_counter}/{len(league_match_ids)}")   
             run_match_pipeline(
                 match_id=match_id,
                 league_id=league_id,
                 season_id=season_id,
                 context=context
             )
-        except Exception:
+            match_counter+=1
+        except Exception as e:
             err_match_ids.append(match_id)
-            print(f"Error processing match {match_id}")
+            print(f"❌ Error processing match {match_id}: {e}")
 
     return err_match_ids

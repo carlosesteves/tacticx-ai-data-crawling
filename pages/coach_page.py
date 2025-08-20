@@ -48,7 +48,11 @@ class CoachPage(Page):
         return f"{row[0].strip()} {row[1].strip()}" if len(row) > 1 else row[0].strip()
 
     def get_coaching_license(self):
-        return self.page.xpath('//ul[contains(@class, "data-header__items")][2]//li[1]/span//text()')[0].strip()
+        coaching_licenses_list = self.page.xpath('//li[contains(.,"Coaching Licence")]//*[@class="data-header__content"]//text()')
+        if len(coaching_licenses_list) == 0:
+            return ''
+        else:
+            return coaching_licenses_list[0].strip()
 
     def get_dob(self):
         dob_text = self._get_td_text_by_th("Date of birth").strip()
