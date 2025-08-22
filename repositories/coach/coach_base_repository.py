@@ -13,3 +13,9 @@ class ICoachRepository(Protocol):
     
     def save(self, coach: Coach) -> Any:
         ...
+
+    def get_coach_id_by_name(self, name: str) -> int:
+        ...
+
+    def get_coach_id_by_date(self, club_id: int, match_date) -> int:
+        ...

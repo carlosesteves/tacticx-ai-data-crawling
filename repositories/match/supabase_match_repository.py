@@ -17,3 +17,7 @@ class SupabaseMatchRepository(IMatchRepository):
     def fetch_all_ids(self) -> set[int]:
         response = self.client.table("Match").select("tm_match_id").execute()
         return {row["tm_match_id"] for row in response.data}
+    
+    # def does_match_exist(self, match_id: int) -> bool:
+    #     response = self.client.table("Match").select("tm_match_id").eq("tm_match_id", match_id).execute()
+    #     return response.data is None

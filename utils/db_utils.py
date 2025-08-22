@@ -25,6 +25,16 @@ def is_season_club_in_db(client: Client, league_id: int, club_id: int, season_id
     response = client.table("Season").select("*").eq("league_id", league_id).eq("club_id", club_id).eq("season_id", season_id).execute()
     return len(response.data) > 0
 
+def get_league_id_by_code(client: Client, league_code: int) -> int:
+    response = (
+        client.table("League")
+        .select("tm_league_id)")
+        .eq("tm_code", league_code)        
+        .execute()
+    )
+    return response.data[0]['tm_league_id']
+
+
 def get_league_seasons(client: Client, league_id: int) -> pd.DataFrame:
     response = (
         client.table("Season")

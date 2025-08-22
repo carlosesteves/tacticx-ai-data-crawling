@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from datetime import date
 
 from repositories.coach.coach_base_repository import ICoachRepository
 from repositories.match.match_base_repository import IMatchRepository
@@ -12,4 +13,4 @@ class PipelineContext:
 
     coach_cache: set[int]
     match_cache: set[int]
-    tenure_cache: list[tuple[int, int]]
+    tenure_cache: list[tuple[int, int, date]]

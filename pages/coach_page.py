@@ -1,3 +1,4 @@
+from requests import Session
 from config.constants import TM_BASE_URL
 from pages.page import Page
 from utils.page_utils import (
@@ -6,13 +7,14 @@ from utils.page_utils import (
 )
 
 class CoachPage(Page):
-    def __init__(self, coach_id: str, html_content: str = None):
+    def __init__(self, session: Session, coach_id: str, html_content: str = None):
         """
         If html_content is provided, it will be used instead of fetching from the network.
         """
         self.url = f"{TM_BASE_URL}-/profil/trainer/{coach_id}"
         self.page = None
         self.coach_id = coach_id
+        self.session = session
         if html_content:
             self.load_html(html_content)
         else:

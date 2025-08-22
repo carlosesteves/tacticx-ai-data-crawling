@@ -1,6 +1,8 @@
 import pytest
 from unittest.mock import MagicMock, patch
 
+import requests
+
 from pipelines.match_pipeline import run_match_pipeline
 
 @pytest.fixture
@@ -14,7 +16,7 @@ def mock_context():
 def test_skip_if_in_cache(mock_context):
     mock_context.match_cache.add(123)
 
-    run_match_pipeline(match_id=123, league_id=1, season_id=2025, context=mock_context)
+    run_match_pipeline(session=requests.session(), match_id=123, league_id=1, season_id=2025, context=mock_context)
 
     # should not save
     mock_context.match_repo.save.assert_not_called()
@@ -23,7 +25,7 @@ def test_skip_if_in_cache(mock_context):
 def test_skip_if_in_db(mock_context):
     mock_context.match_repo.fetch_all_ids.return_value = [456]
 
-    run_match_pipeline(match_id=456, league_id=1, season_id=2025, context=mock_context)
+    run_match_pipeline(session=requests.session(), match_id=456, league_id=1, season_id=2025, context=mock_context)
 
     mock_context.match_repo.save.assert_not_called()
 
@@ -39,7 +41,7 @@ def test_insert_new_match(mock_run_coach, mock_parse, mock_context):
     mock_parse.return_value = mock_match
 
 
-    run_match_pipeline(match_id=789, league_id=1, season_id=2025, context=mock_context)
+    run_match_pipeline(session=requests.session(), match_id=789, league_id=1, season_id=2025, context=mock_context)
 
     # coaches should be processed
     mock_run_coach.assert_any_call(10, mock_context)

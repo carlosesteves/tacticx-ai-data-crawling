@@ -1,4 +1,5 @@
 import pytest
+import requests
 from pages.coach_page import CoachPage
 from utils.page_utils import extract_attendance_from_text, extract_coach_id, extract_team_id, extract_date_from_href
 
@@ -10,11 +11,11 @@ def coach_page_html():
 
 @pytest.fixture
 def coach_page(coach_page_html):
-    return CoachPage(coach_id="1705", html_content=coach_page_html)
+    return CoachPage(session=requests.session(), coach_id="1705", html_content=coach_page_html)
 
 @pytest.fixture
 def empty_coach_page(coach_page_html):
-    return CoachPage(coach_id="1705", html_content="<hmtl></html>")
+    return CoachPage(session=requests.session(), coach_id="1705", html_content="<hmtl></html>")
 
 def test_get_coach_name(coach_page):
     coach_name = coach_page.get_coach_name()

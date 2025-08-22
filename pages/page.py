@@ -1,3 +1,5 @@
+import random, time
+
 import requests
 from utils.page_utils import get_soup
 from lxml import html  # Assuming you are using xpath
@@ -5,13 +7,14 @@ from lxml import html  # Assuming you are using xpath
 BASE_URL = "https://www.transfermarkt.com"
 
 class Page:
-    def __init__(self):
+    def __init__(self, session):
         self.url = f"{BASE_URL}-"
         self.page = None
         self.fetch_page()
+        self.session = session
 
     def fetch_page(self):
-        page = get_soup(self.url, requests.Session())
+        page = get_soup(self.url, self.session)
         if page is not None:
             self.page = page
         else:

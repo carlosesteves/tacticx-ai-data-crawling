@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+from requests import Session
 from config.constants import TM_BASE_URL
 from pages.page import Page
 from utils.page_utils import (
@@ -12,13 +13,14 @@ from utils.page_utils import (
 )
 
 class MatchPage(Page):
-    def __init__(self, match_id: int, html_content: str = None):
+    def __init__(self, session: Session, match_id: int, html_content: str = None):
         """
         If html_content is provided, it will be used instead of fetching from the network.
         """
         self.url = f"{TM_BASE_URL}-/index/spielbericht/{match_id}"
         self.page = None
         self.match_id = match_id
+        self.session = session
 
         if html_content:
             self.load_html(html_content)
@@ -63,7 +65,7 @@ class MatchPage(Page):
     def get_coaches_ids(self):
         if self.page is None:
             self.fetch_page()
-        coach_links = self.page.xpath('//td[contains(@class, "bench-table__td")]//a/@href')
+        coach_links = self.page.xpath('//a[contains(@href, "/profil/trainer/")]/@href')
         if not coach_links or len(coach_links) < 2:
             return None
         return [extract_coach_id(coach_links[0]), extract_coach_id(coach_links[1])]

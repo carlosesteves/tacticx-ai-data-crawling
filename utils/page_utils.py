@@ -13,6 +13,8 @@ def get_soup(url, session) -> etree._Element:
     retries = 3  # Maximum retries
     sleep_time = 3
     for attempt in range(retries):
+        # sleep_time = sleep_time*(attempt+1)*(attempt+1)
+        # sleep_time = 3
         try:
             response = session.get(url, headers=HEADERS, timeout=60)
             response.raise_for_status()
@@ -20,9 +22,9 @@ def get_soup(url, session) -> etree._Element:
         except requests.Timeout as e:
             print(f"Timeout error fetching {url}: {e}. Retrying ({attempt + 1}/{retries})...")
         except Exception as e:
-            print(f"Error fetching {url}: {e}. Retrying ({attempt + 1}/{retries}) while waiting for {sleep_time*(attempt+1)*(attempt+1)}...")
+            print(f"Error fetching {url}: {e}. Retrying ({attempt + 1}/{retries}) while waiting for {sleep_time}...")
         if attempt < retries - 1:
-            time.sleep(sleep_time*(attempt+1)*(attempt+1))
+            time.sleep(sleep_time)
         else:
             print(f"Failed to fetch {url} after {retries} attempts.")
             return None
@@ -121,3 +123,33 @@ def convert_to_yyyy_mm_dd(date_str: str) -> str:
             continue
 
     return None
+
+def clean_text(text):
+    """Remove non-breaking spaces and extra whitespace."""
+    if not text:
+        return ""
+    return text.replace("\xa0", " ").strip()
+
+def extract_club_id(url):
+    """Extracts the club ID from a Transfermarkt club URL."""
+    if not url:
+        return None
+    m = re.search(r'/verein/(\d+)', url)
+    return m.group(1) if m else None
+
+def extract_match_id(url):
+    """Extracts the match ID from a Transfermarkt match report URL."""
+    if not url:
+        return None
+    m = re.search(r'/spielbericht/.*?(\d+)', url)
+    return m.group(1) if m else None
+
+def parse_result(result_text):
+    """Parses score like '2-0' or '1:1' into integers."""
+    if not result_text:
+        return None, None
+    cleaned = clean_text(result_text).replace(':', '-')
+    parts = cleaned.split('-')
+    if len(parts) == 2 and parts[0].isdigit() and parts[1].isdigit():
+        return int(parts[0]), int(parts[1])
+    return None, None
