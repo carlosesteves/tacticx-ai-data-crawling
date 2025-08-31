@@ -1,7 +1,7 @@
 from models.coach_tenure import CoachTenure
 from repositories.tenure.coach_tenure_base_repository import ICoachTenureRepository
 
-class FakeCoachTenure(ICoachTenureRepository):
+class FakeCoachTenureRepository(ICoachTenureRepository):
     def __init__(self, initial_coach_tenures=None):
         self.coach_tenures = {}
         if initial_coach_tenures:

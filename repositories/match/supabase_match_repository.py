@@ -18,6 +18,11 @@ class SupabaseMatchRepository(IMatchRepository):
         response = self.client.table("Match").select("tm_match_id").execute()
         return {row["tm_match_id"] for row in response.data}
     
+    def fetch_ids_by_year_league(self, season_id: int, league_id: int) -> set[int]:
+        response = self.client.table("Match").select("tm_match_id").eq("season_id", season_id).eq("league_id", league_id).execute()
+        return {row["tm_match_id"] for row in response.data}
+    
+
     # def does_match_exist(self, match_id: int) -> bool:
     #     response = self.client.table("Match").select("tm_match_id").eq("tm_match_id", match_id).execute()
     #     return response.data is None

@@ -1,4 +1,5 @@
 import pytest
+import requests
 from pages.match_page import MatchPage
 from utils.page_utils import extract_attendance_from_text, extract_coach_id, extract_team_id, extract_date_from_href
 
@@ -10,7 +11,7 @@ def match_page_html():
 
 @pytest.fixture
 def match_page(match_page_html):
-    return MatchPage(match_id="12345", html_content=match_page_html)
+    return MatchPage(session=requests.session(), match_id="12345", html_content=match_page_html)
 
 def test_get_team_home(match_page):
     home_team = match_page.get_team(home=True)

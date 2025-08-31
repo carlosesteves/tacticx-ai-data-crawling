@@ -12,6 +12,22 @@ from utils.page_utils import (
     get_soup
 )
 
+class DateNotFoundException(Exception):
+    def __init__(self, message):
+        self.message = message
+
+    def __getattr__(self, name):
+        raise NotImplementedError
+
+    def __setattr__(self, name, value):
+        if name in ('message',):
+            super().__setattr__(name, value)
+        else:
+            raise NotImplementedError
+
+    def __call__(self, *args, **kwargs):
+        raise NotImplementedError
+
 class MatchPage(Page):
     def __init__(self, session: Session, match_id: int, html_content: str = None):
         """
@@ -45,7 +61,7 @@ class MatchPage(Page):
             self.fetch_page()
         date_links = self.page.xpath('//a[contains(@href, "datum")]/@href')
         if not date_links:
-            return None
+            return DateNotFoundException("Date link not found on match page")
         return extract_date_from_href(date_links[0])
 
     def get_attendance(self):
@@ -53,7 +69,7 @@ class MatchPage(Page):
             self.fetch_page()
         attendance_text = self.page.xpath('//*[contains(text(), "Attendance")]//text()')
         if not attendance_text:
-            return None
+            return 0
         return int(extract_attendance_from_text(attendance_text[0].strip()))
 
     def get_home_coach_id(self):

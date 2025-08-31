@@ -4,7 +4,7 @@ import requests
 from utils.page_utils import get_soup
 from lxml import html  # Assuming you are using xpath
 
-BASE_URL = "https://www.transfermarkt.com"
+BASE_URL = "http://www.transfermarkt.com"
 
 class Page:
     def __init__(self, session):

@@ -1,12 +1,12 @@
 from datetime import datetime
+import random
 import re
 import time
 import requests
 from requests.exceptions import Timeout
 from bs4 import BeautifulSoup
-from config.constants import HEADERS
+from config.constants import HEADERS, PROXIES
 from lxml import etree
-
 
 def get_soup(url, session) -> etree._Element:
     """Fetches and parses the HTML page with retry logic for timeouts."""
@@ -16,7 +16,8 @@ def get_soup(url, session) -> etree._Element:
         # sleep_time = sleep_time*(attempt+1)*(attempt+1)
         # sleep_time = 3
         try:
-            response = session.get(url, headers=HEADERS, timeout=60)
+            proxy = {"http": random.choice(PROXIES), "https": random.choice(PROXIES)}
+            response = requests.session().get(url, proxies=proxy, headers=HEADERS, timeout=60)
             response.raise_for_status()
             return convert_bsoup_to_page(BeautifulSoup(response.text, "html.parser"))
         except requests.Timeout as e:

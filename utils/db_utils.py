@@ -50,6 +50,10 @@ def get_league_seasons(client: Client, league_id: int) -> pd.DataFrame:
         league_df = pd.json_normalize(df["League"])
         df = pd.concat([df.drop(columns=["League"]), league_df], axis=1)
 
+    if(df.empty):
+        print(f"No seasons found for league_id={league_id}")
+        return df   
+
     return df.dropna(subset=["season_id", "tm_league_id", "name", "country", "tier", "region", "tm_code"])
 
 def insert_match_data(client: Client, match_data: dict):

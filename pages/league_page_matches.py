@@ -20,19 +20,19 @@ class LeaguePageMatches(Page):
         else:
             self.fetch_page()
 
-    def get_match_ids(self):
+    def get_match_ids(self) -> set[int]:
         if self.page is None:
             self.fetch_page()
         match_links = self.page.xpath('//a[contains(@class, "ergebnis-link")]//@id')
         print(f"Found {len(match_links)} matches in {self.url}")
         if not match_links:
             print("No match links found on the page.")
-            return []
-        return match_links
+            return set()
+        return {int(link) for link in match_links if link.isdigit()}
 
 
     def get_matches(self):
-        matches = []
+        matches = set()
 
            # Loop through all tables on the page
         tables = self.page.xpath('//table')

@@ -57,7 +57,7 @@ class CoachPage(Page):
             return coaching_licenses_list[0].strip()
 
     def get_dob(self):
-        dob_text = self._get_td_text_by_th("Date of birth").strip()
+        dob_text = self._get_td_text_by_th("Date of birth")
         if dob_text:
             return convert_to_yyyy_mm_dd(dob_text)
         return None

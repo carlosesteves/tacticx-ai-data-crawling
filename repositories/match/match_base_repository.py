@@ -11,7 +11,10 @@ class IMatchRepository(Protocol):
     def fetch_all_ids(self) -> set[int]:
         return {}
     
+    def fetch_ids_by_year_league(self, season_id: int, league_id: int) -> set[int]:
+        return {}
+    
     def save(self, match: Match) -> Any:
         ...
 
-        
+    
