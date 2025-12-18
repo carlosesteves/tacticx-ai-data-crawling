@@ -1,31 +1,189 @@
 import traceback
+from datetime import datetime
 from requests import Session
 from pages.league_page_matches import LeaguePageMatches
 from pipelines.match_pipeline import run_match_pipeline
 from repositories.pipeline_context import PipelineContext
+from models.league_season_state import LeagueSeasonState
 
 def get_remaining_match_ids(league_id: str, league_code: str, season_id: int, context: PipelineContext, session: Session) -> set[int]:
     all_match_ids = LeaguePageMatches(session=session, league_code=league_code, season_id=season_id).get_match_ids()
-    processed_match_ids = context.match_repo.fetch_ids_by_year_league(season_id=season_id, league_id=league_id)  # You need to provide league_id here if required
+    processed_match_ids = context.match_repo.fetch_ids_by_year_league(season_id=season_id, league_id=league_id)
     return all_match_ids - processed_match_ids - context.match_cache
 
-def run_season_pipeline(league_id: int, league_code: str, season_id: int, session: Session, context: PipelineContext) -> list:
-    match_counter = 1
-    err_match_ids = []    
+def get_matches_with_dates(league_code: str, season_id: int, session: Session) -> list[dict]:
+    """Get all matches with their dates, sorted by date"""
+    league_page = LeaguePageMatches(session=session, league_code=league_code, season_id=season_id)
+    matches = league_page.get_matches()
     
-    remaining_match_ids = get_remaining_match_ids(league_id, league_code, season_id, context, session)
+    # Sort by date
+    matches_list = sorted(matches, key=lambda x: x.get('date', '9999-12-31'))
+    return matches_list
 
-    if not remaining_match_ids:
+def update_season_state(context: PipelineContext, league_id: int, season_id: int, 
+                        last_match_id: int, last_match_date: datetime, 
+                        total_processed: int, failed_match_ids: list = None, 
+                        status: str = 'in_progress'):
+    """Update the state of the league-season in the database"""
+    state = LeagueSeasonState(
+        league_id=league_id,
+        season_id=season_id,
+        last_processed_match_date=last_match_date,
+        last_processed_match_id=last_match_id,
+        total_matches_processed=total_processed,
+        failed_match_ids=failed_match_ids or [],
+        last_updated_at=datetime.now(),
+        status=status
+    )
+    context.state_repo.save_state(state)
+    return state
+
+def run_season_pipeline(league_id: int, league_code: str, season_id: int, session: Session, 
+                        context: PipelineContext, incremental: bool = False) -> list:
+    """
+    Run the season pipeline to process matches for a league-season.
+    
+    Args:
+        league_id: The ID of the league
+        league_code: The Transfermarkt code for the league (e.g., 'GB1')
+        season_id: The season year (e.g., 2025)
+        session: HTTP session for requests
+        context: Pipeline context with repositories
+        incremental: If True, resume from last checkpoint and process only new matches
+    
+    Returns:
+        List of match IDs that had errors during processing
+    """
+    err_match_ids = []
+    
+    # Load existing state if incremental mode
+    existing_state = None
+    if incremental:
+        existing_state = context.state_repo.get_state(league_id, season_id)
+        if existing_state:
+            print(f"📊 Resuming from checkpoint: {existing_state.total_matches_processed} matches processed")
+            print(f"📅 Last processed match: {existing_state.last_processed_match_id} on {existing_state.last_processed_match_date}")
+    
+    # Get all matches with dates, sorted chronologically
+    try:
+        matches_with_dates = get_matches_with_dates(league_code, season_id, session)
+        print(f"🔍 Found {len(matches_with_dates)} total matches for {league_code} {season_id}")
+    except Exception as e:
+        print(f"❌ Error fetching matches: {e}")
+        return err_match_ids
+    
+    # Filter matches to process based on state
+    matches_to_process = matches_with_dates
+    if incremental and existing_state and existing_state.last_processed_match_date:
+        # Only process matches after the last processed date
+        last_date = existing_state.last_processed_match_date
+        matches_to_process = [
+            m for m in matches_with_dates 
+            if m.get('date') and datetime.strptime(m['date'], '%Y-%m-%d') > last_date
+        ]
+        print(f"🔄 Incremental mode: {len(matches_to_process)} new matches to process")
+    
+    if not matches_to_process:
         print(f"✅ All matches for league_id={league_id} season_id={season_id} already processed.")
-
-    for match_id in remaining_match_ids:
-        try:         
-            match_counter+=1
-            print(f"💬 Processing match={match_id} {match_counter}/{len(remaining_match_ids)}")   
-            run_match_pipeline(session=session, match_id=match_id, league_id=league_id, season_id=season_id, context=context)            
+        # Mark as completed if all matches are done
+        if existing_state:
+            final_status = 'completed' if not existing_state.failed_match_ids else 'completed_with_errors'
+            update_season_state(context, league_id, season_id, 
+                              existing_state.last_processed_match_id,
+                              existing_state.last_processed_match_date,
+                              existing_state.total_matches_processed,
+                              existing_state.failed_match_ids,
+                              status=final_status)
+            if existing_state.failed_match_ids:
+                print(f"⚠️  Note: {len(existing_state.failed_match_ids)} matches had errors: {existing_state.failed_match_ids}")
+        return err_match_ids
+    
+    # Process matches in chronological order
+    total_processed = existing_state.total_matches_processed if existing_state else 0
+    accumulated_errors = list(existing_state.failed_match_ids) if existing_state else []
+    current_date = datetime.now().date()
+    
+    for idx, match_data in enumerate(matches_to_process, 1):
+        match_id = match_data.get('match_id')
+        match_date_str = match_data.get('date')
+        
+        if not match_id:
+            print(f"⚠️  Skipping match without ID")
+            continue
+        
+        # Check if match is in the future
+        if match_date_str:
+            match_date = datetime.strptime(match_date_str, '%Y-%m-%d').date()
+            if match_date >= current_date:
+                print(f"🛑 Stopping: Match {match_id} on {match_date_str} is in the future or today")
+                print(f"✅ Processed {total_processed} matches up to {match_date_str}")
+                break
+            
+        try:
+            print(f"💬 Processing match={match_id} ({idx}/{len(matches_to_process)}) Date: {match_date_str}")
+            run_match_pipeline(session=session, match_id=match_id, league_id=league_id, 
+                             season_id=season_id, context=context)
+            
+            total_processed += 1
+            
+            # Update state after each match (or batch of matches)
+            if match_date_str:
+                match_datetime = datetime.strptime(match_date_str, '%Y-%m-%d')
+                update_season_state(context, league_id, season_id, 
+                                  match_id, match_datetime, 
+                                  total_processed, accumulated_errors, 
+                                  status='in_progress')
+                
         except Exception as e:
             err_match_ids.append(match_id)
+            accumulated_errors.append(match_id)
             print(f"❌ Error processing match {match_id}: {e}")
             traceback.print_exc()
+            
+            # Still update state to track the error
+            if match_date_str:
+                match_datetime = datetime.strptime(match_date_str, '%Y-%m-%d')
+                update_season_state(context, league_id, season_id, 
+                                  match_id, match_datetime, 
+                                  total_processed, accumulated_errors, 
+                                  status='in_progress')
+    
+    # Mark as completed if we processed all matches
+    if matches_to_process:
+        last_match = matches_to_process[-1]
+        if last_match.get('date'):
+            last_date = datetime.strptime(last_match['date'], '%Y-%m-%d')
+            final_status = 'completed' if not err_match_ids else 'completed_with_errors'
+            update_season_state(context, league_id, season_id,
+                              last_match.get('match_id'),
+                              last_date, total_processed, 
+                              accumulated_errors,
+                              status=final_status)
+            if err_match_ids:
+                print(f"⚠️  Season pipeline completed with errors: {total_processed} processed, {len(err_match_ids)} failed")
+                print(f"Failed match IDs: {err_match_ids}")
+            else:
+                print(f"✅ Season pipeline completed: {total_processed} total matches processed")
+
+    return err_match_ids
+
+
+def update_season_pipeline(league_id: int, season_id: int, session: Session, context: PipelineContext) -> list:
+    """
+    Legacy function - consider using run_season_pipeline with incremental=True instead
+    """
+    err_match_ids = []    
+    league_codes = []
+    for league_code in league_codes:        
+        all_match_ids = LeaguePageMatches(session=session, league_code=league_code, season_id=season_id).get_match_ids()
+
+        for match_id in all_match_ids:
+            try:         
+                print(f"💬 Updating match={match_id}")   
+                run_match_pipeline(session=session, match_id=match_id, league_id=league_id, season_id=season_id, context=context)            
+            except Exception as e:
+                err_match_ids.append(match_id)
+                print(f"❌ Error updating match {match_id}: {e}")
+                traceback.print_exc()
 
     return err_match_ids

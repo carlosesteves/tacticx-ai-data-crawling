@@ -70,7 +70,11 @@ class MatchPage(Page):
         attendance_text = self.page.xpath('//*[contains(text(), "Attendance")]//text()')
         if not attendance_text:
             return 0
-        return int(extract_attendance_from_text(attendance_text[0].strip()))
+        try:
+            extracted = extract_attendance_from_text(attendance_text[0].strip())
+            return int(extracted) if extracted else 0
+        except (ValueError, TypeError):
+            return 0
 
     def get_home_coach_id(self):
         return int(self.get_coaches_ids()[0])

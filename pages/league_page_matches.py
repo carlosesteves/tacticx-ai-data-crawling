@@ -32,7 +32,7 @@ class LeaguePageMatches(Page):
 
 
     def get_matches(self):
-        matches = set()
+        matches = []  # Changed from set() to list
 
            # Loop through all tables on the page
         tables = self.page.xpath('//table')
@@ -47,8 +47,18 @@ class LeaguePageMatches(Page):
                 if "bg_blau_20" in row.xpath('./@class'):
                     date_text = row.xpath('.//a/text()')
                     if date_text:
-                        parsed_date = datetime.strptime(clean_text(date_text[0]), "%m/%d/%y")
-                        current_date = parsed_date.strftime("%Y-%m-%d")
+                        # Try multiple date formats (dd/mm/yy or mm/dd/yy)
+                        date_str = clean_text(date_text[0])
+                        parsed_date = None
+                        for fmt in ["%d/%m/%y", "%m/%d/%y"]:
+                            try:
+                                parsed_date = datetime.strptime(date_str, fmt)
+                                break
+                            except ValueError:
+                                continue
+                        
+                        if parsed_date:
+                            current_date = parsed_date.strftime("%Y-%m-%d")
 
                     # possible time in header
                     time_text = clean_text("".join(row.xpath('.//text()')))

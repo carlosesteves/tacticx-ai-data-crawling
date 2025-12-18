@@ -40,7 +40,7 @@ def get_league_seasons(client: Client, league_id: int) -> pd.DataFrame:
         client.table("Season")
         .select("season_id, League(tm_league_id, name, country, tier, region, tm_code)")
         .eq("league_id", league_id)
-        .order("season_id", desc=False)
+        .order("season_id", desc=True)
         .execute()
     )
     df = pd.DataFrame(response.data)
@@ -87,3 +87,35 @@ def insert_coach_tenure_data(client: Client, tenure_data: dict):
 def get_clubs_from_db(client: Client) -> pd.DataFrame:
     response = client.table("Club").select("*").execute()
     return pd.DataFrame(response.data)
+
+
+def get_league_season_state(client: Client, league_id: int, season_id: int) -> dict:
+    """Get the state of a league-season"""
+    response = (
+        client.table("league_season_state")
+        .select("*")
+        .eq("league_id", league_id)
+        .eq("season_id", season_id)
+        .execute()
+    )
+    if response.data and len(response.data) > 0:
+        return response.data[0]
+    return None
+
+
+def update_league_season_state(client: Client, state_data: dict):
+    """Update or insert league-season state"""
+    response = client.table("league_season_state").upsert(state_data).execute()
+    return response.data
+
+
+def delete_league_season_state(client: Client, league_id: int, season_id: int):
+    """Delete league-season state"""
+    response = (
+        client.table("league_season_state")
+        .delete()
+        .eq("league_id", league_id)
+        .eq("season_id", season_id)
+        .execute()
+    )
+    return response.data

@@ -17,7 +17,10 @@ def get_soup(url, session) -> etree._Element:
         # sleep_time = 3
         try:
             proxy = {"http": random.choice(PROXIES), "https": random.choice(PROXIES)}
-            response = requests.session().get(url, proxies=proxy, headers=HEADERS, timeout=60)
+            print(f"Fetching {url} using proxy {proxy['http']}")
+            session = requests.session()
+            session.verify = False
+            response = session.get(url, proxies=proxy, headers=HEADERS, timeout=60)
             response.raise_for_status()
             return convert_bsoup_to_page(BeautifulSoup(response.text, "html.parser"))
         except requests.Timeout as e:
@@ -95,6 +98,7 @@ def convert_to_yyyy_mm_dd(date_str: str) -> str:
         '22/23 (May 19, 2023)' -> '2023-05-19'
         'May 19, 2023' -> '2023-05-19'
         '02.03.1947 (78)' -> '1947-03-02'
+        '22/06/1979 (46)' -> '1979-06-22'
     """
     if not date_str:
         return None
@@ -102,6 +106,7 @@ def convert_to_yyyy_mm_dd(date_str: str) -> str:
     # Patterns to try
     patterns = [
         r'([A-Za-z]{3,9} \d{1,2}, \d{4})',  # Month Day, Year
+        r'(\d{2}/\d{2}/\d{4})',             # DD/MM/YYYY
         r'(\d{2}\.\d{2}\.\d{4})'            # DD.MM.YYYY
     ]
 
@@ -116,7 +121,7 @@ def convert_to_yyyy_mm_dd(date_str: str) -> str:
         return None
 
     # Try multiple date formats
-    for fmt in ("%b %d, %Y", "%B %d, %Y", "%d.%m.%Y"):
+    for fmt in ("%b %d, %Y", "%B %d, %Y", "%d/%m/%Y", "%d.%m.%Y"):
         try:
             date_obj = datetime.strptime(candidate, fmt)
             return date_obj.strftime("%Y-%m-%d")
