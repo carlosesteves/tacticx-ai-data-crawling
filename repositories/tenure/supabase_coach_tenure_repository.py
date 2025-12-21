@@ -22,20 +22,13 @@ class SupabaseCoachTenureRepository(ICoachTenureRepository):
                 print(f"Club with tm_club_id={club_id} does not exist, skipping insert.")
                 return None
             
-            # 2️⃣ Check if the tenure row already exists
-            existing = self.client.table("Coach_tenure") \
-                .select("*") \
-                .eq("coach_id", data["coach_id"]) \
-                .eq("club_id", club_id) \
+            # 2️⃣ Use upsert to handle the unique constraint on (coach_id, club_id, start_date)
+            # This will insert if not exists, or update if exists
+            response = self.client.table("Coach_tenure") \
+                .upsert(data, on_conflict="coach_id,club_id,start_date") \
                 .execute()
             
-            # 3️⃣ Insert only if it doesn't exist
-            if not existing.data:
-                response = self.client.table("Coach_tenure").insert(data).execute()
-                return response.data
-            else:
-                # Row already exists, skip insert
-                return existing.data
+            return response.data
 
         except Exception as e:
             raise Exception(f"Supabase save error: {e}")

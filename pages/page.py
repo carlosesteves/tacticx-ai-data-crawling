@@ -14,11 +14,18 @@ class Page:
         self.session = session
 
     def fetch_page(self):
-        page = get_soup(self.url, self.session)
-        if page is not None:
-            self.page = page
-        else:
-            raise Exception(f"Failed to fetch page for {self.url}")
+        retries = 3
+        sleep_time = 5
+        for attempt in range(retries):
+            page = get_soup(self.url, self.session)
+            if page is not None:
+                self.page = page
+                return
+            else:
+                print(f"[fetch_page] Attempt {attempt+1}/{retries} failed for {self.url}. Retrying in {sleep_time} seconds...")
+                if attempt < retries - 1:
+                    time.sleep(sleep_time)
+        raise Exception(f"Failed to fetch page for {self.url} after {retries} attempts.")
     
     def load_html(self, html_content: str):
         """

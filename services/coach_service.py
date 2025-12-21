@@ -17,6 +17,8 @@ class CoachService:
     def parse_tenures(page: CoachPage) -> list[CoachTenure]:
         list_of_tenures = []
         for tenure in page.get_tenures():
+            if(tenure['club_id'] is ''):
+                continue
             list_of_tenures.append(
                 CoachTenure(
                     coach_id=page.get_coach_id(),
