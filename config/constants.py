@@ -13,4 +13,5 @@ PROXIES = [
     # "http://odaeufjg-rotate:4rzsborth70x@p.webshare.io:80",
     # "http://cscgqyrr-rotate:d8otf35wedfm@p.webshare.io:80",
     "http://oghfztuj-rotate:il5ggz585j3w@p.webshare.io:80",
+    "http://xvuratfe-rotate:s4o9aqeh2nl1@p.webshare.io:80",
 ]
