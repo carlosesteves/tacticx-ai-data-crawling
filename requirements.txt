@@ -1,0 +1,14 @@
+# Core dependencies
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+supabase>=2.3.0
+pandas>=2.1.0
+pydantic>=2.5.0
+lxml>=5.1.0
+urllib3>=2.1.0
+
+# Testing
+pytest>=7.4.0
+
+# Development
+python-dotenv>=1.0.0

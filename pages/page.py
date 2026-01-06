@@ -1,4 +1,9 @@
+
+import os
 import random, time
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+os.environ['PYTHONHTTPSVERIFY'] = '0'
 
 import requests
 from utils.page_utils import get_soup
@@ -15,7 +20,7 @@ class Page:
 
     def fetch_page(self):
         retries = 3
-        sleep_time = 5
+        sleep_time = 3
         for attempt in range(retries):
             page = get_soup(self.url, self.session)
             if page is not None:

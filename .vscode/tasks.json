@@ -1,18 +1,23 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "Run tests and script",
-            "type": "shell",
-            "command": "pytest -v tests/ && python scripts/main.py",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            }
-        }
-    ]
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Update 2025 matches",
+			"type": "shell",
+			"command": "pytest -v tests/ && python scripts/main.py",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				"reveal": "always",
+				"panel": "shared"
+			}
+		},
+		{
+			"label": "Update All Leagues Season 2025",
+			"type": "shell",
+			"command": "source .venv/bin/activate && python ./scripts/update_all_leagues_season.py --season 2025"
+		}
+	]
 }

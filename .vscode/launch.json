@@ -26,6 +26,26 @@
             ],
             "console": "integratedTerminal",
             "justMyCode": false
+        },
+        {
+            "name": "Update All Leagues Season (Input Year)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/update_all_leagues_season.py",
+            "args": [
+                "--season",
+                "${input:seasonYear}"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ],
+    "inputs": [
+        {
+            "id": "seasonYear",
+            "type": "promptString",
+            "description": "Enter the season year:",
+            "default": "2025"
         }
     ]
 }
