@@ -1,13 +1,21 @@
 #!/usr/bin/env python3
 """
-Script to retry failed matches from a league-season.
+[DEPRECATED] Script to retry failed matches from a league-season.
 
-This script reads the failed_match_ids from the league_season_state table
-and attempts to reprocess them.
+NOTE: This script is now deprecated. The main update scripts (update_all_leagues_season.py
+and update_league_season.py) now automatically detect which matches are missing from the
+database by comparing what's on the Transfermarkt page vs what's in the DB. Simply re-run
+the main script to process any failed or missing matches.
 
-Usage:
+The failed_match_ids field in league_season_state is kept for informational/tracking
+purposes only and is not used to determine which matches to process.
+
+Usage (if you still want to use this):
     python3 scripts/retry_failed_matches.py --league GB1 --season 2025
     python3 scripts/retry_failed_matches.py --league GB1 --season 2025 --match-id 1234567
+
+Better alternative:
+    python3 scripts/update_league_season.py --league GB1 --season 2025
 """
 
 import sys

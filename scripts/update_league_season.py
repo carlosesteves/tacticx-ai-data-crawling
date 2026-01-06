@@ -1,6 +1,17 @@
 #!/usr/bin/env python3
 """
-Script to update a specific league-season with incremental processing.
+Script to update a specific league-season.
+
+This script automatically detects which matches need processing by comparing what's on the
+Transfermarkt page vs what's already in the database. It does NOT rely on last_processed_match_date
+or failed_match_ids for determining what to process - those fields are kept for informational/
+tracking purposes only.
+
+The script will:
+1. Fetch all match IDs from the Transfermarkt page for the league-season
+2. Fetch all match IDs already in the database for that league-season
+3. Process the difference (matches not yet in DB)
+4. Update tracking state (last_processed_match_id, failed_match_ids, etc.) for monitoring
 
 Usage:
     python3 scripts/update_league_season.py --league GB1 --season 2025

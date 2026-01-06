@@ -2,12 +2,23 @@
 """
 Script to update a specific season for all leagues in the database.
 
-This script fetches all distinct leagues from the database and runs
-the incremental update for each one for the specified season.
+This script fetches all distinct leagues from the database and updates each one for the
+specified season. It automatically detects which matches need processing by comparing what's
+on the Transfermarkt page vs what's already in the database.
+
+The script does NOT rely on last_processed_match_date or failed_match_ids for determining
+what to process - those fields are kept for informational/tracking purposes only.
+
+For each league-season, the script will:
+1. Fetch all match IDs from the Transfermarkt page
+2. Fetch all match IDs already in the database
+3. Process the difference (matches not yet in DB)
+4. Update tracking state for monitoring
 
 Usage:
     python3 scripts/update_all_leagues_season.py --season 2025
     python3 scripts/update_all_leagues_season.py --season 2025 --full  # Force full reprocess
+    python3 scripts/update_all_leagues_season.py --season 2025 --limit 5  # Test with first 5 leagues
 """
 
 import sys
