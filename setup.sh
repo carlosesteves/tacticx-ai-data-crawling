@@ -24,7 +24,7 @@ if [ ! -d ".venv" ]; then
     echo "✓ Virtual environment created"
 else
     echo "✓ Virtual environment already exists"
-fi
+fi 
 
 # Activate virtual environment
 echo "🔌 Activating virtual environment..."
