@@ -1,6 +1,6 @@
 import pytest
 import requests
-from pages.match_page import MatchPage
+from pages.match_page import MatchPage, MissingCoachException, MissingResultException
 from utils.page_utils import extract_attendance_from_text, extract_coach_id, extract_team_id, extract_date_from_href
 
 # Fixture to load the HTML file
@@ -36,3 +36,28 @@ def test_get_coaches_ids(match_page):
 def test_get_match_result(match_page):
     match_result = match_page.get_match_result()
     assert match_result == "0:0"  # Expected match result from fixture
+
+
+# Tests for missing data exceptions
+def test_missing_coaches_raises_exception():
+    """Test that missing coaches raises MissingCoachException"""
+    html_no_coaches = "<html><body><div>No coaches here</div></body></html>"
+    page = MatchPage(session=requests.session(), match_id=99999, html_content=html_no_coaches)
+    
+    with pytest.raises(MissingCoachException) as exc_info:
+        page.get_coaches_ids()
+    
+    assert exc_info.value.match_id == 99999
+    assert "Coach information missing" in str(exc_info.value)
+
+
+def test_missing_result_raises_exception():
+    """Test that missing result raises MissingResultException"""
+    html_no_result = "<html><body><div>No result here</div></body></html>"
+    page = MatchPage(session=requests.session(), match_id=88888, html_content=html_no_result)
+    
+    with pytest.raises(MissingResultException) as exc_info:
+        page.get_match_result()
+    
+    assert exc_info.value.match_id == 88888
+    assert "Match result is missing" in str(exc_info.value)

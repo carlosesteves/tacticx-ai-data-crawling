@@ -28,6 +28,23 @@ class DateNotFoundException(Exception):
     def __call__(self, *args, **kwargs):
         raise NotImplementedError
 
+
+class MissingCoachException(Exception):
+    """Exception raised when coach information is missing from the match page"""
+    def __init__(self, match_id: int, missing_side: str = "both"):
+        self.match_id = match_id
+        self.missing_side = missing_side
+        self.message = f"Coach information missing for match {match_id} ({missing_side} coach(es) not found)"
+        super().__init__(self.message)
+
+
+class MissingResultException(Exception):
+    """Exception raised when match result is missing from the match page"""
+    def __init__(self, match_id: int):
+        self.match_id = match_id
+        self.message = f"Match result is missing for match {match_id}"
+        super().__init__(self.message)
+
 class MatchPage(Page):
     def __init__(self, session: Session, match_id: int, html_content: str = None):
         """
@@ -87,15 +104,16 @@ class MatchPage(Page):
             self.fetch_page()
         coach_links = self.page.xpath('//a[contains(@href, "/profil/trainer/")]/@href')
         if not coach_links or len(coach_links) < 2:
-            return None
+            missing_side = "both" if not coach_links else "away" if len(coach_links) == 1 else "unknown"
+            raise MissingCoachException(match_id=self.match_id, missing_side=missing_side)
         return [extract_coach_id(coach_links[0]), extract_coach_id(coach_links[1])]
 
     def get_match_result(self):
         if self.page is None:
             self.fetch_page()
         result_text = self.page.xpath('//*[contains(@class, "sb-endstand")][1]//text()')
-        if not result_text:
-            return None
+        if not result_text or not result_text[0].strip():
+            raise MissingResultException(match_id=self.match_id)
         return result_text[0].strip()
     
     def get_home_team_score(self):

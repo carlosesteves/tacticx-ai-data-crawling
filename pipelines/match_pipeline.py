@@ -1,5 +1,5 @@
 from requests import Session
-from pages.match_page import MatchPage
+from pages.match_page import MatchPage, MissingCoachException, MissingResultException
 from pipelines.coach_pipeline import run_coach_pipeline
 from repositories.match.match_base_repository import IMatchRepository
 from repositories.pipeline_context import PipelineContext
@@ -14,8 +14,15 @@ def run_match_pipeline(session: Session, match_id: int, league_id: int, season_i
     if(page is None):
         page = MatchPage(match_id=match_id, session=session)
     
-    # get match data
-    match = MatchService.parse(league_id, season_id, page)
+    # Parse match data - will raise exceptions if coach info or result is missing
+    try:
+        match = MatchService.parse(league_id, season_id, page)
+    except MissingCoachException as e:
+        print(f"❌ Match {match_id}: {e.message}")
+        raise  # Re-raise to mark this match as failed
+    except MissingResultException as e:
+        print(f"❌ Match {match_id}: {e.message}")
+        raise  # Re-raise to mark this match as failed
     
     print(f"-----------------------")
     # handle coaches inside the same pipeline
