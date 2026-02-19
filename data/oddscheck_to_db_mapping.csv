@@ -1,0 +1,975 @@
+oddscheck_team_name,db_club_id,db_club_name,match_count,avg_confidence,avg_fuzzy_score
+CSA,18545,Centro Sportivo Alagoano (AL),3,72.42,19
+QPR,1039,Queens Park Rangers,3,72.58,27
+Nautico,2646,Clube Náutico Capibaribe,3,73.17,39
+Cuiaba,28022,Cuiabá Esporte Clube (MT),3,73.33,32
+Olimpo Bahia Blanca,7468,Club Olimpo,3,73.92,40
+Gremio,210,Grêmio Foot-Ball Porto Alegrense,3,73.92,26
+FCSB,301,Steaua Bucharest,3,73.92,20
+Mirassol,3876,Mirassol Futebol Clube (SP),3,74.08,46
+Botafogo RJ,537,Botafogo de Futebol e Regatas,3,74.25,50
+Beijing Renhe,17250,Shaanxi Chanba,3,74.25,22
+Vasco,978,Clube de Regatas Vasco da Gama,3,74.33,29
+Roda,192,Roda JC Kerkrade,3,74.5,40
+Vitoria,2125,Esporte Clube Vitória,3,74.67,43
+Atletico-MG,330,Clube Atlético Mineiro,3,74.83,48
+Atletico GO,15172,Atlético Clube Goianiense,3,74.92,56
+America MG,2863,América Futebol Clube (MG),3,74.92,50
+Cangzhou,35272,Shijiazhuang Ever Bright,3,75.08,25
+Ceara,2029,Ceará Sporting Club,3,75.17,33
+Joinville,3330,Joinville Esporte Clube (SC),3,75.25,49
+OFI,653,OFI Crete FC,3,75.42,40
+Rennes,273,Stade Rennais FC,3,75.75,45
+Colon Santa FE,1070,CA Colón,3,75.92,36
+Pandurii,8715,Pandurii Targu Jiu (- 2022),3,76,46
+Corinthians,199,Sport Club Corinthians Paulista,3,76.25,52
+Criciuma,7178,Criciúma Esporte Clube,3,76.25,47
+Bistrita,4688,CF Gloria Bistrita (- 2015),3,76.42,46
+Creteil,2067,US Créteil-Lusitanos,3,76.5,44
+Sp Lisbon,336,Sporting CP,3,76.5,40
+Chapecoense-SC,17776,Associação Chapecoense de Futebol,3,76.67,47
+Nancy,1159,AS Nancy-Lorraine,3,76.67,45
+Ponte Preta,1134,Associação Atlética Ponte Preta,3,76.75,52
+Sochaux,750,FC Sochaux-Montbéliard,3,76.75,48
+Sao Paulo,585,São Paulo Futebol Clube,3,76.83,50
+Fortaleza,10870,Fortaleza Esporte Clube,3,76.92,56
+Ajax,610,Ajax Amsterdam,3,77.08,44
+Kuban,2439,Kuban Krasnodar (-2018),3,77.25,36
+Neustadt,17444,SC Magna Wiener Neustadt,3,77.33,50
+U. Cluj,6429,Universitatea Cluj,3,77.33,48
+Din. Bucuresti,312,FC Dinamo 1948,3,77.42,29
+Veracruz,5138,Tiburones Rojos de Veracruz,3,77.5,46
+Lyon,1041,Olympique Lyon,3,77.5,44
+Bahia,10010,Esporte Clube Bahia,3,77.58,42
+Hamilton,2999,Hamilton Academical FC,3,77.58,53
+Admira,503,FC Admira Wacker Mödling,3,77.83,40
+Aves,3336,Desportivo Aves (- 2020),3,77.92,29
+T. Moscow,1186,Torpedo Moskau,3,78,43
+Tosno,40426,FC Tosno (-2018),3,78.08,48
+Hearts,43,Heart of Midlothian FC,3,78.08,36
+Poli Iasi,33966,CSMS Iași,3,78.17,44
+St Etienne,618,AS Saint-Étienne,3,78.17,62
+Istres,2580,FC Istres Ouest Provence,3,78.25,40
+Goias,3197,Goiás EC,3,78.58,62
+Nimes,1160,Nîmes Olympique,3,78.58,40
+Niort,1161,Chamois Niortais FC,3,78.58,42
+Wolves,543,Wolverhampton Wanderers,3,78.67,41
+Twente,317,Twente Enschede FC,3,78.67,50
+Belgrano,2417,Club Atlético Belgrano,3,78.75,53
+Parana,309,Paraná Clube,3,78.75,56
+Novara,6692,Novara Calcio 1908,3,78.75,50
+Brest,3911,Stade Brestois 29,3,78.75,45
+Figueirense,4064,Figueirense Futebol Clube,3,78.92,61
+Naval,4814,Naval 1º de Maio,3,78.92,48
+Juventude,10492,Esporte Clube Juventude,3,79,56
+Pari NN,49702,FC Pari Nizhniy Novgorod,3,79,45
+Jaen,666,Real Jaén CF,3,79,38
+Coritiba,776,Coritiba Foot Ball Club,3,79.08,52
+Shenzhen Xinpengcheng,51120,Shenzhen Peng City,3,79.08,72
+Alaves,1108,Deportivo Alavés,3,79.08,45
+Arles,11300,AC Arles-Avignon,3,79.08,48
+Sedan,1081,CS Sedan-Ardennes,3,79.17,45
+Cruzeiro,609,Cruzeiro Esporte Clube,3,79.25,53
+Lille,1082,LOSC Lille,3,79.42,67
+Ceahlaul,8687,Ceahlăul Piatra Neamț,3,79.5,48
+Yenisey,3714,Metallurg-Enisey Krasnoyarsk,3,79.58,34
+Bourg Peronnas,2972,Football Bourg-en-Bresse Péronnas 01,3,79.58,52
+AVS,110302,Avs Futebol,3,79.67,43
+Erzurum BB,39722,Büyüksehir Belediye Erzurumspor,3,79.67,34
+Aris,605,Aris Thessaloniki,3,79.67,38
+Guadalajara Chivas,6711,Deportivo Guadalajara,3,79.75,56
+Willem II ,403,Willem II Tilburg,1,79.75,69
+Athletico-PR,679,Atlético Paranaense,3,79.92,58
+Xamax,625,Neuchâtel Xamax,3,79.92,50
+CA Bastia,28559,CA Bastia (- 2017),3,79.92,67
+Fluminense,2462,Fluminense Football Club,3,80,59
+Odd,1058,Odd Grenland,3,80,40
+Roda ,192,Roda JC Kerkrade,1,80,40
+Paris SG,583,Paris Saint-Germain,3,80.08,59
+San Lorenzo,1775,CA San Lorenzo de Almagro,3,80.17,61
+Tigre,11831,Club Atlético Tigre,3,80.25,42
+Alloa,3020,Alloa Athletic FC,3,80.33,45
+M. Saransk,11126,Mordovia Saransk (-2020),3,80.42,53
+Laval,1080,Stade Lavallois,3,80.42,50
+Ionikos,553,Ionikos Nikeas,3,80.42,67
+Munich 1860,72,TSV 1860 Munich,3,80.5,46
+Alessandria,2721,US Alessandria Calcio 1912,3,80.5,59
+Estrela,2431,CF Estrela Amadora,3,80.5,56
+Clermont,3524,Clermont Foot 63,3,80.58,67
+Palmeiras,1023,Sociedade Esportiva Palmeiras,3,80.67,47
+Santa Cruz,1785,Santa Cruz FC (PE),3,80.67,71
+Ulm,69,SSV Ulm 1846,3,80.67,40
+Lecco,5514,Calcio Lecco 1912,3,80.67,45
+Betis,150,Real Betis Balompié,3,80.67,42
+Gimnasia L.P.,1106,Club de Gimnasia y Esgrima La Plata,3,80.83,46
+Podbeskidzie,6361,Podbeskidzie Bielsko-Biala,3,80.83,63
+Astra,13499,Astra Ploiesti,3,80.83,53
+Daco-Getica Bucuresti,11222,Juventus Bucharest,3,81,51
+Iraklis,47,Iraklis Thessaloniki,3,81,52
+Zhejiang Professional,17276,Hangzhou Greentown,3,81.08,46
+M'gladbach,18,Borussia Mönchengladbach,3,81.08,53
+Avellino,2331,AS Avellino 1912,3,81.08,67
+Cottbus,25,FC Energie Cottbus,3,81.17,56
+Pisa,4172,AC Pisa 1909,3,81.17,50
+HamKam,4309,Hamarkameratene,3,81.25,57
+Vitesse,499,Vitesse Arnhem,3,81.25,67
+Otelul,4959,Otelul Galati,3,81.33,63
+Cambuur,133,SC Cambuur Leeuwarden,3,81.33,50
+Toluca,1804,Deportivo Toluca,3,81.42,55
+Perugia,839,AC Perugia Calcio,3,81.5,58
+Reims,1421,Stade Reims,3,81.5,62
+Godoy Cruz,12574,CD Godoy Cruz Antonio Tomba,3,81.58,54
+Bragantino,8793,Red Bull Bragantino,3,81.58,69
+Stabaek,1274,Stabæk Fotball,3,81.58,48
+Zenit,964,Zenit St. Petersburg,3,81.58,40
+Inverness C,2451,Inverness Caledonian Thistle FC,3,81.58,52
+Genk,1184,KRC Genk,3,81.58,67
+Dep. Riestra,19775,Club Deportivo Riestra,3,81.67,65
+Targu Mures,16650,FCM Targu Mures,3,81.67,85
+Lierse,204,Lierse SK (-2018),3,81.67,52
+Ham-Kam,4309,Hamarkameratene,3,81.75,55
+U Craiova,40812,CS Universitatea Craiova,3,81.75,55
+Atl. Tucuman,14554,Club Atlético Tucumán,3,81.83,61
+Partick,2760,Partick Thistle FC,3,81.83,56
+Espanol,714,RCD Espanyol Barcelona,3,81.83,48
+Germinal,566,Germinal Beerschot Antwerpen,3,81.83,44
+Estudiantes L.P.,288,Club Estudiantes de La Plata,3,81.92,64
+Petrolul,9465,Petrolul Ploiesti,3,81.92,64
+Latina,22045,US Latina Calcio,3,81.92,55
+Tours,3161,Tours FC,3,81.92,77
+Pescara,2921,Delfino Pescara 1936,3,82,52
+Murcia,171,Real Murcia CF,3,82,60
+Ajaccio GFCO,3558,GFC Ajaccio,3,82,61
+Wehen,108,SV Wehen Wiesbaden,3,82.08,43
+Derby,22,Derby County,3,82.17,59
+Tianjin Jinmen Tiger,3187,Tianjin Teda,3,82.25,62
+Vejle,443,Vejle Boldklub,3,82.25,53
+Avai,2035,Avaí FC,3,82.33,55
+Orleans,10868,US Orléans,3,82.33,71
+Setubal,1085,Vitória Setúbal FC,3,82.33,48
+Brighton,1237,Brighton & Hove Albion,3,82.42,53
+Gubbio,4326,AS Gubbio 1910,3,82.42,60
+Talleres Cordoba,3938,CA Talleres,3,82.5,59
+Poli Timisoara,36590,ACS Poli Timisoara (2012 - 2021),3,82.5,61
+Ural,11127,Ural Yekaterinburg,3,82.5,36
+Lamia,3999,PAS Lamia 1964,3,82.5,53
+SK Rapid,170,Rapid Vienna,3,82.58,50
+Ascoli,408,Ascoli Calcio 1898,3,82.58,50
+Concordia,15945,Concordia Chiajna,3,82.67,69
+Wycombe,2805,Wycombe Wanderers,3,82.67,58
+Spal,2722,SPAL 2013,3,82.67,62
+Lens,826,RC Lens,3,82.67,73
+Oster,1236,Östers IF,3,82.75,57
+Stoke,512,Stoke City,3,82.75,67
+Celta,940,Celta de Vigo,3,82.75,56
+Ath Bilbao B,6688,Bilbao Athletic,3,82.75,52
+Ceuta,8568,AD Ceuta FC,3,82.75,62
+Bordeaux,40,FC Girondins Bordeaux,3,82.75,55
+Ajax ,610,Ajax Amsterdam,1,82.75,44
+Internacional,6600,Sport Club Internacional,3,82.83,70
+Chievo,862,Chievo Verona,3,82.83,63
+La Coruna,897,Deportivo de La Coruña,3,82.83,52
+A. Lustenau,541,SC Austria Lustenau,3,82.92,67
+Lyngby,369,Lyngby Boldklub,3,82.92,57
+Yamaga,25765,Matsumoto Yamaga,3,82.92,55
+Basel,26,FC Basel 1893,3,82.92,56
+Bolton,355,Bolton Wanderers,3,82.92,55
+Bastia,595,SC Bastia,3,82.92,80
+Standard,3057,Standard Liège,3,82.92,73
+Lanus,333,CA Lanús,3,83,62
+Ufa,28095,FC Ufa,3,83,67
+Wigan,1071,Wigan Athletic,3,83,53
+Dresden,129,SG Dynamo Dresden,3,83,58
+Trapani,4331,Trapani Calcio,3,83,67
+Valerenga,76,Vålerenga Fotball Elite,3,83.08,50
+Yverdon,322,Yverdon Sport FC,3,83.08,61
+Tottenham,148,Tottenham Hotspur,3,83.08,69
+Leganes,1244,CD Leganés,3,83.08,71
+Strasbourg,667,RC Strasbourg Alsace,3,83.08,67
+Leczna,3291,Gornik Leczna,3,83.17,63
+Rotherham,1194,Rotherham United,3,83.17,72
+Carpi,4102,Carpi FC 1909,3,83.17,56
+Maritimo,1301,CS Marítimo,3,83.17,74
+Inter,46,Inter Milan,3,83.25,62
+Jonkopings,7411,Jönköpings Södra IF,3,83.33,55
+Toulouse,415,FC Toulouse,3,83.33,84
+Antwerp,1096,Royal Antwerp FC,3,83.33,61
+Estoril,1465,GD Estoril Praia,3,83.33,61
+Atl. Rafaela,10233,AMSD Atlético de Rafaela,3,83.42,61
+Grodig,10131,SV Grödig,3,83.42,67
+Juarez,49283,FC Juárez,3,83.42,67
+Grasshoppers,504,Grasshopper Club Zurich,3,83.42,63
+Padova,3037,Calcio Padova,3,83.42,63
+Ferrol,1176,Racing Ferrol,3,83.42,63
+Mouscron,29228,Mouscron-Péruwelz,3,83.42,64
+Wuhan FC,6450,Wuhan Zall,3,83.5,67
+Dender,9010,FCV Dender EH,3,83.5,63
+Nurnberg,4,1.FC Nuremberg,3,83.58,64
+Pordenone,21331,Pordenone Calcio,3,83.58,72
+Lokeren,498,KSC Lokeren (-2020),3,83.58,54
+Rakow,9644,Raków Częstochowa,3,83.67,45
+Bologna,1025,Bologna FC 1909,3,83.67,64
+Chateauroux,1175,LB Châteauroux,3,83.67,80
+Quevilly Rouen,7124,Quevilly Rouen Métropole,3,83.67,74
+Kallonis,28956,AEL Kalloni,3,83.67,74
+Hebei,36630,Hebei China Fortune,3,83.75,42
+Shenzhen,1320,Shenzhen Ruby,3,83.75,76
+Tomsk,3691,Tom Tomsk,3,83.75,71
+Scunthorpe,2964,Scunthorpe United,3,83.75,74
+Grenoble,1290,Grenoble Foot 38,3,83.75,67
+Luton,1031,Luton Town,3,83.83,67
+Aachen,8,Alemannia Aachen,3,83.83,55
+Leonesa,4542,Cultural Leonesa,3,83.83,61
+Santos,221,Santos FC,3,83.92,80
+Jagiellonia,2300,Jagiellonia Bialystok,3,83.92,69
+Preston,466,Preston North End,3,83.92,58
+Frankfurt FSV,293,FSV Frankfurt,3,83.92,69
+Como,1047,Como 1907,3,83.92,62
+Viking,239,Viking FK,3,84,80
+Leverkusen,15,Bayer 04 Leverkusen,3,84,69
+Mainz,39,1.FSV Mainz 05,3,84,53
+Regensburg,109,SSV Jahn Regensburg,3,84,69
+Foggia,704,Foggia Calcio,3,84,63
+Uniao Madeira,976,CF União Madeira (-2021),3,84,65
+Volos NFC,60949,Volos NPS,3,84,78
+Gimnastic,5648,Gimnàstic de Tarragona,3,84.08,52
+Monarcas,5623,Monarcas Morelia,3,84.17,67
+Apollon,441,Apollon Smyrnis,3,84.17,64
+Oxford,988,Oxford United,3,84.25,63
+Platense,928,Club Atlético Platense,3,84.33,53
+Hull,3008,Hull City,3,84.33,62
+Charlton,358,Charlton Athletic,3,84.33,64
+Recreativo,2867,Recreativo Huelva,3,84.33,74
+Caen,1162,SM Caen,3,84.33,73
+Annecy,30204,FC Annecy,3,84.33,80
+KFUM Oslo,23184,KFUM-Kameratene Oslo,3,84.42,62
+Termalica B-B.,15906,Bruk-Bet Termalica Nieciecza,3,84.42,48
+Csikszereda M. Ciuc,37255,FK Csikszereda Miercurea Ciuc,3,84.5,75
+Reggiana,5621,AC Reggiana 1919,3,84.5,67
+Zwolle,1269,PEC Zwolle,3,84.5,75
+PAOK,1091,PAOK Thessaloniki,3,84.5,38
+Dunfermline,1270,Dunfermline Athletic FC,3,84.58,65
+Portogruaro,15374,Calcio Portogruaro-Summaga,3,84.58,59
+Vicenza,2655,Vicenza Calcio,3,84.58,67
+Flamengo RJ,614,CR Flamengo,3,84.67,73
+Kyoto,593,Kyoto Sanga,3,84.67,62
+Heidenheim,2036,1.FC Heidenheim 1846,3,84.67,67
+Sp Gijon,2448,Sporting Gijón,3,84.67,64
+Logrones,24420,UD Logroñés,3,84.67,63
+Troyes,1095,ESTAC Troyes,3,84.67,67
+Henan Songshan Longmen,9982,Henan Jianye,3,84.75,53
+Atlas,8590,Atlas Guadalajara,3,84.75,45
+Tromso,1293,Tromsø IL,3,84.75,67
+CS Turnu Severin,34767,CS Turnu-Severin (- 2013),3,84.75,73
+Spezia,3522,Spezia Calcio,3,84.75,63
+Nice,417,OGC Nice,3,84.75,67
+Guimaraes,2420,Vitória Guimarães SC,3,84.75,55
+Vizela,6912,FC Vizela,3,84.75,80
+Guangzhou FC,10948,Guangzhou Evergrande,3,84.83,62
+Catania,1627,Calcio Catania,3,84.83,67
+Udinese,410,Udinese Calcio,3,84.83,67
+Huracan,2063,CA Huracán,3,84.92,71
+Almeria,3302,UD Almería,3,84.92,71
+Zaragoza,142,Real Zaragoza,3,84.92,76
+Chambly,35012,FC Chambly Oise,3,84.92,64
+Gent,157,KAA Gent,3,84.92,67
+Lausanne,527,FC Lausanne-Sport,3,85,64
+Genoa,252,Genoa CFC,3,85,71
+Grosseto,4333,US Grosseto FC,3,85,73
+Cosenza,4031,Cosenza Calcio,3,85,67
+Carrarese,4159,Carrarese Calcio 1908,3,85,60
+Karagumruk,6646,Fatih Karagümrük,3,85,62
+AEK,2441,AEK Athens,3,85,46
+Shanghai Shenxin,17238,Nanchang Bayi Hengyuan,3,85.08,58
+Dalian Pro,33304,Dalian Aerbin,3,85.08,70
+Qingdao Hainiu,8536,Qingdao Jonoon,3,85.08,64
+Krylya Sovetov,2696,Krylya Sovetov Samara,3,85.08,80
+Panionios,169,Panionios Athens,3,85.08,72
+Legia,255,Legia Warszawa,3,85.17,53
+Navodari,31304,Sageata Navodari (- 2015),3,85.17,48
+Ath Madrid,13,Atlético de Madrid,3,85.17,64
+Getafe,3709,Getafe CF,3,85.17,80
+Arsenal Sarandi,4673,Arsenal FC,3,85.25,64
+Oberhausen,57,Rot-Weiß Oberhausen,3,85.25,69
+Brescia,19,Brescia Calcio,3,85.25,67
+Verona,276,Hellas Verona,3,85.25,63
+Eibar,1533,SD Eibar,3,85.25,77
+Arouca,8024,FC Arouca,3,85.25,80
+FC Rapid Bucuresti,455,Rapid Bucharest,3,85.33,79
+Norwich,1123,Norwich City,3,85.33,74
+Accrington,3688,Accrington Stanley,3,85.33,71
+Dijon,2969,Dijon FCO,3,85.33,71
+Grazer AK,316,Grazer AK 1902,3,85.42,78
+Sport Recife,8718,Sport Club do Recife,3,85.42,75
+Shandong Taishan,3182,Shandong Luneng Taishan,3,85.42,82
+Corona Brasov,36593,CSM Corona Brasov,3,85.42,87
+Zurich,260,FC Zürich,3,85.42,67
+Dortmund,16,Borussia Dortmund,3,85.42,64
+Beziers,10867,AS Béziers,3,85.42,71
+St Truiden,475,Sint-Truidense VV,3,85.42,67
+Leones Negros,23505,CD Leones Negros de la UdeG,3,85.5,65
+Gaz Metan Medias,8104,Gaz Metan Medias (- 2022),3,85.5,78
+Feyenoord,234,Feyenoord Rotterdam,3,85.5,64
+Olympiakos,683,Olympiacos Piraeus,3,85.5,64
+Dalian Yifang F.C.,33304,Dalian Aerbin,3,85.58,58
+Amkar,4128,Amkar Perm,3,85.58,67
+St. Gallen,257,FC St. Gallen 1879,3,85.58,71
+Paderborn,127,SC Paderborn 07,3,85.58,75
+Le Havre,738,Le Havre AC,3,85.58,84
+Ind. Rivadavia,12179,CS Independiente Rivadavia,3,85.67,65
+Chelsea,631,Chelsea FC,3,85.67,82
+Swansea,2288,Swansea City,3,85.67,74
+Mechelen,354,KV Mechelen,3,85.67,84
+Buyuksehyr,6890,Büyüksehir Belediyespor,3,85.67,48
+Kerkyra,5219,AO Kerkyra,3,85.67,82
+St. Polten,2662,SKN St. Pölten,3,85.75,75
+Helsingor,22110,FC Helsingør,3,85.75,76
+Stockport,1098,Stockport County,3,85.75,72
+Ternana,1103,Ternana Calcio,3,85.75,67
+Veria,2079,PAE Veria,3,85.75,71
+Jiangsu Suning,22219,Jiangsu Sainty,3,85.83,79
+Chiapas,4774,Jaguares de Chiapas,3,85.83,54
+Aarau,116,FC Aarau,3,85.83,77
+Cadiz,2687,Cádiz CF,3,85.83,62
+Academica,2990,Académica Coimbra,3,85.83,62
+Atromitos,3060,Atromitos Athens,3,85.83,72
+Puszcza,28893,Puszcza Niepolomice,3,85.92,54
+Newcastle,762,Newcastle United,3,85.92,72
+Torino,416,Torino FC,3,85.92,80
+Anderlecht,58,RSC Anderlecht,3,85.92,83
+San Martin S.J.,10511,CA San Martín (San Juan),3,86,62
+Portuguesa,10247,Portuguesa,3,86,100
+Odense,173,Odense Boldklub,3,86,57
+Kofu,10999,Ventforet Kofu,3,86,44
+Ranheim,13519,Ranheim IL,3,86,82
+Ingolstadt,4795,FC Ingolstadt 04,3,86,77
+Heracles,1304,Heracles Almelo,3,86,70
+Oostende,2861,KV Oostende (-2024),3,86,59
+A. Klagenfurt,28760,SK Austria Klagenfurt,3,86.08,71
+Shanghai Port,27190,Shanghai East Asia,3,86.08,65
+Aalesund,5619,Aalesunds FK,3,86.08,80
+Wisla,422,Wisla Kraków,3,86.08,59
+Legnica,8936,Miedz Legnica,3,86.08,70
+Orebro,1056,Örebro SK,3,86.08,67
+Thun,938,FC Thun,3,86.08,73
+Karlsruhe,48,Karlsruher SC,3,86.08,82
+Roma,12,AS Roma,3,86.08,73
+Panthrakikos,7185,Panthrakikos Komotini,3,86.08,73
+Lillestrom,353,Lillestrøm SK,3,86.17,78
+Akhmat Grozny,3725,Terek Grozny,3,86.17,64
+Boulogne,7042,US Boulogne,3,86.17,84
+Pacos Ferreira,2995,FC Paços de Ferreira,3,86.17,76
+Mjallby,2719,Mjällby AIF,3,86.25,67
+Varnamo,3622,IFK Värnamo,3,86.25,67
+Bochum,80,VfL Bochum,3,86.25,75
+Osnabruck,81,VfL Osnabrück,3,86.25,73
+Wacker Innsbruck,2444,FC Wacker Innsbruck,3,86.33,91
+Luzern,434,FC Luzern,3,86.33,80
+Duisburg,52,MSV Duisburg,3,86.33,80
+Parma,130,Parma FC,3,86.33,77
+Salernitana,380,US Salernitana 1919,3,86.33,73
+Marseille,244,Olympique Marseille,3,86.33,64
+Amiens,1416,Amiens SC,3,86.33,80
+Den Haag,1268,ADO Den Haag,3,86.33,80
+West Brom,984,West Bromwich Albion,3,86.42,62
+Modena,1385,Modena FC,3,86.42,80
+Albacete,1532,Albacete Balompié,3,86.42,64
+Porto,720,FC Porto,3,86.42,77
+Brondby,206,Bröndby IF,3,86.5,71
+Cagliari,1390,Cagliari Calcio,3,86.5,70
+Sudtirol,4554,FC Südtirol,3,86.5,74
+R. Volgograd,3609,Rotor Volgograd,3,86.58,81
+Baltika,2741,Baltika Kaliningrad,3,86.58,54
+West Ham,379,West Ham United,3,86.58,70
+Willem II,403,Willem II Tilburg,3,86.58,69
+Mansfield,3820,Mansfield Town,3,86.67,78
+Dundee United,1519,Dundee United FC,3,86.67,90
+Cordoba,993,Córdoba CF,3,86.67,71
+Benfica,294,SL Benfica,3,86.67,82
+Union de Santa Fe,7097,CA Unión (Santa Fe),3,86.75,72
+Unirea Slobozia,29700,AFC Unirea 04 Slobozia,3,86.75,81
+Pro Vercelli,26789,FC Pro Vercelli 1892,3,86.75,75
+Club America,3631,CF América,3,86.83,73
+East Fife,3024,East Fife FC,3,86.83,86
+Ath Bilbao,621,Athletic Bilbao,3,86.83,80
+Granada,16795,Granada CF,3,86.83,82
+Monaco,162,AS Monaco,3,86.83,80
+Zawisza,7153,Zawisza Bydgoszcz,3,86.92,58
+Leeds,399,Leeds United,3,86.92,59
+Malaga,1084,Málaga CF,3,86.92,67
+Nantes,995,FC Nantes,3,86.92,80
+Eupen,1245,KAS Eupen,3,86.92,71
+Man United,985,Manchester United,3,87,74
+Cardiff,603,Cardiff City,3,87,74
+Reggina,1386,Reggina Calcio,3,87,67
+Mantova,2581,Mantova 1911,3,87,74
+Sevilla B,8519,Sevilla Atlético,3,87,64
+Larisa,4603,AE Larisa,3,87,80
+Niki Volos,5572,Niki Volou,3,87,90
+Kifisia,30120,AE Kifisias,3,87,78
+Liaoning,1079,Liaoning FC,3,87.08,84
+Chongqing Liangjiang Athletic,1326,Chongqing Lifan,3,87.08,64
+Servette,61,Servette FC,3,87.08,84
+Palermo,458,US Palermo,3,87.08,82
+Ibiza,13241,UD Ibiza,3,87.08,77
+Graafschap,642,De Graafschap Doetinchem,3,87.08,59
+Sogndal,2038,Sogndal IL,3,87.17,82
+Bodo/Glimt,501,FK Bodø/Glimt,3,87.17,78
+Sion,321,FC Sion,3,87.17,73
+Benevento,4171,Benevento Calcio,3,87.17,72
+Vannes,1377,Vannes OC,3,87.17,80
+Red Star,1154,Red Star FC,3,87.17,84
+Queen of Sth,3001,Queen of the South FC,3,87.25,73
+Stuttgart,79,VfB Stuttgart,3,87.25,82
+Hertha,44,Hertha BSC,3,87.25,75
+Sevilla,368,Sevilla FC,3,87.25,82
+Castellon,2502,CD Castellón,3,87.25,76
+Waregem,3508,Zulte Waregem,3,87.25,70
+Beira Mar,1436,SC Beira-Mar,3,87.25,76
+BW Linz,2157,FC Blau-Weiss Linz,3,87.33,56
+Guangzhou City,18916,Guangzhou R&F,3,87.33,74
+Vaduz,163,FC Vaduz,3,87.33,77
+Man City,281,Manchester City,3,87.33,70
+Doncaster,2454,Doncaster Rovers,3,87.33,72
+Cambridge,986,Cambridge United,3,87.33,72
+Braunschweig,23,Eintracht Braunschweig,3,87.33,71
+Bari,332,AS Bari,3,87.33,73
+Triestina,4271,US Triestina,3,87.33,86
+Westerlo,968,KVC Westerlo,3,87.33,80
+Kavala,3391,AO Kavala,3,87.33,80
+Panserraikos,3385,Panserraikos,3,87.33,100
+Excelsior,798,SBV Excelsior,3,87.42,82
+Telstar,1434,SC Telstar,3,87.42,82
+Xanthi,128,Skoda Xanthi,3,87.42,67
+Ried,266,SV Ried,3,87.5,73
+Ruch,318,Ruch Chorzow,3,87.5,50
+FK Anzi Makhackala,2700,Anzhi Makhachkala,3,87.5,86
+Birmingham,337,Birmingham City,3,87.5,80
+Cittadella,4084,AS Cittadella,3,87.5,87
+Lorca,34559,Lorca FC,3,87.5,77
+Waalwijk,235,RKC Waalwijk,3,87.5,80
+Tranmere,1074,Tranmere Rovers,3,87.58,70
+Valladolid,366,Real Valladolid CF,3,87.58,71
+Girona,12321,Girona FC,3,87.58,80
+Lugo,11000,CD Lugo,3,87.58,73
+Metz,347,FC Metz,3,87.58,73
+Angers,1420,Angers SCO,3,87.58,75
+Charleroi,172,Royal Charleroi SC,3,87.58,67
+Monterrey,2407,CF Monterrey,3,87.67,86
+Lobos BUAP,13357,Lobos BUAP (- 2019),3,87.67,69
+Burgos,1536,Burgos CF,3,87.67,80
+River Plate,209,CA River Plate,3,87.75,88
+Fredrikstad,3837,Fredrikstad FK,3,87.75,88
+Varberg,10507,Varbergs BoIS,3,87.75,70
+Bielefeld,10,Arminia Bielefeld,3,87.75,69
+Aalen,83,VfR Aalen,3,87.75,71
+Frosinone,8970,Frosinone Calcio,3,87.75,72
+Monza,2919,AC Monza,3,87.75,77
+Mirandes,13222,CD Mirandés,3,87.75,74
+Famalicao,3329,FC Famalicão,3,87.75,76
+OFI Crete,653,OFI Crete FC,3,87.75,86
+Shandong Luneng,3182,Shandong Luneng Taishan,3,87.83,79
+Okayama,22171,Fagiano Okayama,3,87.83,64
+Atl. San Luis,11693,San Luis FC,3,87.83,67
+FC Voluntari,40843,FC Voluntari,3,87.83,100
+Lausanne Ouchy,5499,FC Stade-Lausanne-Ouchy,3,87.83,70
+Burton,2963,Burton Albion,3,87.83,63
+Hamburg,41,Hamburger SV,3,87.83,74
+Ein Frankfurt,24,Eintracht Frankfurt,3,87.83,81
+Tondela,7179,CD Tondela,3,87.83,82
+Hartberg,4467,TSV Hartberg,3,87.92,80
+Shanghai SIPG,27190,Shanghai East Asia,3,87.92,71
+Fulham,931,Fulham FC,3,87.92,80
+Milan,5,AC Milan,3,87.92,77
+Siena,1387,AC Siena,3,87.92,77
+Olhanense,4750,SC Olhanense,3,87.92,86
+Panathinaikos,265,Panathinaikos FC,3,87.92,90
+Stromsgodset,2817,Strømsgodset IF,3,88,81
+Gloria Buzau,11380,SCM Gloria Buzau,3,88,86
+Hacken,1109,BK Häcken,3,88,67
+Young Boys,452,BSC Young Boys,3,88,83
+Coventry,990,Coventry City,3,88,76
+Stenhousemuir,3012,Stenhousemuir FC,3,88,90
+Elche,1531,Elche CF,3,88,77
+Verdy,3734,Tokyo Verdy,3,88.08,62
+Necaxa,1146,Club Necaxa,3,88.08,71
+Sandefjord,6399,Sandefjord Fotball,3,88.08,71
+Arka Gdynia,6107,Arka Gdynia,3,88.08,100
+Sochi,41231,FC Sochi,3,88.08,77
+Varese,4361,Varese 1910,3,88.08,71
+Virtus Lanciano,4718,SS Virtus Lanciano,3,88.08,91
+St. Gilloise,3948,Union Saint-Gilloise,3,88.08,62
+Start,267,IK Start,3,88.17,77
+Ipswich,677,Ipswich Town,3,88.17,74
+Northampton,1302,Northampton Town,3,88.17,81
+Levadeiakos,2672,APO Levadiakos,3,88.17,80
+Hobro,5818,Hobro IK,3,88.25,77
+Everton,29,Everton FC,3,88.25,82
+Yeovil,972,Yeovil Town,3,88.25,71
+Lorient,1158,FC Lorient,3,88.25,82
+Besiktas,114,Besiktas JK,3,88.25,84
+Feyenoord ,234,Feyenoord Rotterdam,1,88.25,64
+Guizhou Zhicheng,36628,Guizhou Hengfeng Zhicheng,3,88.33,78
+Sirius,7945,IK Sirius,3,88.33,80
+Blackburn,164,Blackburn Rovers,3,88.33,72
+St Johnstone,2578,St. Johnstone FC,3,88.33,86
+Empoli,749,FC Empoli,3,88.33,80
+Guingamp,855,EA Guingamp,3,88.33,84
+Penafiel,3327,FC Penafiel,3,88.33,84
+Central Cordoba,31284,CA Central Córdoba (SdE),3,88.42,72
+Kristiansund,21101,Kristiansund BK,3,88.42,89
+Gornik Z.,428,Górnik Zabrze,3,88.42,64
+Tambov,41201,FK Tambov,3,88.42,80
+Lugano,2790,FC Lugano,3,88.42,80
+Sunderland,289,Sunderland AFC,3,88.42,83
+Southampton,180,Southampton FC,3,88.42,88
+Celtic,371,Celtic FC,3,88.42,80
+Crotone,4083,FC Crotone,3,88.42,82
+Evian Thonon Gaillard,14171,FC Évian Thonon Gaillard,3,88.42,89
+Groningen,202,FC Groningen,3,88.42,86
+Kortrijk,601,KV Kortrijk,3,88.42,84
+Karabukspor,1506,Kardemir DC Karabükspor,3,88.42,59
+Lokomotiv Moscow,932,Lokomotiv Moskau,3,88.5,81
+Osters,1236,Östers IF,3,88.5,67
+Peterboro,1072,Peterborough United,3,88.5,64
+Santander,630,Racing Santander,3,88.5,72
+Alcorcon,11596,AD Alcorcón,3,88.5,74
+Auxerre,290,AJ Auxerre,3,88.5,82
+Rio Ave,2425,Rio Ave FC,3,88.5,82
+Tirol,2446,WSG Tirol,3,88.58,71
+Meizhou Hakka,38929,Meizhou Hakka,3,88.58,100
+Plymouth,2262,Plymouth Argyle,3,88.58,70
+Wolfsburg,82,VfL Wolfsburg,3,88.58,82
+Las Palmas,472,UD Las Palmas,3,88.58,87
+Numancia,2296,CD Numancia,3,88.58,84
+Montpellier,969,Montpellier HSC,3,88.58,85
+Ajaccio,1147,AC Ajaccio,3,88.58,82
+Almere City,723,Almere City FC,3,88.58,88
+Rizespor,126,Caykur Rizespor,3,88.58,70
+Bodrumspor,44006,Bodrum FK,3,88.58,63
+Sarmiento Junin,12454,CA Sarmiento (Junin),3,88.67,86
+Shijiazhuang,35272,Shijiazhuang Ever Bright,3,88.67,67
+Norrkoping,2844,IFK Norrköping,3,88.67,75
+Reading,1032,Reading FC,3,88.67,82
+Nott'm Forest,703,Nottingham Forest,3,88.67,80
+Hoffenheim,533,TSG 1899 Hoffenheim,3,88.67,69
+Lazio,398,SS Lazio,3,88.67,77
+Instituto,1829,Instituto ACC,3,88.75,82
+Mattersburg,856,SV Mattersburg,3,88.75,88
+Yanbian,8539,Yanbian Funde,3,88.75,70
+Darmstadt,105,SV Darmstadt 98,3,88.75,75
+Valencia,1049,Valencia CF,3,88.75,84
+Salamanca,1087,UD Salamanca,3,88.75,86
+Real Madrid B,6767,Real Madrid Castilla,3,88.75,73
+Haugesund,2761,FK Haugesund,3,88.83,86
+Mjondalen,11338,Mjøndalen IF,3,88.83,76
+Banfield,830,CA Banfield,3,88.92,84
+Salzburg,409,Red Bull Salzburg,3,88.92,64
+Jerv,36224,FK Jerv,3,88.92,73
+Port Vale,1211,Port Vale FC,3,88.92,86
+Cesena,1429,AC Cesena,3,88.92,80
+Napoli,6195,SSC Napoli,3,88.92,75
+Villarreal,1050,Villarreal CF,3,88.92,87
+Tianjin Tianhai,33714,Tianjin Quanjian,3,89,71
+Winterthur,242,FC Winterthur,3,89,87
+Harrogate,12020,Harrogate Town,3,89,78
+St Pauli,35,FC St. Pauli,3,89,80
+Greuther Furth,65,SpVgg Greuther Fürth,3,89,76
+Venezia,607,Venezia FC,3,89,82
+Barcelona,131,FC Barcelona,3,89,86
+Andorra,10718,FC Andorra,3,89,82
+Volendam,724,FC Volendam,3,89,84
+Giannina,2671,PAS Giannina,3,89,80
+Wrexham,1112,Wrexham AFC,3,89.08,78
+Peterhead,3032,Peterhead FC,3,89.08,86
+Concarneau,21688,US Concarneau,3,89.08,87
+Honefoss,632,Hønefoss BK,3,89.17,74
+Livorno,1210,AS Livorno,3,89.17,82
+Vallecano,367,Rayo Vallecano,3,89.17,78
+Le Mans,1164,Le Mans FC,3,89.17,82
+Portimonense,7378,Portimonense SAD,3,89.17,86
+Asteras Tripolis,6676,Asteras Tripolis,3,89.17,100
+Zhejiang Yiteng,29171,Harbin Yiteng,3,89.25,71
+Sandnes,13025,Sandnes Ulf,3,89.25,78
+Goteborg,801,IFK Göteborg,3,89.25,70
+Lecce,1005,US Lecce,3,89.25,77
+Piacenza,1408,Piacenza FC,3,89.25,84
+Nacional,982,CD Nacional,3,89.25,84
+Newells Old Boys,1286,CA Newell's Old Boys,3,89.33,89
+Brann,1100,SK Brann,3,89.33,77
+Liverpool,31,Liverpool FC,3,89.33,86
+Hercules,7971,Hércules CF,3,89.33,74
+Sociedad B,9899,Real Sociedad B,3,89.33,80
+Sp Braga,1075,SC Braga,3,89.33,88
+Pachuca,4035,CF Pachuca,3,89.42,82
+Blackpool,1181,Blackpool FC,3,89.42,86
+Millwall,1028,Millwall FC,3,89.42,84
+Nocerina,4114,ASG Nocerina,3,89.42,80
+Waasland-Beveren,28643,KVRS Waasland - SK Beveren,3,89.42,76
+Erciyesspor,6894,Kayseri Erciyesspor,3,89.42,73
+Sepsi Sf. Gheorghe,54585,Sepsi OSK Sf. Gheorghe,3,89.5,90
+Lincoln,1198,Lincoln City,3,89.5,74
+FeralpiSalo,9439,Feralpisalò,3,89.5,91
+Catanzaro,4097,US Catanzaro,3,89.5,86
+Xerez,134,Xerez CD,3,89.5,77
+Sabadell,11422,CE Sabadell FC,3,89.5,73
+Kayserispor,3205,Kayserispor,3,89.5,100
+Boca Juniors,189,CA Boca Juniors,3,89.58,89
+Molde,687,Molde FK,3,89.58,77
+UCAM Murcia,34148,UCAM Murcia CF,3,89.58,88
+Trelleborgs,701,Trelleborgs FF,3,89.67,88
+Burnley,1132,Burnley FC,3,89.67,82
+Oviedo,2497,Real Oviedo,3,89.67,71
+All Boys,12100,CA All Boys,3,89.75,84
+Iwata,937,Júbilo Iwata,3,89.75,59
+Portsmouth,1020,Portsmouth FC,3,89.75,87
+Sassuolo,6574,US Sassuolo,3,89.75,84
+Alverca,2521,FC Alverca,3,89.75,82
+Graafschap ,642,De Graafschap Doetinchem,1,89.75,59
+Hammarby,1059,Hammarby IF,3,89.83,84
+Watford,1010,Watford FC,3,89.83,82
+Sheffield Weds,1035,Sheffield Wednesday,3,89.83,85
+Aberdeen,370,Aberdeen FC,3,89.83,84
+Freiburg,60,SC Freiburg,3,89.83,84
+Hansa Rostock,30,FC Hansa Rostock,3,89.83,90
+Fiorentina,430,ACF Fiorentina,3,89.83,83
+Juventus,506,Juventus FC,3,89.83,84
+Leiria,2639,UD Leiria,3,89.83,80
+LASK,413,LASK,3,89.92,100
+Esbjerg,3426,Esbjerg fB,3,89.92,82
+Barnsley,349,Barnsley FC,3,89.92,84
+Utrecht,200,FC Utrecht,3,89.92,82
+Wuhan Three Towns,70657,Wuhan Three Towns,3,90,100
+Leicester,1003,Leicester City,3,90,78
+FC Koln,3,1.FC Köln,3,90,75
+Valenciennes,1423,Valenciennes FC,3,90,89
+Nijmegen,467,NEC Nijmegen,3,90,80
+Tigres UANL,7055,Tigres UANL,3,90.08,100
+Cruz Azul,3711,CD Cruz Azul,3,90.08,86
+Helsingborg,699,Helsingborgs IF,3,90.08,85
+Magdeburg,187,1.FC Magdeburg,3,90.08,78
+Rayo Majadahonda,13702,CF Rayo Majadahonda,3,90.08,91
+Queretaro,4961,Querétaro FC,3,90.17,76
+Brommapojkarna,1092,IF Brommapojkarna,3,90.17,90
+Middlesbrough,641,Middlesbrough FC,3,90.17,90
+Atalanta,800,Atalanta BC,3,90.17,84
+Albinoleffe,4541,UC AlbinoLeffe,3,90.17,88
+Sonderjyske,5817,Sönderjyske Fodbold,3,90.25,67
+Club Leon,4941,Club León FC,3,90.25,76
+Vaslui,8174,FC Vaslui,3,90.25,80
+Montrose,3030,Montrose FC,3,90.25,84
+Kaiserslautern,2,1.FC Kaiserslautern,3,90.25,85
+Huesca,5358,SD Huesca,3,90.25,80
+Barcelona B,2464,FC Barcelona B,3,90.25,88
+Platanias,21957,AO Platanias,3,90.25,86
+Bryne,1057,Bryne FK,3,90.33,77
+Atvidabergs,6139,Åtvidabergs FF,3,90.33,80
+Univ. Craiova,40812,CS Universitatea Craiova,3,90.42,65
+Gefle,4414,Gefle IF,3,90.42,77
+Milton Keynes Dons,991,Milton Keynes Dons,3,90.42,100
+Seraing,2715,RFC Seraing,3,90.42,78
+Gil Vicente,2424,Gil Vicente FC,3,90.42,88
+Belenenses,68608,CF Os Belenenses,3,90.42,77
+Shanghai Shenhua,3183,Shanghai Shenhua Liansheng,3,90.5,76
+Torpedo Moscow,1186,Torpedo Moskau,3,90.5,79
+CF Montreal,4078,Montreal Impact,3,90.5,62
+Mallorca,237,RCD Mallorca,3,90.5,80
+Sociedad,681,Real Sociedad,3,90.5,76
+Amorebieta,16575,SD Amorebieta,3,90.5,87
+Dunkerque,9202,USL Dunkerque,3,90.5,82
+Velez Sarsfield,1029,CA Vélez Sarsfield,3,90.58,85
+Viborg,1063,Viborg FF,3,90.58,80
+Elfsborg,1101,IF Elfsborg,3,90.58,84
+Sundsvall,2843,GIF Sundsvall,3,90.58,82
+Syrianska,7406,Syrianska FC,3,90.58,86
+Extremadura UD,29095,Extremadura UD,3,90.58,100
+Zaglebie,168,Zaglebie Lubin,3,90.67,73
+Malmo FF,496,Malmö FF,3,90.67,88
+Schalke 04,33,FC Schalke 04,3,90.67,87
+Sandhausen,254,SV Sandhausen,3,90.67,87
+PreuÃen MÃ¼nster,91,Preußen Münster,3,90.67,81
+Argentinos Jrs,1030,AA Argentinos Juniors,3,90.75,80
+Rosario Central,1418,CA Rosario Central,3,90.75,91
+Halmstad,1011,Halmstads BK,3,90.75,80
+Kelty Hearts,3804,Kelty Hearts FC,3,90.75,89
+Hannover,42,Hannover 96,3,90.75,84
+Juve Stabia,5587,SS Juve Stabia,3,90.75,88
+RAAL La Louviere,3901,RAAL La Louvière,3,90.75,94
+Vendsyssel,19657,Vendsyssel FF,3,90.83,87
+Arsenal,11,Arsenal FC,3,90.83,82
+Augsburg,167,FC Augsburg,3,90.83,84
+Elversberg,64,SV 07 Elversberg,3,90.83,77
+Chaves,3325,GD Chaves,3,90.83,80
+Quilmes,1826,Quilmes AC,3,90.92,82
+Farul Constanta,29831,FC Viitorul Constanta,3,90.92,78
+Djurgarden,1044,Djurgårdens IF,3,90.92,75
+Dalkurd,23302,Dalkurd FF,3,90.92,82
+Villarreal B,11972,Villarreal CF B,3,90.92,89
+Vladikavkaz,2703,Alania Vladikavkaz,3,91,76
+Utrecht ,200,FC Utrecht,1,91,82
+Qingdao West Coast,70662,Qingdao West Coast,3,91.08,100
+Silkeborg,1177,Silkeborg IF,3,91.08,86
+Calarasi,37239,Dunarea Calarasi,3,91.08,67
+Mioveni,11390,CS Mioveni,3,91.08,82
+Dynamo Makhachkala,75231,Dinamo Makhachkala,3,91.08,94
+Erzgebirge Aue,94,FC Erzgebirge Aue,3,91.08,90
+Llagostera,26132,UE Llagostera,3,91.08,87
+Rodez,11273,Rodez AF,3,91.08,77
+Mouscron-Peruwelz,29228,Mouscron-Péruwelz,3,91.08,94
+FC Brasov,4687,FC Brasov,3,91.17,100
+Metaloglobus Bucharest,37624,FC Metaloglobus Bucharest,3,91.17,94
+Sampdoria,1038,UC Sampdoria,3,91.17,86
+Cremonese,2239,US Cremonese,3,91.17,86
+Puebla,5662,Puebla FC,3,91.25,80
+Rosenborg,195,Rosenborg BK,3,91.25,86
+Chindia Targoviste,12680,AFC Chindia Targoviste,3,91.25,90
+Levante,3368,Levante UD,3,91.25,82
+CSKA Moscow,2410,CSKA Moscow,3,91.33,100
+Tenerife,648,CD Tenerife,3,91.33,84
+Feirense,3349,CD Feirense,3,91.33,84
+Olympiakos Volou,4602,Olympiakos Volou,3,91.33,100
+Aalborg,1053,Aalborg BK,3,91.42,82
+Nordsjaelland,2778,FC Nordsjaelland,3,91.42,90
+Khimki,3719,FC Khimki,3,91.42,80
+Stevenage,3684,Stevenage FC,3,91.42,86
+Union Berlin,89,1.FC Union Berlin,3,91.42,83
+Osasuna,331,CA Osasuna,3,91.42,82
+VVV Venlo,1426,VVV-Venlo,3,91.42,89
+Moreirense,979,Moreirense FC,3,91.42,87
+Viitorul Constanta,29831,FC Viitorul Constanta,3,91.5,92
+Dynamo Moscow,121,Dinamo Moscow,3,91.5,92
+Eldense,12567,CD Eldense,3,91.5,82
+Groningen ,202,FC Groningen,1,91.5,86
+Academica Clinceni,21475,Academica Clinceni,3,91.58,100
+U Craiova 1948,1007,FC U Craiova 1948,3,91.58,90
+Dundee,511,Dundee FC,3,91.58,80
+Cercle Brugge,520,Cercle Brugge,3,91.58,100
+Farense,4294,SC Farense,3,91.58,82
+Alcoyano,11259,CD Alcoyano,3,91.67,84
+Martigues,1165,FC Martigues,3,91.67,86
+Chengdu Rongcheng,65791,Chengdu Rongcheng,3,91.75,100
+Machida,23568,Machida Zelvia,3,91.75,67
+Atlante,6709,CF Atlante,3,91.75,82
+Ankaragucu,868,MKE Ankaragücü,3,91.75,67
+Vitesse ,499,Vitesse Arnhem,1,91.75,67
+St Mirren,465,St. Mirren FC,3,91.83,82
+Vestsjaelland,20100,FC Vestsjaelland,3,91.92,90
+Krasnodar,16704,FC Krasnodar,3,91.92,86
+Guangzhou R&F,18916,Guangzhou R&F,3,92,100
+Randers FC,5724,Randers FC,3,92,100
+Aarhus,678,Aarhus GF,3,92,80
+Virtus Entella,20519,Virtus Entella,3,92,100
+Reus Deportiu,13225,CF Reus Deportiu,3,92,90
+Boavista,2503,Boavista FC,3,92,84
+Feirense ,3349,CD Feirense,1,92,84
+Hangzhou Greentown,17276,Hangzhou Greentown,3,92.08,100
+Qingdao FC,38987,Qingdao FC,3,92.08,100
+Nantong Zhiyun,46487,Nantong Zhiyun,3,92.08,100
+Rangers,124,Rangers FC,3,92.08,82
+Wurzburger Kickers,1557,Würzburger Kickers,3,92.08,94
+Sarpsborg 08,10217,Sarpsborg 08 FF,3,92.17,89
+CFR Cluj,7769,CFR Cluj,3,92.17,100
+FC Arges,41278,ACSC FC Arges,3,92.17,76
+FK Rostov,1083,FC Rostov,3,92.17,89
+Ostersunds,9614,Östersunds FK,3,92.17,78
+Bromley,8981,Bromley FC,3,92.17,82
+Casa Pia,3268,Casa Pia AC,3,92.17,84
+Lech Poznan,238,Lech Poznan,3,92.25,100
+Falkirk,1191,Falkirk FC,3,92.25,82
+RB Leipzig,23826,RB Leipzig,3,92.25,100
+Cartagena,7077,FC Cartagena,3,92.25,86
+Mazatlan FC,82696,Mazatlán FC,3,92.33,91
+Orenburg,14589,FC Orenburg,3,92.33,84
+Degerfors,3641,Degerfors IF,3,92.33,86
+Guadalajara,16576,CD Guadalajara,3,92.33,88
+Orlando City,45604,Orlando City SC,3,92.42,89
+Huddersfield,1110,Huddersfield Town,3,92.42,83
+Hibernian,903,Hibernian FC,3,92.42,86
+Panetolikos,6418,Panetolikos GFS,3,92.42,85
+Horsens,2414,AC Horsens,3,92.5,82
+Kalmar,3654,Kalmar FF,3,92.5,80
+Vasteras SK,5202,Västerås SK,3,92.5,82
+Livingston,1241,Livingston FC,3,92.5,87
+Ponferradina,4032,SD Ponferradina,3,92.5,89
+Heracles ,1304,Heracles Almelo,1,92.5,70
+Bournemouth,989,AFC Bournemouth,3,92.58,85
+Heerenveen,306,SC Heerenveen,3,92.58,87
+Altach,3551,SCR Altach,3,92.67,75
+GKS Belchatow,716,GKS Belchatow,3,92.67,100
+Fuenlabrada,16486,CF Fuenlabrada,3,92.67,88
+Paris FC,10004,Paris FC,3,92.67,100
+Santa Clara,2423,CD Santa Clara,3,92.67,88
+Aldosivi,12301,CA Aldosivi,3,92.75,84
+Sturm Graz,122,SK Sturm Graz,3,92.75,87
+Urawa Reds,828,Urawa Red Diamonds,3,92.75,71
+Barrow,6168,Barrow AFC,3,92.83,75
+Kilmarnock,2553,Kilmarnock FC,3,92.83,87
+Motherwell,987,Motherwell FC,3,92.83,87
+Cove Rangers,8933,Cove Rangers FC,3,92.83,89
+Werder Bremen,86,SV Werder Bremen,3,92.83,90
+Ross County,2759,Ross County FC,3,92.92,88
+Cultural Leonesa,4542,Cultural Leonesa,3,92.92,100
+Club Brugge,2282,Club Brugge KV,3,92.92,88
+Tokushima,17832,Tokushima Vortis,3,93,72
+Doxa Dramas,3706,Doxa Dramas,3,93,100
+Sandecja Nowy S.,8984,Sandecja Nowy Sacz,3,93.08,88
+AIK,272,AIK,3,93.08,100
+For Sittard,385,Fortuna Sittard,3,93.08,85
+Beerschot VA,41274,Beerschot VA,3,93.08,100
+Yunnan Yukun,93753,Yunnan Yukun,3,93.17,100
+AFC Eskilstuna,8877,AFC Eskilstuna,3,93.25,100
+Crystal Palace,873,Crystal Palace,3,93.25,100
+Sparta Rotterdam,468,Sparta Rotterdam,3,93.25,100
+Dordrecht,1455,FC Dordrecht,3,93.33,86
+UNAM Pumas,7633,UNAM Pumas,3,93.42,100
+Arsenal Tula,3729,Arsenal Tula,3,93.42,100
+Barracas Central,25184,CA Barracas Central,3,93.5,91
+GAIS,7009,GAIS,3,93.5,100
+Falkenbergs,5196,Falkenbergs FF,3,93.5,88
+Santos Laguna,1403,Santos Laguna,3,93.58,100
+Guangzhou Evergrande,10948,Guangzhou Evergrande,3,93.67,100
+Aston Villa,405,Aston Villa,3,93.67,100
+FC Emmen,1283,FC Emmen,3,93.67,100
+Ergotelis,5220,GS Ergotelis,3,93.75,86
+Ruch Chorzow,318,Ruch Chorzow,3,93.83,100
+FC Botosani,8818,FC Botosani,3,93.83,100
+Manisaspor,1267,Manisaspor,3,93.83,100
+Eyupspor,7160,Eyüpspor,3,93.92,88
+Dalian Yingbo,98080,Dalian Yingbo,3,94,100
+Atlanta Utd,51663,Atlanta United FC,3,94,79
+Tianjin Quanjian,33714,Tianjin Quanjian,3,94.08,100
+Hokkaido Consadole Sapporo,16032,Hokkaido Consadole Sapporo,3,94.17,100
+Dorados de Sinaloa,10091,Dorados de Sinaloa,3,94.17,100
+Racing Club,1444,Racing Club,3,94.25,100
+Goztep,1467,Göztepe,3,94.25,77
+Altay,2375,Altay SK,3,94.25,77
+Pau FC,3166,Pau FC,3,94.42,100
+Beijing Guoan,3176,Beijing Guoan,3,94.5,100
+Athens Kallithea,3062,Athens Kallithea,3,94.5,100
+Fortuna Dusseldorf,38,Fortuna Düsseldorf,3,94.58,94
+Midtjylland,865,FC Midtjylland,3,94.67,88
+Wolfsberger AC,4441,Wolfsberger AC,3,94.75,100
+Austria Vienna,14,Austria Vienna,3,94.75,100
+FC Copenhagen,190,FC Copenhagen,3,94.75,100
+Fredericia,5776,FC Fredericia,3,94.75,87
+Piast Gliwice,6112,Piast Gliwice,3,94.75,100
+Charlotte,78435,Charlotte FC,3,94.75,86
+Polonia Warszawa,2745,Polonia Warsaw,3,94.83,93
+Volga N. Novgorod,12438,Volga Nizhniy Novgorod,3,94.83,82
+Real Madrid,418,Real Madrid,3,94.83,100
+Gaziantep,2832,Gaziantep FK,3,94.83,86
+Chivas USA,6642,CD Chivas USA,3,94.92,87
+SKA Khabarovsk,3690,SKA Khabarovsk,3,95,100
+Brentford,1148,Brentford FC,3,95,86
+Bristol City,698,Bristol City,3,95,100
+Genclerbirligi,820,Genclerbirligi Ankara,3,95,80
+Oud-Heverlee Leuven,2727,Oud-Heverlee Leuven,3,95.08,100
+Fakel Voronezh,1124,Fakel Voronezh,3,95.17,100
+Real Salt Lake,6643,Real Salt Lake City,3,95.17,85
+Inter Miami,69261,Inter Miami CF,3,95.25,88
+Independiente,1234,CA Independiente,3,95.33,90
+Rubin Kazan,2698,Rubin Kazan,3,95.33,100
+GKS Katowice,6456,GKS Katowice,3,95.42,100
+Motor Lublin,3527,Motor Lublin,3,95.42,100
+PSV Eindhoven,383,PSV Eindhoven,3,95.5,100
+Kasimpasa,10484,Kasimpasa,3,95.67,100
+Orduspor,2323,Orduspor,3,95.67,100
+Hatayspor,7775,Hatayspor,3,95.67,100
+Gornik Zabrze,428,Górnik Zabrze,3,95.75,92
+Widzew Lodz,88,Widzew Lodz,3,95.83,100
+Slask Wroclaw,759,Slask Wroclaw,3,95.83,100
+Cracovia,5689,Cracovia,3,95.83,100
+Spartak Moscow,232,Spartak Moscow,3,95.83,100
+Holstein Kiel,269,Holstein Kiel,3,95.92,100
+RWD Molenbeek,54189,RWD Molenbeek,3,95.92,100
+Minnesota United,56089,Minnesota United FC,3,96,91
+Changchun Yatai,4768,Changchun Yatai,3,96.08,100
+Korona Kielce,6110,Korona Kielce,3,96.08,100
+Wisla Plock,2118,Wisla Plock,3,96.08,100
+Radomiak Radom,7154,Radomiak Radom,3,96.08,100
+Club Tijuana,13353,Club Tijuana,3,96.33,100
+Vancouver Whitecaps,6321,Vancouver Whitecaps FC,3,96.33,93
+St. Louis City,82686,St. Louis CITY SC,3,96.33,90
+FC Hermannstadt,58049,FC Hermannstadt,3,96.42,100
+Bayern Munich,27,Bayern Munich,3,96.42,100
+Mersin Idman Yurdu,3216,Mersin Idmanyurdu,3,96.5,97
+Ad. Demirspor,3840,Adana Demirspor,3,96.5,86
+Sagan Tosu,22177,Sagan Tosu,3,96.58,100
+Gamba Osaka,596,Gamba Osaka,3,96.58,100
+New York City,40058,New York City FC,3,96.58,90
+Chicago Fire,432,Chicago Fire,3,96.83,100
+Columbus Crew,813,Columbus Crew,3,96.83,100
+Go Ahead Eagles,1435,Go Ahead Eagles,3,96.83,100
+DC United,2440,D.C. United,3,96.92,90
+Sheffield United,350,Sheffield United,3,96.92,100
+Stal Mielec,22431,Stal Mielec,3,97,100
+Bucaspor,2750,Bucaspor,3,97,100
+Osmanlispor,2944,Osmanlispor FK,3,97,88
+Alanyaspor,11282,Alanyaspor,3,97,100
+Defensa y Justicia,2402,Defensa y Justicia,3,97.17,100
+Trabzonspor,449,Trabzonspor,3,97.25,100
+Hvidovre IF,1894,Hvidovre IF,3,97.33,100
+UTA Arad,952,UTA Arad,3,97.33,100
+NAC Breda,132,NAC Breda,3,97.42,100
+FC Cincinnati,51772,FC Cincinnati,3,97.5,100
+Sanfrecce Hiroshima,2697,Sanfrecce Hiroshima,3,97.58,100
+Kashiwa Reysol,6632,Kashiwa Reysol,3,97.58,100
+Oita Trinita,3935,Oita Trinita,3,97.58,100
+V-Varen Nagasaki,23581,V-Varen Nagasaki,3,97.58,100
+Pogon Szczecin,324,Pogon Szczecin,3,97.75,100
+Zaglebie Sosnowiec,6560,Zaglebie Sosnowiec,3,97.75,100
+Warta Poznan,7146,Warta Poznan,3,97.75,100
+Akron Togliatti,71985,Akron Togliatti,3,97.75,100
+Seattle Sounders,9636,Seattle Sounders FC,3,97.75,91
+San Diego FC,114977,San Diego FC,3,97.92,100
+Los Angeles FC,51828,Los Angeles FC,3,98,100
+Umraniyespor,24245,Ümraniyespor,3,98,92
+Denizlispor,833,Denizlispor,3,98.08,100
+Nashville SC,63966,Nashville SC,3,98.25,100
+Gaziantepspor,524,Gaziantepspor,3,98.33,100
+Eskisehirspor,825,Eskisehirspor,3,98.33,100
+Samsunspor,152,Samsunspor,3,98.33,100
+Akhisar Belediyespor,19771,Akhisar Belediyespor,3,98.33,100
+Pendikspor,3209,Pendikspor,3,98.67,100
+New York Red Bulls,623,New York Red Bulls,3,98.75,100
+Los Angeles Galaxy,1061,Los Angeles Galaxy,3,98.75,100
+AZ Alkmaar,1090,AZ Alkmaar,3,98.83,100
+Yeni Malatyaspor,19789,Yeni Malatyaspor,3,99,100
+Sporting Kansas City,4284,Sporting Kansas City,3,99.17,100
+Toronto FC,11141,Toronto FC,3,99.25,100
+Houston Dynamo,9168,Houston Dynamo,3,99.25,100
+Austin FC,72309,Austin FC,3,99.25,100
+Lechia Gdansk,4000,Lechia Gdansk,3,99.42,100
+Kashima Antlers,2241,Kashima Antlers,3,100,100
+Vegalta Sendai,6395,Vegalta Sendai,3,100,100
+Omiya Ardija,7452,Omiya Ardija,3,100,100
+Kawasaki Frontale,9598,Kawasaki Frontale,3,100,100
+Cerezo Osaka,1022,Cerezo Osaka,3,100,100
+Vissel Kobe,3958,Vissel Kobe,3,100,100
+FC Tokyo,6631,FC Tokyo,3,100,100
+Yokohama F. Marinos,3828,Yokohama F. Marinos,3,100,100
+Shimizu S-Pulse,1062,Shimizu S-Pulse,3,100,100
+Nagoya Grampus,1066,Nagoya Grampus,3,100,100
+Albirex Niigata,8344,Albirex Niigata,3,100,100
+Shonan Bellmare,8457,Shonan Bellmare,3,100,100
+Yokohama FC,943,Yokohama FC,3,100,100
+Avispa Fukuoka,9597,Avispa Fukuoka,3,100,100
+LKS Lodz,256,LKS Lodz,3,100,100
+San Jose Earthquakes,218,San Jose Earthquakes,3,100,100
+New England Revolution,626,New England Revolution,3,100,100
+Portland Timbers,4291,Portland Timbers,3,100,100
+Philadelphia Union,25467,Philadelphia Union,3,100,100
+FC Dallas,8816,FC Dallas,3,100,100
+Colorado Rapids,1247,Colorado Rapids,3,100,100
+Konyaspor,2293,Konyaspor,3,100,100
+Sivasspor,2381,Sivasspor,3,100,100
+Bursaspor,20,Bursaspor,3,100,100
+Galatasaray,141,Galatasaray,3,100,100
+Fenerbahce,36,Fenerbahce,3,100,100
+Antalyaspor,589,Antalyaspor,3,100,100
+Elazigspor,2292,Elazigspor,3,100,100
+Balikesirspor,20698,Balikesirspor,3,100,100
+Adanaspor,6,Adanaspor,3,100,100
+Giresunspor,11688,Giresunspor,3,100,100
+Istanbulspor,924,Istanbulspor,3,100,100
+Kocaelispor,120,Kocaelispor,3,100,100

@@ -1,0 +1,257 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,league_code,tm_code,home_club_id,home_club_name,away_club_id,away_club_name,tm_match_id,match_confidence,matches_found
+2022-10-22,AC Oulu,VPS,0.0,0.0,FIN,FI1,,,,,,0,0
+2019-06-02,Aarau,Xamax,0.0,5.0,SWZ,C1,,,,,,0,0
+2022-05-16,Academica Clinceni,FC Botosani,0.0,4.0,ROU,RO1,,,,,,0,0
+2022-12-25,Ad. Demirspor,Karagumruk,2.0,1.0,T1,TR1,,,,,,0,0
+2022-11-19,Airdrie Utd,Kelty Hearts,1.0,0.0,SC2,SC3,,,,,,0,0
+2019-05-19,Akhisar Belediyespor,Kayserispor,2.0,2.0,T1,TR1,,,,,,0,0
+2022-12-28,Alanyaspor,Kayserispor,3.0,1.0,T1,TR1,,,,,,0,0
+2022-10-16,Aldosivi,Talleres Cordoba,1.0,3.0,ARG,ARG1,,,,,,0,0
+2022-12-31,Alloa,Kelty Hearts,0.0,0.0,SC2,SC3,,,,,,0,0
+2022-05-21,Altay,Kasimpasa,2.0,4.0,T1,TR1,,,,,,0,0
+2018-05-17,Amkar,Tambov,2.0,0.0,RUS,RU1,,,,,,0,0
+2022-12-27,Ankaragucu,Umraniyespor,1.0,2.0,T1,TR1,,,,,,0,0
+2022-12-23,Antalyaspor,Ankaragucu,0.0,2.0,T1,TR1,,,,,,0,0
+2022-05-07,Apollon,Lamia,0.0,0.0,G1,GR1,,,,,,0,0
+2022-12-23,Arbroath,Queens Park,1.0,4.0,SC1,SC2,,,,,,0,2
+2022-10-22,Argentinos Jrs,Velez Sarsfield,2.0,0.0,ARG,ARG1,,,,,,0,0
+2022-10-17,Arsenal Sarandi,Barracas Central,1.0,2.0,ARG,ARG1,,,,,,0,0
+2021-05-15,Astra,FC Voluntari,0.0,3.0,ROU,RO1,,,,,,0,0
+2022-12-29,Ath Madrid,Elche,2.0,0.0,SP1,ES1,,,,,,0,2
+2014-10-24,Athlone,Bray,1.0,1.0,IRL,IR1,,,,,,0,0
+2017-06-25,Atl. Rafaela,Sarmiento Junin,2.0,3.0,ARG,ARG1,,,,,,0,0
+2022-10-01,Atl. San Luis,Tigres UANL,0.0,3.0,MEX,MEX1,,,,,,0,2
+2022-10-18,Atl. Tucuman,Union de Santa Fe,1.0,1.0,ARG,ARG1,,,,,,0,0
+2022-11-10,Atletico-MG,Cuiaba,3.0,0.0,BRA,BRA1,,,,,,0,4
+2022-10-24,Austin FC,FC Dallas,2.0,1.0,USA,MLS1,,,,,,0,0
+2022-12-23,Ayr,Dundee,0.0,2.0,SC1,SC2,,,,,,0,2
+2022-10-23,Banfield,Sarmiento Junin,0.0,0.0,ARG,ARG1,,,,,,0,0
+2018-05-05,Barnet,Chesterfield,3.0,0.0,E3,GB4,,,,,,0,6
+2022-12-29,Barnsley,Fleetwood Town,2.0,1.0,E2,GB3,,,,,,0,8
+2022-10-24,Barracas Central,Newells Old Boys,1.0,1.0,ARG,ARG1,,,,,,0,0
+2022-12-27,Beijing Guoan,Shanghai Port,0.0,3.0,CHN,CSL,,,,,,0,4
+2019-04-07,Belgrano,Godoy Cruz,1.0,0.0,ARG,ARG1,,,,,,0,0
+2022-12-29,Besiktas,Ad. Demirspor,1.0,0.0,T1,TR1,,,,,,0,0
+2013-05-31,Bistrita,Concordia,1.0,3.0,ROU,RO1,,,,,,0,0
+2022-10-23,Boca Juniors,Independiente,2.0,2.0,ARG,ARG1,,,,,,0,0
+2022-11-06,Bohemians,Sligo Rovers,3.0,1.0,IRL,IR1,,,,,,0,0
+2022-12-27,Bolton,Derby,0.0,0.0,E2,GB3,,,,,,0,4
+2022-11-10,Botafogo RJ,Santos,3.0,0.0,BRA,BRA1,,,,,,0,4
+2022-12-29,Bradford,Harrogate,1.0,0.0,E3,GB4,,,,,,0,8
+2019-11-06,Brage,Kalmar,0.0,2.0,SWE,SE1,,,,,,0,0
+2021-12-15,Brann,Jerv,1.0,1.0,NOR,NO1,,,,,,0,0
+2021-11-19,Bray,UC Dublin,0.0,2.0,IRL,IR1,,,,,,0,0
+2019-05-04,Brechin,Stenhousemuir,1.0,1.0,SC2,SC3,,,,,,0,0
+2022-12-29,Bristol Rvs,Exeter,3.0,4.0,E2,GB3,,,,,,0,8
+2018-11-25,Brommapojkarna,AFC Eskilstuna,1.0,2.0,SWE,SE1,,,,,,0,0
+2019-05-19,Bursaspor,Goztep,0.0,0.0,T1,TR1,,,,,,0,0
+2022-12-26,Burton,Lincoln,3.0,0.0,E2,GB3,,,,,,0,17
+2019-05-04,Bury,Port Vale,1.0,1.0,E3,GB4,,,,,,0,5
+2022-12-27,Buyuksehyr,Antalyaspor,2.0,0.0,T1,TR1,,,,,,0,0
+2022-10-23,CF Montreal,New York City,1.0,3.0,USA,MLS1,,,,,,0,0
+2019-10-18,Cabinteely,Drogheda,1.0,1.0,IRL,IR1,,,,,,0,0
+2021-05-29,Calarasi,FC Voluntari,1.0,2.0,ROU,RO1,,,,,,0,0
+2022-12-27,Cangzhou,Hebei,3.0,0.0,CHN,CSL,,,,,,0,4
+2022-12-26,Carlisle,Bradford,1.0,0.0,E3,GB4,,,,,,0,17
+2022-10-19,Central Cordoba,Tigre,1.0,2.0,ARG,ARG1,,,,,,0,0
+2018-05-11,Chacarita Juniors,San Martin S.J.,1.0,4.0,ARG,ARG1,,,,,,0,0
+2022-12-26,Cheltenham,Plymouth,0.0,1.0,E2,GB3,,,,,,0,17
+2018-05-01,Chesterfield,Newport County,1.0,0.0,E3,GB4,,,,,,0,0
+2017-04-29,Chiapas,Santos Laguna,2.0,2.0,MEX,MEX1,,,,,,0,1
+2022-10-23,Club America,Toluca,1.0,1.0,MEX,MEX1,,,,,,0,0
+2016-10-22,Cobh Ramblers,Drogheda,0.0,2.0,IRL,IR1,,,,,,0,0
+2022-06-15,Colon Santa FE,River Plate,1.0,0.0,ARG,ARG1,,,,,,0,0
+2022-10-18,Colon Santa Fe,Defensa y Justicia,1.0,2.0,ARG,ARG1,,,,,,0,0
+2022-05-21,Concordia,Chindia Targoviste,2.0,1.0,ROU,RO1,,,,,,0,0
+2020-11-09,Cork City,Derry City,1.0,1.0,IRL,IR1,,,,,,0,0
+2022-12-23,Cove Rangers,Hamilton,2.0,0.0,SC1,SC2,,,,,,0,2
+2015-11-09,Crucero del Norte,Aldosivi,0.0,2.0,ARG,ARG1,,,,,,0,0
+2022-10-13,Cruz Azul,Monterrey,0.0,0.0,MEX,MEX1,,,,,,0,0
+2018-06-02,Daco-Getica Bucuresti,FC Voluntari,2.0,2.0,ROU,RO1,,,,,,0,0
+2022-10-22,Defensa y Justicia,Atl. Tucuman,3.0,1.0,ARG,ARG1,,,,,,0,0
+2021-05-11,Denizlispor,Galatasaray,1.0,4.0,T1,TR1,,,,,,0,0
+2022-12-30,Derby,Cambridge,1.0,0.0,E2,GB3,,,,,,0,6
+2022-11-06,Derry City,Dundalk,0.0,1.0,IRL,IR1,,,,,,0,0
+2022-05-29,Din. Bucuresti,U. Cluj,1.0,1.0,ROU,RO1,,,,,,0,0
+2022-12-29,Doncaster,Rochdale,4.0,3.0,E3,GB4,,,,,,0,8
+2022-11-06,Drogheda,Finn Harps,2.0,0.0,IRL,IR1,,,,,,0,0
+2022-04-30,Dumbarton,Clyde,2.0,1.0,SC2,SC3,,,,,,0,0
+2022-10-28,Dundalk,Bohemians,2.0,1.0,IRL,IR1,,,,,,0,0
+2022-11-19,Dundee,Hamilton,1.0,0.0,SC1,SC2,,,,,,0,0
+2022-12-03,Dunfermline,Queen of Sth,1.0,1.0,SC2,SC3,,,,,,0,0
+2022-04-30,East Fife,Cove Rangers,2.0,3.0,SC2,SC3,,,,,,0,0
+2021-05-08,Erzurum BB,Kasimpasa,0.0,1.0,T1,TR1,,,,,,0,0
+2020-07-03,Esbjerg,Horsens,1.0,2.0,DNK,DK1,,,,,,0,1
+2022-10-22,Estudiantes L.P.,Godoy Cruz,2.0,0.0,ARG,ARG1,,,,,,0,0
+2022-12-18,FC Arges,Mioveni,2.0,2.0,ROU,RO1,,,,,,0,2
+2022-10-18,FC Dallas,Minnesota United,1.0,1.0,USA,MLS1,,,,,,0,0
+2022-12-23,Falkirk,Queen of Sth,5.0,2.0,SC2,SC3,,,,,,0,2
+2022-12-27,Fenerbahce,Hatayspor,4.0,0.0,T1,TR1,,,,,,0,0
+2022-10-28,Finn Harps,UC Dublin,1.0,3.0,IRL,IR1,,,,,,0,0
+2022-11-12,Flamengo RJ,Avai,1.0,2.0,BRA,BRA1,,,,,,0,0
+2021-05-04,Forfar,East Fife,2.0,3.0,SC2,SC3,,,,,,0,0
+2022-11-09,Fortaleza,Bragantino,6.0,0.0,BRA,BRA1,,,,,,0,4
+2022-12-25,Galatasaray,Istanbulspor,2.0,1.0,T1,TR1,,,,,,0,0
+2021-11-07,Galway,Bray,0.0,1.0,IRL,IR1,,,,,,0,0
+2022-05-06,Gaz Metan Medias,Academica Clinceni,4.0,3.0,ROU,RO1,,,,,,0,0
+2022-12-25,Gaziantep,Besiktas,1.0,1.0,T1,TR1,,,,,,0,0
+2021-05-11,Genclerbirligi,Goztep,5.0,3.0,T1,TR1,,,,,,0,0
+2022-12-26,Gillingham,Colchester,0.0,1.0,E3,GB4,,,,,,0,17
+2022-10-20,Gimnasia L.P.,Boca Juniors,1.0,2.0,ARG,ARG1,,,,,,0,0
+2022-12-29,Giresunspor,Gaziantep,2.0,1.0,T1,TR1,,,,,,0,0
+2022-10-16,Godoy Cruz,Patronato,0.0,1.0,ARG,ARG1,,,,,,0,0
+2022-05-15,Goztep,Besiktas,0.0,2.0,T1,TR1,,,,,,0,0
+2020-11-12,Guangzhou Evergrande,Jiangsu Suning,1.0,2.0,CHN,CSL,,,,,,0,0
+2020-11-06,Guangzhou R&F,Dalian Pro,0.0,3.0,CHN,CSL,,,,,,0,0
+2022-10-08,HIFK,Mariehamn,2.0,3.0,FIN,FI1,,,,,,0,0
+2022-10-16,HJK,KuPS,0.0,1.0,FIN,FI1,,,,,,0,0
+2022-10-30,Haka,VPS,1.0,2.0,FIN,FI1,,,,,,0,0
+2021-12-14,Halmstad,Helsingborg,1.0,3.0,SWE,SE1,,,,,,0,0
+2022-11-11,Hamilton,Ayr,2.0,3.0,SC1,SC2,,,,,,0,0
+2022-12-26,Harrogate,Grimsby,3.0,2.0,E3,GB4,,,,,,0,17
+2022-12-24,Hatayspor,Giresunspor,1.0,1.0,T1,TR1,,,,,,0,0
+2022-12-30,Hebei,Henan Songshan Longmen,0.0,4.0,CHN,CSL,,,,,,0,1
+2018-05-17,Helsingor,Silkeborg,1.0,1.0,DNK,DK1,,,,,,0,0
+2020-07-13,Hobro,Lyngby,1.0,2.0,DNK,DK1,,,,,,0,0
+2022-10-16,Honka,Haka,1.0,1.0,FIN,FI1,,,,,,0,0
+2022-10-19,Huracan,Platense,2.0,0.0,ARG,ARG1,,,,,,0,0
+2022-10-09,Ilves,Lahti,1.0,0.0,FIN,FI1,,,,,,0,0
+2022-10-16,Independiente,Banfield,1.0,0.0,ARG,ARG1,,,,,,0,0
+2022-10-19,Inter Turku,VPS,1.0,5.0,FIN,FI1,,,,,,0,0
+2022-12-03,Inverness C,Dundee,0.0,1.0,SC1,SC2,,,,,,0,0
+2022-12-26,Ipswich,Oxford,3.0,0.0,E2,GB3,,,,,,0,17
+2022-12-28,Istanbulspor,Kasimpasa,2.0,1.0,T1,TR1,,,,,,0,0
+2017-10-28,JJK Jyvaskyla,VPS,2.0,0.0,FIN,FI1,,,,,,0,0
+2015-10-18,Jaro,Lahti,1.0,1.0,FIN,FI1,,,,,,0,0
+2020-11-08,Jiangsu Suning,Guangzhou Evergrande,0.0,0.0,CHN,CSL,,,,,,0,0
+2020-12-09,Jonkopings,Kalmar,1.0,3.0,SWE,SE1,,,,,,0,0
+2019-10-27,KPV Kokkola,TPS,0.0,3.0,FIN,FI1,,,,,,0,0
+2021-10-27,KTP,Haka,2.0,4.0,FIN,FI1,,,,,,0,0
+2022-12-28,Karagumruk,Trabzonspor,4.0,1.0,T1,TR1,,,,,,0,0
+2022-12-24,Kasimpasa,Sivasspor,1.0,2.0,T1,TR1,,,,,,0,0
+2022-11-13,Kayserispor,Konyaspor,1.0,2.0,T1,TR1,,,,,,0,0
+2022-12-24,Kelty Hearts,Dunfermline,1.0,2.0,SC2,SC3,,,,,,0,4
+2022-11-19,Kongsvinger,Sandefjord,2.0,1.0,NOR,NO1,,,,,,0,0
+2022-12-25,Konyaspor,Alanyaspor,2.0,2.0,T1,TR1,,,,,,0,0
+2022-10-09,KuPS,Inter Turku,2.0,0.0,FIN,FI1,,,,,,0,0
+2016-05-24,Kuban,Tomsk,1.0,0.0,RUS,RU1,,,,,,0,0
+2022-11-06,Kumamoto,Montedio Yamagata,2.0,2.0,JPN,JAP1,,,,,,0,0
+2022-11-13,Kyoto,Kumamoto,1.0,1.0,JPN,JAP1,,,,,,0,0
+2022-10-23,Lahti,TPS,2.0,1.0,FIN,FI1,,,,,,0,0
+2022-10-18,Lanus,Racing Club,0.0,1.0,ARG,ARG1,,,,,,0,0
+2021-05-16,Larisa,Giannina,2.0,0.0,G1,GR1,,,,,,0,0
+2015-05-03,Leones Negros,Veracruz,1.0,2.0,MEX,MEX1,,,,,,0,6
+2022-12-27,Leyton Orient,Stevenage,0.0,0.0,E3,GB4,,,,,,0,4
+2018-11-02,Limerick,Finn Harps,0.0,2.0,IRL,IR1,,,,,,0,0
+2014-11-06,Ljungskile,Gefle,1.0,3.0,SWE,SE1,,,,,,0,0
+2021-11-13,Longford,Waterford,1.0,1.0,IRL,IR1,,,,,,0,0
+2022-11-05,Los Angeles FC,Philadelphia Union,3.0,3.0,USA,MLS1,,,,,,0,0
+2022-10-15,Los Angeles Galaxy,Nashville SC,1.0,0.0,USA,MLS1,,,,,,0,0
+2020-02-29,Macclesfield,Salford,0.0,2.0,E3,GB4,,,,,,0,16
+2022-10-16,Mariehamn,VPS,2.0,2.0,FIN,FI1,,,,,,0,0
+2013-10-18,Mervue,Longford,1.0,0.0,IRL,IR1,,,,,,0,0
+2022-12-26,Milton Keynes Dons,Forest Green,1.0,0.0,E2,GB3,,,,,,0,17
+2012-06-01,Monaghan,St. Patricks,0.0,4.0,IRL,IR1,,,,,,0,0
+2015-11-07,Montedio Yamagata,Shimizu S-Pulse,1.0,2.0,JPN,JAP1,,,,,,0,0
+2022-10-24,Monterrey,Pachuca,0.0,1.0,MEX,MEX1,,,,,,0,0
+2022-12-23,Montrose,Airdrie Utd,2.0,4.0,SC2,SC3,,,,,,0,2
+2022-05-14,Moreirense,Vizela,4.0,1.0,P1,PO1,,,,,,0,7
+2014-10-19,MyPa,Inter Turku,2.0,2.0,FIN,FI1,,,,,,0,0
+2018-05-31,Neustadt,St. Polten,0.0,2.0,AUT,A1,,,,,,0,0
+2022-10-18,New York City,Inter Miami,3.0,0.0,USA,MLS1,,,,,,0,0
+2022-10-15,New York Red Bulls,FC Cincinnati,1.0,2.0,USA,MLS1,,,,,,0,0
+2022-10-16,Newells Old Boys,Boca Juniors,2.0,0.0,ARG,ARG1,,,,,,0,0
+2022-12-30,Newport County,Leyton Orient,0.0,0.0,E3,GB4,,,,,,0,6
+2015-11-09,Nueva Chicago,Quilmes,2.0,1.0,ARG,ARG1,,,,,,0,0
+2022-10-30,Okayama,Montedio Yamagata,0.0,3.0,JPN,JAP1,,,,,,0,0
+2022-05-07,Oldham,Crawley Town,3.0,3.0,E3,GB4,,,,,,0,18
+2018-05-12,Olimpo Bahia Blanca,Talleres Cordoba,2.0,2.0,ARG,ARG1,,,,,,0,0
+2019-12-01,Omiya Ardija,Montedio Yamagata,0.0,2.0,JPN,JAP1,,,,,,0,0
+2022-11-10,Oster,Varberg,1.0,2.0,SWE,SE1,,,,,,0,0
+2022-12-29,Oxford,Charlton,3.0,1.0,E2,GB3,,,,,,0,8
+2016-10-23,PK-35 Vantaa,Inter Turku,2.0,1.0,FIN,FI1,,,,,,0,0
+2018-10-21,PS Kemi,Mariehamn,2.0,0.0,FIN,FI1,,,,,,0,0
+2022-10-31,Pachuca,Toluca,3.0,1.0,MEX,MEX1,,,,,,0,0
+2017-05-26,Pandurii,Gaz Metan Medias,0.0,0.0,ROU,RO1,,,,,,0,0
+2020-07-11,Panionios,Panetolikos,0.0,2.0,G1,GR1,,,,,,0,0
+2022-12-23,Partick,Inverness C,5.0,1.0,SC1,SC2,,,,,,0,2
+2022-10-23,Patronato,Huracan,3.0,2.0,ARG,ARG1,,,,,,0,0
+2022-11-19,Peterhead,Dunfermline,0.0,2.0,SC2,SC3,,,,,,0,0
+2022-10-31,Philadelphia Union,New York City,3.0,1.0,USA,MLS1,,,,,,0,0
+2022-10-26,Platense,Lanus,1.0,1.0,ARG,ARG1,,,,,,0,0
+2022-12-29,Plymouth,Wycombe,1.0,0.0,E2,GB3,,,,,,0,8
+2021-05-15,Poli Iasi,FC Hermannstadt,0.0,1.0,ROU,RO1,,,,,,0,0
+2018-05-28,Poli Timisoara,Din. Bucuresti,1.0,3.0,ROU,RO1,,,,,,0,0
+2022-12-26,Port Vale,Morecambe,1.0,0.0,E2,GB3,,,,,,0,17
+2022-12-29,Portsmouth,Ipswich,2.0,2.0,E2,GB3,,,,,,0,8
+2022-10-13,Puebla,Club America,1.0,6.0,MEX,MEX1,,,,,,0,0
+2022-01-08,Qingdao FC,Zhejiang Professional,0.0,1.0,CHN,CSL,,,,,,0,0
+2022-12-31,Queen of Sth,Clyde,1.0,0.0,SC2,SC3,,,,,,0,0
+2022-12-03,Queens Park,Hamilton,4.0,0.0,SC1,SC2,,,,,,0,0
+2022-09-10,Queretaro,Santos Laguna,3.0,3.0,MEX,MEX1,,,,,,0,1
+2017-06-21,Quilmes,Arsenal Sarandi,2.0,2.0,ARG,ARG1,,,,,,0,0
+2022-10-23,Racing Club,River Plate,1.0,2.0,ARG,ARG1,,,,,,0,0
+2022-10-17,River Plate,Rosario Central,1.0,2.0,ARG,ARG1,,,,,,0,0
+2022-05-16,Rizespor,Sivasspor,1.0,2.0,T1,TR1,,,,,,0,0
+2022-10-24,Rosario Central,Colon Santa Fe,1.0,1.0,ARG,ARG1,,,,,,0,0
+2021-11-03,Rovaniemi,AC Oulu,2.0,1.0,FIN,FI1,,,,,,0,0
+2022-10-19,SJK,AC Oulu,0.0,1.0,FIN,FI1,,,,,,0,0
+2022-05-25,SKA Khabarovsk,Khimki,1.0,0.0,RUS,RU1,,,,,,0,0
+2022-10-22,San Lorenzo,Aldosivi,3.0,0.0,ARG,ARG1,,,,,,0,0
+2019-04-07,San Martin S.J.,Talleres Cordoba,2.0,1.0,ARG,ARG1,,,,,,0,0
+2019-04-06,San Martin T.,San Lorenzo,0.0,0.0,ARG,ARG1,,,,,,0,0
+2022-11-16,Sandefjord,Kongsvinger,4.0,0.0,NOR,NO1,,,,,,0,0
+2022-10-17,Santos Laguna,Toluca,1.0,2.0,MEX,MEX1,,,,,,0,0
+2022-10-18,Sarmiento Junin,San Lorenzo,2.0,4.0,ARG,ARG1,,,,,,0,0
+2022-10-30,Shamrock Rovers,Derry City,1.0,0.0,IRL,IR1,,,,,,0,0
+2020-11-10,Shandong Luneng,Chongqing Liangjiang Athletic,2.0,1.0,CHN,CSL,,,,,,0,0
+2020-11-07,Shanghai SIPG,Beijing Guoan,1.0,2.0,CHN,CSL,,,,,,0,0
+2022-10-28,Shelbourne,Drogheda,6.0,0.0,IRL,IR1,,,,,,0,0
+2022-12-27,Shenzhen,Guangzhou City,0.0,3.0,CHN,CSL,,,,,,0,4
+2020-11-11,Shijiazhuang,Wuhan FC,1.0,2.0,CHN,CSL,,,,,,0,0
+2022-12-29,Shrewsbury,Cheltenham,0.0,1.0,E2,GB3,,,,,,0,8
+2022-12-29,Sivasspor,Galatasaray,1.0,2.0,T1,TR1,,,,,,0,0
+2022-10-28,Sligo Rovers,St. Patricks,1.0,0.0,IRL,IR1,,,,,,0,0
+2017-11-29,Sogndal,Ranheim,1.0,0.0,NOR,NO1,,,,,,0,0
+2022-05-21,Sonderjyske,Viborg,0.0,2.0,DNK,DK1,,,,,,0,0
+2013-06-03,Spartak Nalchik,Krylya Sovetov,2.0,5.0,RUS,RU1,,,,,,0,0
+2022-11-06,St. Patricks,Shelbourne,4.0,0.0,IRL,IR1,,,,,,0,0
+2021-05-29,St. Polten,A. Klagenfurt,0.0,1.0,AUT,A1,,,,,,0,0
+2019-04-27,Stenhousemuir,East Fife,1.0,1.0,SC2,SC3,,,,,,0,0
+2022-12-30,Stevenage,Crawley Town,3.0,1.0,E3,GB4,,,,,,0,6
+2022-12-26,Stockport,Crewe,2.0,0.0,E3,GB4,,,,,,0,17
+2020-03-10,Stranraer,Montrose,0.0,1.0,SC2,SC3,,,,,,0,0
+2022-12-29,Sutton,Gillingham,2.0,1.0,E3,GB4,,,,,,0,8
+2022-10-20,TPS,Lahti,1.0,1.0,FIN,FI1,,,,,,0,0
+2022-10-23,Talleres Cordoba,Gimnasia L.P.,2.0,1.0,ARG,ARG1,,,,,,0,0
+2017-06-05,Targu Mures,Poli Iasi,1.0,1.0,ROU,RO1,,,,,,0,0
+2018-05-06,Temperley,Patronato,1.0,2.0,ARG,ARG1,,,,,,0,0
+2021-05-27,Thun,Sion,1.0,4.0,SWZ,C1,,,,,,0,0
+2022-12-27,Tianjin Jinmen Tiger,Dalian Pro,0.0,3.0,CHN,CSL,,,,,,0,4
+2022-10-25,Tigre,Arsenal Sarandi,1.0,4.0,ARG,ARG1,,,,,,0,0
+2022-10-14,Tigres UANL,Pachuca,1.0,0.0,MEX,MEX1,,,,,,0,0
+2022-10-28,Toluca,Pachuca,1.0,5.0,MEX,MEX1,,,,,,0,0
+2019-06-02,Tomsk,Ufa,1.0,0.0,RUS,RU1,,,,,,0,0
+2022-12-24,Trabzonspor,Fenerbahce,2.0,0.0,T1,TR1,,,,,,0,0
+2022-12-26,Tranmere,Doncaster,3.0,0.0,E3,GB4,,,,,,0,17
+2021-11-03,Treaty United,UC Dublin,0.0,3.0,IRL,IR1,,,,,,0,0
+2022-11-11,UC Dublin,Waterford,1.0,0.0,IRL,IR1,,,,,,0,0
+2022-09-18,UNAM Pumas,Cruz Azul,1.0,2.0,MEX,MEX1,,,,,,0,2
+2022-05-28,Ufa,Orenburg,1.0,2.0,RUS,RU1,,,,,,0,0
+2012-11-21,Ull/Kisa,Sandnes,0.0,4.0,NOR,NO1,,,,,,0,0
+2022-12-23,Umraniyespor,Buyuksehyr,1.0,3.0,T1,TR1,,,,,,0,0
+2022-10-22,Union de Santa Fe,Central Cordoba,1.0,4.0,ARG,ARG1,,,,,,0,0
+2022-10-26,VPS,Haka,0.0,3.0,FIN,FI1,,,,,,0,0
+2022-11-13,Varberg,Oster,2.0,1.0,SWE,SE1,,,,,,0,0
+2022-05-21,Vejle,Odense,2.0,1.0,DNK,DK1,,,,,,0,0
+2022-10-25,Velez Sarsfield,Central Cordoba,3.0,1.0,ARG,ARG1,,,,,,0,0
+2019-06-02,Vendsyssel,Lyngby,2.0,2.0,DNK,DK1,,,,,,0,0
+2021-05-19,Viitorul Constanta,Astra,1.0,0.0,ROU,RO1,,,,,,0,0
+2016-05-24,Volgar-Astrakhan,FK Anzi Makhackala,0.0,1.0,RUS,RU1,,,,,,0,0
+2022-12-29,Walsall,Stockport,0.0,2.0,E3,GB4,,,,,,0,8
+2021-11-26,Waterford,UC Dublin,1.0,2.0,IRL,IR1,,,,,,0,0
+2016-10-31,Wexford,Drogheda,2.0,0.0,IRL,IR1,,,,,,0,0
+2020-07-11,Xanthi,Asteras Tripolis,1.0,2.0,G1,GR1,,,,,,0,0
+2022-05-21,Yeni Malatyaspor,Fenerbahce,0.0,5.0,T1,TR1,,,,,,0,0
+2019-05-04,Yeovil,Carlisle,0.0,0.0,E3,GB4,,,,,,0,5
+2020-11-18,Zhejiang Greentown,Wuhan FC,2.0,2.0,CHN,CSL,,,,,,0,0

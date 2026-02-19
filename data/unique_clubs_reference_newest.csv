@@ -1,0 +1,915 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,league_code,tm_code
+2022-11-13,A. Klagenfurt,Salzburg,0.0,1.0,AUT,A1
+2022-11-12,A. Lustenau,Altach,3.0,0.0,AUT,A1
+2022-10-22,AC Oulu,VPS,0.0,0.0,FIN,FI1
+2022-12-21,AEK,Lamia,3.0,0.0,G1,GR1
+2019-10-27,AFC Eskilstuna,Sirius,0.0,0.0,SWE,SE1
+2022-12-26,AFC Wimbledon,Newport County,1.0,1.0,E3,GB4
+2022-11-06,AIK,Elfsborg,0.0,1.0,SWE,SE1
+2022-10-30,AZ Alkmaar,Volendam,2.0,1.0,N1,NL1
+2022-11-06,Aalborg,Silkeborg,1.0,2.0,DNK,DK1
+2022-11-06,Aalesund,Lillestrom,2.0,1.0,NOR,NO1
+2019-06-02,Aarau,Xamax,0.0,5.0,SWZ,C1
+2022-11-13,Aarhus,FC Copenhagen,0.0,2.0,DNK,DK1
+2022-12-20,Aberdeen,Rangers,2.0,3.0,SC0,SC1
+2022-05-16,Academica Clinceni,FC Botosani,0.0,4.0,ROU,RO1
+2022-12-26,Accrington,Barnsley,1.0,1.0,E2,GB3
+2022-12-25,Ad. Demirspor,Karagumruk,2.0,1.0,T1,TR1
+2022-05-14,Admira,Altach,0.0,3.0,AUT,A1
+2022-11-19,Airdrie Utd,Kelty Hearts,1.0,0.0,SC2,SC3
+2022-12-28,Ajaccio,Angers,1.0,0.0,F1,FR1
+2019-05-10,Ajaccio GFCO,Chateauroux,1.0,2.0,F2,FR2
+2022-11-09,Ajax,Vitesse,2.0,2.0,N1,NL1
+2019-05-19,Akhisar Belediyespor,Kayserispor,2.0,2.0,T1,TR1
+2022-10-29,Akhmat Grozny,FK Rostov,1.0,2.0,RUS,RU1
+2022-12-28,Alanyaspor,Kayserispor,3.0,1.0,T1,TR1
+2022-12-12,Alaves,Levante,0.0,2.0,SP2,ES2
+2022-12-18,Albacete,Ibiza,4.0,0.0,SP2,ES2
+2017-12-02,Albirex Niigata,Cerezo Osaka,1.0,0.0,JPN,JAP1
+2022-05-29,Alcorcon,Eibar,1.0,0.0,SP2,ES2
+2022-10-16,Aldosivi,Talleres Cordoba,1.0,3.0,ARG,ARG1
+2022-05-06,Alessandria,Vicenza,0.0,1.0,I2,IT2
+2014-05-17,All Boys,Belgrano,0.0,0.0,ARG,ARG1
+2022-12-31,Alloa,Kelty Hearts,0.0,0.0,SC2,SC3
+2022-11-09,Almeria,Getafe,1.0,0.0,SP1,ES1
+2022-11-06,Altach,Sturm Graz,1.0,1.0,AUT,A1
+2022-05-21,Altay,Kasimpasa,2.0,4.0,T1,TR1
+2022-11-13,America MG,Atletico GO,1.0,1.0,BRA,BRA1
+2022-11-12,Amiens,Quevilly Rouen,0.0,2.0,F2,FR2
+2018-05-17,Amkar,Tambov,2.0,0.0,RUS,RU1
+2022-05-28,Amorebieta,Ponferradina,1.0,0.0,SP2,ES2
+2022-11-13,Anderlecht,Genk,0.0,2.0,B1,BE1
+2022-12-10,Andorra,Leganes,1.0,1.0,SP2,ES2
+2022-11-05,Angers,Lens,1.0,2.0,F1,FR1
+2022-12-27,Ankaragucu,Umraniyespor,1.0,2.0,T1,TR1
+2022-12-30,Annecy,Nimes,0.0,0.0,F2,FR2
+2022-12-23,Antalyaspor,Ankaragucu,0.0,2.0,T1,TR1
+2022-11-06,Antwerp,Anderlecht,0.0,0.0,B1,BE1
+2022-05-07,Apollon,Lamia,0.0,0.0,G1,GR1
+2022-12-23,Arbroath,Queens Park,1.0,4.0,SC1,SC2
+2022-10-22,Argentinos Jrs,Velez Sarsfield,2.0,0.0,ARG,ARG1
+2022-12-29,Aris,Panetolikos,1.0,0.0,G1,GR1
+2020-07-14,Arka Gdynia,Gornik Z.,1.0,2.0,POL,PL1
+2022-11-12,Arouca,Rio Ave,0.0,1.0,P1,PO1
+2022-12-26,Arsenal,West Ham,3.0,1.0,E0,GB1
+2022-10-17,Arsenal Sarandi,Barracas Central,1.0,2.0,ARG,ARG1
+2022-05-21,Arsenal Tula,Ural,1.0,2.0,RUS,RU1
+2022-12-26,Ascoli,Reggina,0.0,1.0,I2,IT2
+2022-12-21,Asteras Tripolis,Volos NFC,0.0,0.0,G1,GR1
+2022-12-26,Aston Villa,Liverpool,1.0,3.0,E0,GB1
+2021-05-15,Astra,FC Voluntari,0.0,3.0,ROU,RO1
+2022-11-13,Atalanta,Inter,2.0,3.0,I1,IT1
+2022-11-08,Ath Bilbao,Valladolid,3.0,0.0,SP1,ES1
+2022-12-29,Ath Madrid,Elche,2.0,0.0,SP1,ES1
+2022-11-13,Athletico-PR,Botafogo RJ,3.0,0.0,BRA,BRA1
+2014-10-24,Athlone,Bray,1.0,1.0,IRL,IR1
+2017-06-25,Atl. Rafaela,Sarmiento Junin,2.0,3.0,ARG,ARG1
+2022-10-01,Atl. San Luis,Tigres UANL,0.0,3.0,MEX,MEX1
+2022-10-18,Atl. Tucuman,Union de Santa Fe,1.0,1.0,ARG,ARG1
+2022-10-09,Atlanta Utd,New York City,1.0,2.0,USA,MLS1
+2014-04-20,Atlante,Club Tijuana,1.0,2.0,MEX,MEX1
+2022-10-02,Atlas,Necaxa,1.0,0.0,MEX,MEX1
+2022-11-10,Atletico GO,Athletico-PR,1.0,1.0,BRA,BRA1
+2022-11-10,Atletico-MG,Cuiaba,3.0,0.0,BRA,BRA1
+2022-12-28,Atromitos,PAOK,1.0,1.0,G1,GR1
+2015-10-26,Atvidabergs,Orebro,2.0,3.0,SWE,SE1
+2022-11-12,Augsburg,Bochum,0.0,1.0,D1,L1
+2022-10-24,Austin FC,FC Dallas,2.0,1.0,USA,MLS1
+2022-11-13,Austria Vienna,Wolfsberger AC,0.0,1.0,AUT,A1
+2022-12-28,Auxerre,Monaco,2.0,3.0,F1,FR1
+2022-11-09,Avai,Ceara,2.0,0.0,BRA,BRA1
+2020-07-21,Aves,Benfica,0.0,4.0,P1,PO1
+2022-10-29,Avispa Fukuoka,Kashiwa Reysol,2.0,1.0,JPN,JAP1
+2022-12-23,Ayr,Dundee,0.0,2.0,SC1,SC2
+2021-12-05,Bahia,Fluminense,2.0,0.0,BRA,BRA1
+2022-10-23,Banfield,Sarmiento Junin,0.0,0.0,ARG,ARG1
+2022-12-31,Barcelona,Espanol,1.0,1.0,SP1,ES1
+2022-12-26,Bari,Genoa,1.0,2.0,I2,IT2
+2018-05-05,Barnet,Chesterfield,3.0,0.0,E3,GB4
+2022-12-29,Barnsley,Fleetwood Town,2.0,1.0,E2,GB3
+2022-10-24,Barracas Central,Newells Old Boys,1.0,1.0,ARG,ARG1
+2022-12-29,Barrow,Tranmere,1.0,2.0,E3,GB4
+2022-11-06,Basel,Sion,0.0,0.0,SWZ,C1
+2022-12-30,Bastia,Valenciennes,1.0,0.0,F2,FR2
+2022-11-08,Bayern Munich,Werder Bremen,6.0,1.0,D1,L1
+2022-04-01,Beerschot VA,Club Brugge,1.0,3.0,B1,BE1
+2022-12-27,Beijing Guoan,Shanghai Port,0.0,3.0,CHN,CSL
+2019-11-27,Beijing Renhe,Shanghai SIPG,1.0,1.0,CHN,CSL
+2022-05-09,Belenenses,Famalicao,2.0,3.0,P1,PO1
+2019-04-07,Belgrano,Godoy Cruz,1.0,0.0,ARG,ARG1
+2022-12-26,Benevento,Perugia,0.0,2.0,I2,IT2
+2022-11-13,Benfica,Gil Vicente,3.0,1.0,P1,PO1
+2022-12-29,Besiktas,Ad. Demirspor,1.0,0.0,T1,TR1
+2022-12-29,Betis,Ath Bilbao,0.0,0.0,SP1,ES1
+2019-05-17,Beziers,Nancy,3.0,0.0,F2,FR2
+2022-11-13,Bielefeld,Magdeburg,3.0,1.0,D2,L2
+2022-12-30,Birmingham,Hull,0.0,1.0,E1,GB2
+2013-05-31,Bistrita,Concordia,1.0,3.0,ROU,RO1
+2022-12-29,Blackburn,Middlesbrough,1.0,2.0,E1,GB2
+2022-12-29,Blackpool,Sheffield United,1.0,2.0,E1,GB2
+2022-11-12,Boavista,Porto,1.0,4.0,P1,PO1
+2022-10-23,Boca Juniors,Independiente,2.0,2.0,ARG,ARG1
+2022-11-08,Bochum,M'gladbach,2.0,1.0,D1,L1
+2022-11-06,Bodo/Glimt,Viking,5.0,4.0,NOR,NO1
+2022-11-06,Bohemians,Sligo Rovers,3.0,1.0,IRL,IR1
+2022-11-12,Bologna,Sassuolo,3.0,0.0,I1,IT1
+2022-12-27,Bolton,Derby,0.0,0.0,E2,GB3
+2022-12-30,Bordeaux,Sochaux,2.0,1.0,F2,FR2
+2022-11-10,Botafogo RJ,Santos,3.0,0.0,BRA,BRA1
+2022-12-31,Bournemouth,Crystal Palace,0.0,2.0,E0,GB1
+2022-12-29,Bradford,Harrogate,1.0,0.0,E3,GB4
+2022-11-13,Bragantino,Fluminense,0.0,1.0,BRA,BRA1
+2019-11-06,Brage,Kalmar,0.0,2.0,SWE,SE1
+2021-12-15,Brann,Jerv,1.0,1.0,NOR,NO1
+2022-11-12,Braunschweig,Hansa Rostock,0.0,1.0,D2,L2
+2021-11-19,Bray,UC Dublin,0.0,2.0,IRL,IR1
+2019-05-04,Brechin,Stenhousemuir,1.0,1.0,SC2,SC3
+2022-12-26,Brentford,Tottenham,2.0,2.0,E0,GB1
+2022-12-26,Brescia,Palermo,1.0,1.0,I2,IT2
+2022-12-28,Brest,Lyon,2.0,4.0,F1,FR1
+2022-12-31,Brighton,Arsenal,2.0,4.0,E0,GB1
+2022-12-26,Bristol City,West Brom,0.0,2.0,E1,GB2
+2022-12-29,Bristol Rvs,Exeter,3.0,4.0,E2,GB3
+2018-11-25,Brommapojkarna,AFC Eskilstuna,1.0,2.0,SWE,SE1
+2022-11-13,Brondby,Viborg,0.0,2.0,DNK,DK1
+2022-12-18,Burgos,Huesca,1.0,1.0,SP2,ES2
+2022-12-27,Burnley,Birmingham,3.0,0.0,E1,GB2
+2019-05-19,Bursaspor,Goztep,0.0,0.0,T1,TR1
+2022-12-26,Burton,Lincoln,3.0,0.0,E2,GB3
+2019-05-04,Bury,Port Vale,1.0,1.0,E3,GB4
+2022-12-27,Buyuksehyr,Antalyaspor,2.0,0.0,T1,TR1
+2022-10-23,CF Montreal,New York City,1.0,3.0,USA,MLS1
+2022-12-20,CFR Cluj,FC Hermannstadt,0.0,1.0,ROU,RO1
+2013-05-26,CS Turnu Severin,FCSB,1.0,1.0,ROU,RO1
+2019-12-08,CSA,Sao Paulo,1.0,2.0,BRA,BRA1
+2022-11-05,CSKA Moscow,Pari NN,0.0,1.0,RUS,RU1
+2019-10-18,Cabinteely,Drogheda,1.0,1.0,IRL,IR1
+2022-12-30,Cadiz,Almeria,1.0,1.0,SP1,ES1
+2022-11-12,Caen,Annecy,0.0,0.0,F2,FR2
+2022-12-26,Cagliari,Cosenza,2.0,0.0,I2,IT2
+2021-05-29,Calarasi,FC Voluntari,1.0,2.0,ROU,RO1
+2022-12-26,Cambridge,Shrewsbury,2.0,1.0,E2,GB3
+2022-11-04,Cambuur,Nijmegen,0.0,1.0,N1,NL1
+2022-12-27,Cangzhou,Hebei,3.0,0.0,CHN,CSL
+2022-12-26,Cardiff,QPR,0.0,0.0,E1,GB2
+2022-12-26,Carlisle,Bradford,1.0,0.0,E3,GB4
+2019-05-11,Carpi,Venezia,2.0,3.0,I2,IT2
+2022-12-17,Cartagena,Santander,0.0,3.0,SP2,ES2
+2022-11-13,Casa Pia,Chaves,1.0,2.0,P1,PO1
+2021-05-24,Castellon,Vallecano,0.0,2.0,SP2,ES2
+2015-05-24,Ceahlaul,U Craiova,2.0,1.0,ROU,RO1
+2022-11-13,Ceara,Juventude,4.0,1.0,BRA,BRA1
+2022-12-30,Celta,Sevilla,1.0,1.0,SP1,ES1
+2022-12-24,Celtic,St Johnstone,4.0,1.0,SC0,SC1
+2022-10-19,Central Cordoba,Tigre,1.0,2.0,ARG,ARG1
+2022-11-05,Cercle Brugge,Oud-Heverlee Leuven,2.0,1.0,B1,BE1
+2022-11-05,Cerezo Osaka,Nagoya Grampus,0.0,1.0,JPN,JAP1
+2018-05-11,Chacarita Juniors,San Martin S.J.,1.0,4.0,ARG,ARG1
+2021-05-08,Chambly,Pau FC,1.0,0.0,F2,FR2
+2022-11-26,Changchun Yatai,Cangzhou,0.0,2.0,CHN,CSL
+2021-12-07,Chapecoense-SC,Sport Recife,0.0,1.0,BRA,BRA1
+2022-12-26,Charleroi,Anderlecht,0.0,1.0,B1,BE1
+2022-10-06,Charlotte,Columbus Crew,2.0,2.0,USA,MLS1
+2022-12-26,Charlton,Peterboro,1.0,1.0,E2,GB3
+2021-05-15,Chateauroux,Ajaccio,0.0,0.0,F2,FR2
+2022-12-30,Chaves,Famalicao,0.0,2.0,P1,PO1
+2022-12-27,Chelsea,Bournemouth,2.0,0.0,E0,GB1
+2022-12-26,Cheltenham,Plymouth,0.0,1.0,E2,GB3
+2022-12-31,Chengdu Rongcheng,Dalian Pro,3.0,0.0,CHN,CSL
+2018-05-01,Chesterfield,Newport County,1.0,0.0,E3,GB4
+2017-04-29,Chiapas,Santos Laguna,2.0,2.0,MEX,MEX1
+2022-10-09,Chicago Fire,New England Revolution,1.0,1.0,USA,MLS1
+2021-05-10,Chievo,Ascoli,3.0,0.0,I2,IT2
+2022-12-11,Chindia Targoviste,FCSB,0.0,2.0,ROU,RO1
+2014-10-26,Chivas USA,San Jose Earthquakes,1.0,0.0,USA,MLS1
+2021-12-31,Chongqing Liangjiang Athletic,Shanghai Shenhua,0.0,0.0,CHN,CSL
+2022-12-18,Cittadella,Sudtirol,0.0,2.0,I2,IT2
+2022-12-28,Clermont,Lille,0.0,2.0,F1,FR1
+2022-10-23,Club America,Toluca,1.0,1.0,MEX,MEX1
+2022-12-26,Club Brugge,Oud-Heverlee Leuven,1.0,1.0,B1,BE1
+2022-10-03,Club Leon,Club Tijuana,2.0,2.0,MEX,MEX1
+2022-09-19,Club Tijuana,Necaxa,1.0,1.0,MEX,MEX1
+2022-12-23,Clyde,Alloa,2.0,2.0,SC2,SC3
+2016-10-22,Cobh Ramblers,Drogheda,0.0,2.0,IRL,IR1
+2022-12-29,Colchester,AFC Wimbledon,1.0,2.0,E3,GB4
+2022-06-15,Colon Santa FE,River Plate,1.0,0.0,ARG,ARG1
+2022-10-18,Colon Santa Fe,Defensa y Justicia,1.0,2.0,ARG,ARG1
+2022-10-01,Colorado Rapids,FC Dallas,1.0,0.0,USA,MLS1
+2022-10-02,Columbus Crew,New York Red Bulls,2.0,1.0,USA,MLS1
+2022-12-26,Como,Cittadella,2.0,0.0,I2,IT2
+2022-05-21,Concordia,Chindia Targoviste,2.0,1.0,ROU,RO1
+2019-05-31,Cordoba,Osasuna,2.0,3.0,SP2,ES2
+2022-11-13,Corinthians,Atletico-MG,0.0,1.0,BRA,BRA1
+2022-11-09,Coritiba,Corinthians,2.0,2.0,BRA,BRA1
+2020-11-09,Cork City,Derry City,1.0,1.0,IRL,IR1
+2014-05-20,Corona Brasov,Petrolul,0.0,3.0,ROU,RO1
+2022-12-18,Cosenza,Ascoli,1.0,3.0,I2,IT2
+2022-12-23,Cove Rangers,Hamilton,2.0,0.0,SC1,SC2
+2022-12-29,Coventry,Cardiff,0.0,0.0,E1,GB2
+2022-11-05,Cracovia,Jagiellonia,1.0,0.0,POL,PL1
+2022-12-26,Crawley Town,Sutton,1.0,2.0,E3,GB4
+2022-11-08,Cremonese,Milan,0.0,0.0,I1,IT1
+2022-12-29,Crewe,Carlisle,0.0,3.0,E3,GB4
+2014-11-29,Criciuma,Sport Recife,2.0,2.0,BRA,BRA1
+2022-05-06,Crotone,Parma,0.0,1.0,I2,IT2
+2015-11-09,Crucero del Norte,Aldosivi,0.0,2.0,ARG,ARG1
+2022-10-13,Cruz Azul,Monterrey,0.0,0.0,MEX,MEX1
+2019-12-08,Cruzeiro,Palmeiras,0.0,2.0,BRA,BRA1
+2022-12-26,Crystal Palace,Fulham,0.0,3.0,E0,GB1
+2022-11-13,Cuiaba,Coritiba,2.0,1.0,BRA,BRA1
+2022-10-09,DC United,FC Cincinnati,2.0,5.0,USA,MLS1
+2018-06-02,Daco-Getica Bucuresti,FC Voluntari,2.0,2.0,ROU,RO1
+2022-12-14,Dalian Pro,Wuhan Three Towns,1.0,2.0,CHN,CSL
+2019-12-01,Dalian Yifang F.C.,Beijing Renhe,2.0,0.0,CHN,CSL
+2018-11-05,Dalkurd,Djurgarden,1.0,2.0,SWE,SE1
+2022-11-13,Darmstadt,Greuther Furth,1.0,1.0,D2,L2
+2022-10-22,Defensa y Justicia,Atl. Tucuman,3.0,1.0,ARG,ARG1
+2022-10-29,Degerfors,Varnamo,0.0,0.0,SWE,SE1
+2021-05-13,Den Haag,Willem II,1.0,4.0,N1,NL1
+2021-05-11,Denizlispor,Galatasaray,1.0,4.0,T1,TR1
+2022-12-30,Derby,Cambridge,1.0,0.0,E2,GB3
+2022-11-06,Derry City,Dundalk,0.0,1.0,IRL,IR1
+2022-12-26,Dijon,Laval,5.0,0.0,F2,FR2
+2022-05-29,Din. Bucuresti,U. Cluj,1.0,1.0,ROU,RO1
+2022-11-06,Djurgarden,Mjallby,0.0,1.0,SWE,SE1
+2022-12-29,Doncaster,Rochdale,4.0,3.0,E3,GB4
+2016-05-08,Dorados de Sinaloa,Club Leon,0.0,1.0,MEX,MEX1
+2022-11-05,Dortmund,Bochum,3.0,0.0,D1,L1
+2022-05-15,Dresden,Erzgebirge Aue,0.0,1.0,D2,L2
+2022-11-06,Drogheda,Finn Harps,2.0,0.0,IRL,IR1
+2019-05-12,Duisburg,Heidenheim,3.0,4.0,D2,L2
+2022-04-30,Dumbarton,Clyde,2.0,1.0,SC2,SC3
+2022-10-28,Dundalk,Bohemians,2.0,1.0,IRL,IR1
+2022-11-19,Dundee,Hamilton,1.0,0.0,SC1,SC2
+2022-12-28,Dundee United,Ross County,3.0,0.0,SC0,SC1
+2022-12-03,Dunfermline,Queen of Sth,1.0,1.0,SC2,SC3
+2022-05-07,Dunkerque,Guingamp,1.0,3.0,F2,FR2
+2022-11-13,Dynamo Moscow,CSKA Moscow,2.0,1.0,RUS,RU1
+2022-04-30,East Fife,Cove Rangers,2.0,3.0,SC2,SC3
+2022-12-11,Eibar,Oviedo,1.0,0.0,SP2,ES2
+2022-11-09,Ein Frankfurt,Hoffenheim,4.0,2.0,D1,L1
+2022-11-08,Elche,Girona,1.0,2.0,SP1,ES1
+2022-10-31,Elfsborg,Helsingborg,3.0,0.0,SWE,SE1
+2022-11-11,Empoli,Cremonese,2.0,0.0,I1,IT1
+2022-05-08,Erzgebirge Aue,Werder Bremen,0.0,3.0,D2,L2
+2021-05-08,Erzurum BB,Kasimpasa,0.0,1.0,T1,TR1
+2020-07-03,Esbjerg,Horsens,1.0,2.0,DNK,DK1
+2022-11-09,Espanol,Villarreal,0.0,1.0,SP1,ES1
+2022-11-06,Estoril,Benfica,1.0,5.0,P1,PO1
+2022-10-22,Estudiantes L.P.,Godoy Cruz,2.0,0.0,ARG,ARG1
+2022-11-05,Eupen,Standard,2.0,0.0,B1,BE1
+2022-12-26,Everton,Wolves,1.0,2.0,E0,GB1
+2022-11-05,Excelsior,Heerenveen,0.0,1.0,N1,NL1
+2022-12-26,Exeter,Portsmouth,0.0,0.0,E2,GB3
+2020-07-17,Extremadura UD,Sp Gijon,2.0,0.0,SP2,ES2
+2022-12-18,FC Arges,Mioveni,2.0,2.0,ROU,RO1
+2022-12-11,FC Botosani,CFR Cluj,1.0,1.0,ROU,RO1
+2015-05-27,FC Brasov,Gaz Metan Medias,0.0,0.0,ROU,RO1
+2022-10-02,FC Cincinnati,Chicago Fire,2.0,3.0,USA,MLS1
+2022-11-06,FC Copenhagen,Lyngby,3.0,0.0,DNK,DK1
+2022-10-18,FC Dallas,Minnesota United,1.0,1.0,USA,MLS1
+2022-12-24,FC Edinburgh,Peterhead,4.0,0.0,SC2,SC3
+2022-11-12,FC Emmen,Ajax,3.0,3.0,N1,NL1
+2022-12-10,FC Hermannstadt,Farul Constanta,4.0,0.0,ROU,RO1
+2022-11-09,FC Koln,Leverkusen,1.0,2.0,D1,L1
+2022-12-14,FC Rapid Bucuresti,Petrolul,3.0,1.0,ROU,RO1
+2022-11-05,FC Tokyo,Kawasaki Frontale,2.0,3.0,JPN,JAP1
+2022-12-16,FC Voluntari,Farul Constanta,1.0,1.0,ROU,RO1
+2022-12-19,FCSB,FC Botosani,1.0,0.0,ROU,RO1
+2019-05-26,FK Anzi Makhackala,Ural,0.0,2.0,RUS,RU1
+2022-11-06,FK Rostov,Dynamo Moscow,2.0,1.0,RUS,RU1
+2022-11-05,Fakel Voronezh,Krasnodar,3.0,3.0,RUS,RU1
+2020-12-06,Falkenbergs,Mjallby,2.0,3.0,SWE,SE1
+2022-12-23,Falkirk,Queen of Sth,5.0,2.0,SC2,SC3
+2022-11-13,Famalicao,Sp Lisbon,1.0,2.0,P1,PO1
+2021-05-15,Farense,Tondela,1.0,0.0,P1,PO1
+2022-12-04,Farul Constanta,FC Botosani,8.0,0.0,ROU,RO1
+2019-05-18,Feirense,Aves,2.0,1.0,P1,PO1
+2022-12-27,Fenerbahce,Hatayspor,4.0,0.0,T1,TR1
+2022-11-13,Feyenoord,Excelsior,5.0,1.0,N1,NL1
+2016-11-27,Figueirense,Fluminense,1.0,0.0,BRA,BRA1
+2022-10-28,Finn Harps,UC Dublin,1.0,3.0,IRL,IR1
+2022-11-09,Fiorentina,Salernitana,2.0,1.0,I1,IT1
+2022-11-12,Flamengo RJ,Avai,1.0,2.0,BRA,BRA1
+2022-12-26,Fleetwood Town,Sheffield Weds,1.0,2.0,E2,GB3
+2022-11-09,Fluminense,Goias,3.0,0.0,BRA,BRA1
+2019-05-06,Foggia,Perugia,1.0,0.0,I2,IT2
+2022-11-05,For Sittard,FC Emmen,0.0,1.0,N1,NL1
+2022-12-29,Forest Green,Burton,1.0,2.0,E2,GB3
+2021-05-04,Forfar,East Fife,2.0,3.0,SC2,SC3
+2022-11-09,Fortaleza,Bragantino,6.0,0.0,BRA,BRA1
+2022-11-11,Fortuna Dusseldorf,Kaiserslautern,1.0,2.0,D2,L2
+2012-11-18,Fredrikstad,Molde,0.0,2.0,NOR,NO1
+2022-11-13,Freiburg,Union Berlin,4.0,1.0,D1,L1
+2022-12-26,Frosinone,Ternana,3.0,0.0,I2,IT2
+2022-05-21,Fuenlabrada,Sp Gijon,0.0,0.0,SP2,ES2
+2022-12-31,Fulham,Southampton,2.0,1.0,E0,GB1
+2012-11-01,GAIS,Gefle,2.0,3.0,SWE,SE1
+2015-06-02,GKS Belchatow,Korona Kielce,2.0,2.0,POL,PL1
+2022-12-25,Galatasaray,Istanbulspor,2.0,1.0,T1,TR1
+2021-11-07,Galway,Bray,0.0,1.0,IRL,IR1
+2022-10-29,Gamba Osaka,Iwata,2.0,0.0,JPN,JAP1
+2022-05-06,Gaz Metan Medias,Academica Clinceni,4.0,3.0,ROU,RO1
+2022-12-25,Gaziantep,Besiktas,1.0,1.0,T1,TR1
+2016-10-30,Gefle,Malmo FF,1.0,0.0,SWE,SE1
+2021-05-11,Genclerbirligi,Goztep,5.0,3.0,T1,TR1
+2022-11-04,Genk,Charleroi,4.0,1.0,B1,BE1
+2022-12-18,Genoa,Frosinone,1.0,0.0,I2,IT2
+2022-12-23,Gent,Standard,0.0,0.0,B1,BE1
+2022-12-30,Getafe,Mallorca,2.0,0.0,SP1,ES1
+2022-12-21,Giannina,Olympiakos,2.0,2.0,G1,GR1
+2022-12-29,Gil Vicente,Santa Clara,1.0,0.0,P1,PO1
+2022-12-26,Gillingham,Colchester,0.0,1.0,E3,GB4
+2022-10-20,Gimnasia L.P.,Boca Juniors,1.0,2.0,ARG,ARG1
+2019-06-09,Gimnastic,Lugo,1.0,1.0,SP2,ES2
+2022-12-29,Giresunspor,Gaziantep,2.0,1.0,T1,TR1
+2022-12-29,Girona,Vallecano,2.0,2.0,SP1,ES1
+2022-11-13,Go Ahead Eagles,Vitesse,2.0,2.0,N1,NL1
+2022-10-16,Godoy Cruz,Patronato,0.0,1.0,ARG,ARG1
+2022-11-13,Goias,Sao Paulo,0.0,4.0,BRA,BRA1
+2022-11-12,Gornik Z.,Legnica,0.0,3.0,POL,PL1
+2022-10-30,Goteborg,Hacken,0.0,4.0,SWE,SE1
+2022-05-15,Goztep,Besiktas,0.0,2.0,T1,TR1
+2019-05-15,Graafschap,Ajax,1.0,4.0,N1,NL1
+2022-12-11,Granada,Burgos,1.0,0.0,SP2,ES2
+2022-11-12,Grasshoppers,Basel,1.0,0.0,SWZ,C1
+2021-12-10,Gremio,Atletico-MG,4.0,3.0,BRA,BRA1
+2022-12-30,Grenoble,Metz,0.0,1.0,F2,FR2
+2022-11-09,Greuther Furth,Hamburg,1.0,0.0,D2,L2
+2022-12-29,Grimsby,Salford,1.0,4.0,E3,GB4
+2016-05-11,Grodig,Salzburg,1.0,2.0,AUT,A1
+2022-11-13,Groningen,For Sittard,2.0,3.0,N1,NL1
+2022-09-14,Guadalajara Chivas,Tigres UANL,1.0,4.0,MEX,MEX1
+2022-12-31,Guangzhou City,Cangzhou,1.0,4.0,CHN,CSL
+2020-11-12,Guangzhou Evergrande,Jiangsu Suning,1.0,2.0,CHN,CSL
+2022-12-27,Guangzhou FC,Changchun Yatai,1.0,4.0,CHN,CSL
+2020-11-06,Guangzhou R&F,Dalian Pro,0.0,3.0,CHN,CSL
+2022-11-13,Guimaraes,Maritimo,1.0,0.0,P1,PO1
+2022-12-30,Guingamp,Quevilly Rouen,0.0,2.0,F2,FR2
+2018-11-11,Guizhou Zhicheng,Chongqing Liangjiang Athletic,1.0,0.0,CHN,CSL
+2022-10-08,HIFK,Mariehamn,2.0,3.0,FIN,FI1
+2022-10-16,HJK,KuPS,0.0,1.0,FIN,FI1
+2022-11-06,Hacken,Norrkoping,3.0,3.0,SWE,SE1
+2022-10-30,Haka,VPS,1.0,2.0,FIN,FI1
+2021-12-14,Halmstad,Helsingborg,1.0,3.0,SWE,SE1
+2022-11-06,Ham-Kam,Tromso,1.0,2.0,NOR,NO1
+2022-11-12,Hamburg,Sandhausen,4.0,2.0,D2,L2
+2022-11-11,Hamilton,Ayr,2.0,3.0,SC1,SC2
+2022-10-30,Hammarby,Kalmar,4.0,2.0,SWE,SE1
+2016-10-30,Hangzhou Greentown,Yanbian,2.0,2.0,CHN,CSL
+2022-11-08,Hannover,Fortuna Dusseldorf,2.0,0.0,D2,L2
+2022-11-09,Hansa Rostock,Nurnberg,1.0,1.0,D2,L2
+2022-12-26,Harrogate,Grimsby,3.0,2.0,E3,GB4
+2022-11-12,Hartberg,SK Rapid,1.0,2.0,AUT,A1
+2022-12-29,Hartlepool,Mansfield,1.0,2.0,E3,GB4
+2022-12-24,Hatayspor,Giresunspor,1.0,1.0,T1,TR1
+2022-11-06,Haugesund,Valerenga,1.0,1.0,NOR,NO1
+2022-12-17,Hearts,Kilmarnock,3.0,1.0,SC0,SC1
+2022-12-30,Hebei,Henan Songshan Longmen,0.0,4.0,CHN,CSL
+2022-11-13,Heerenveen,Cambuur,2.0,1.0,N1,NL1
+2022-11-12,Heidenheim,Regensburg,5.0,4.0,D2,L2
+2022-11-06,Helsingborg,Hammarby,0.0,2.0,SWE,SE1
+2018-05-17,Helsingor,Silkeborg,1.0,1.0,DNK,DK1
+2022-12-27,Henan Songshan Longmen,Shanghai Shenhua,1.0,1.0,CHN,CSL
+2022-05-15,Heracles,Sparta Rotterdam,1.0,3.0,N1,NL1
+2022-11-12,Hertha,FC Koln,2.0,0.0,D1,L1
+2022-12-28,Hibernian,Celtic,0.0,4.0,SC0,SC1
+2020-07-13,Hobro,Lyngby,1.0,2.0,DNK,DK1
+2022-11-12,Hoffenheim,Wolfsburg,1.0,2.0,D1,L1
+2022-11-05,Hokkaido Consadole Sapporo,Shimizu S-Pulse,4.0,3.0,JPN,JAP1
+2022-11-11,Holstein Kiel,Hannover,1.0,1.0,D2,L2
+2013-11-03,Honefoss,Sogndal,3.0,1.0,NOR,NO1
+2022-10-16,Honka,Haka,1.0,1.0,FIN,FI1
+2022-11-13,Horsens,Odense,3.0,3.0,DNK,DK1
+2022-10-09,Houston Dynamo,Los Angeles Galaxy,1.0,3.0,USA,MLS1
+2022-12-29,Huddersfield,Rotherham,2.0,0.0,E1,GB2
+2022-12-07,Huesca,Andorra,1.0,0.0,SP2,ES2
+2022-12-26,Hull,Blackpool,1.0,1.0,E1,GB2
+2022-10-19,Huracan,Platense,2.0,0.0,ARG,ARG1
+2022-12-11,Ibiza,Malaga,1.0,1.0,SP2,ES2
+2022-10-09,Ilves,Lahti,1.0,0.0,FIN,FI1
+2022-10-16,Independiente,Banfield,1.0,0.0,ARG,ARG1
+2022-05-07,Ingolstadt,Hansa Rostock,0.0,0.0,D2,L2
+2022-11-09,Inter,Bologna,6.0,1.0,I1,IT1
+2022-10-09,Inter Miami,CF Montreal,1.0,3.0,USA,MLS1
+2022-10-19,Inter Turku,VPS,1.0,5.0,FIN,FI1
+2022-11-13,Internacional,Palmeiras,3.0,0.0,BRA,BRA1
+2022-12-03,Inverness C,Dundee,0.0,1.0,SC1,SC2
+2022-12-21,Ionikos,Panathinaikos,1.0,1.0,G1,GR1
+2022-12-26,Ipswich,Oxford,3.0,0.0,E2,GB3
+2022-12-28,Istanbulspor,Kasimpasa,2.0,1.0,T1,TR1
+2022-11-05,Iwata,Kyoto,0.0,0.0,JPN,JAP1
+2017-10-28,JJK Jyvaskyla,VPS,2.0,0.0,FIN,FI1
+2022-11-12,Jagiellonia,Lech Poznan,1.0,2.0,POL,PL1
+2015-10-18,Jaro,Lahti,1.0,1.0,FIN,FI1
+2022-11-06,Jerv,Rosenborg,2.0,4.0,NOR,NO1
+2020-11-08,Jiangsu Suning,Guangzhou Evergrande,0.0,0.0,CHN,CSL
+2015-12-06,Joinville,Gremio,0.0,2.0,BRA,BRA1
+2020-12-09,Jonkopings,Kalmar,1.0,3.0,SWE,SE1
+2022-10-01,Juarez,UNAM Pumas,3.0,1.0,MEX,MEX1
+2020-07-27,Juve Stabia,Cremonese,1.0,2.0,I2,IT2
+2022-11-10,Juventude,Flamengo RJ,2.0,2.0,BRA,BRA1
+2022-11-13,Juventus,Lazio,3.0,0.0,I1,IT1
+2019-10-27,KPV Kokkola,TPS,0.0,3.0,FIN,FI1
+2021-10-27,KTP,Haka,2.0,4.0,FIN,FI1
+2022-11-08,Kaiserslautern,Karlsruhe,2.0,0.0,D2,L2
+2022-11-06,Kalmar,Sundsvall,4.0,0.0,SWE,SE1
+2022-12-28,Karagumruk,Trabzonspor,4.0,1.0,T1,TR1
+2022-11-12,Karlsruhe,St Pauli,4.0,4.0,D2,L2
+2022-11-05,Kashima Antlers,Gamba Osaka,0.0,0.0,JPN,JAP1
+2022-11-05,Kashiwa Reysol,Shonan Bellmare,1.0,2.0,JPN,JAP1
+2022-12-24,Kasimpasa,Sivasspor,1.0,2.0,T1,TR1
+2022-10-29,Kawasaki Frontale,Vissel Kobe,2.0,1.0,JPN,JAP1
+2022-11-13,Kayserispor,Konyaspor,1.0,2.0,T1,TR1
+2022-12-24,Kelty Hearts,Dunfermline,1.0,2.0,SC2,SC3
+2022-11-13,Khimki,Sochi,0.0,2.0,RUS,RU1
+2022-12-28,Kilmarnock,Aberdeen,2.0,1.0,SC0,SC1
+2017-12-02,Kofu,Vegalta Sendai,1.0,0.0,JPN,JAP1
+2022-11-19,Kongsvinger,Sandefjord,2.0,1.0,NOR,NO1
+2022-12-25,Konyaspor,Alanyaspor,2.0,2.0,T1,TR1
+2022-11-12,Korona Kielce,Widzew Lodz,0.0,1.0,POL,PL1
+2022-12-26,Kortrijk,Genk,1.0,0.0,B1,BE1
+2022-10-30,Krasnodar,Zenit,0.0,1.0,RUS,RU1
+2022-11-13,Kristiansund,Jerv,1.0,1.0,NOR,NO1
+2022-11-12,Krylya Sovetov,FK Rostov,1.0,3.0,RUS,RU1
+2022-10-09,KuPS,Inter Turku,2.0,0.0,FIN,FI1
+2016-05-24,Kuban,Tomsk,1.0,0.0,RUS,RU1
+2022-11-06,Kumamoto,Montedio Yamagata,2.0,2.0,JPN,JAP1
+2022-11-13,Kyoto,Kumamoto,1.0,1.0,JPN,JAP1
+2022-11-13,LASK,Sturm Graz,1.0,1.0,AUT,A1
+2020-07-14,LKS Lodz,Rakow,3.0,2.0,POL,PL1
+2020-08-07,La Coruna,Fuenlabrada,2.0,1.0,SP2,ES2
+2022-10-23,Lahti,TPS,2.0,1.0,FIN,FI1
+2022-12-29,Lamia,Giannina,1.0,1.0,G1,GR1
+2022-10-18,Lanus,Racing Club,0.0,1.0,ARG,ARG1
+2021-05-16,Larisa,Giannina,2.0,0.0,G1,GR1
+2022-12-11,Las Palmas,Albacete,1.0,2.0,SP2,ES2
+2022-05-19,Lausanne,Sion,1.0,2.0,SWZ,C1
+2022-12-30,Laval,Amiens,0.0,3.0,F2,FR2
+2022-11-10,Lazio,Monza,1.0,0.0,I1,IT1
+2022-12-26,Le Havre,Bordeaux,1.0,0.0,F2,FR2
+2020-02-28,Le Mans,Guingamp,2.0,1.0,F2,FR2
+2022-11-09,Lecce,Atalanta,2.0,1.0,I1,IT1
+2022-11-06,Lech Poznan,Korona Kielce,3.0,2.0,POL,PL1
+2022-11-18,Lechia Gdansk,Gornik Z.,2.0,1.0,POL,PL1
+2022-05-21,Leczna,Jagiellonia,0.0,1.0,POL,PL1
+2022-12-28,Leeds,Man City,1.0,3.0,E0,GB1
+2022-12-19,Leganes,Zaragoza,2.0,1.0,SP2,ES2
+2022-11-04,Legia,Lechia Gdansk,2.0,1.0,POL,PL1
+2022-11-06,Legnica,Slask Wroclaw,1.0,0.0,POL,PL1
+2022-12-26,Leicester,Newcastle,0.0,3.0,E0,GB1
+2022-11-12,Lens,Clermont,2.0,1.0,F1,FR1
+2015-05-03,Leones Negros,Veracruz,1.0,2.0,MEX,MEX1
+2022-12-28,Levadeiakos,Ionikos,1.0,0.0,G1,GR1
+2022-12-18,Levante,Eibar,0.0,0.0,SP2,ES2
+2022-11-12,Leverkusen,Stuttgart,2.0,0.0,D1,L1
+2022-12-27,Leyton Orient,Stevenage,0.0,0.0,E3,GB4
+2017-11-04,Liaoning,Shanghai Shenhua,1.0,4.0,CHN,CSL
+2022-11-13,Lille,Angers,1.0,0.0,F1,FR1
+2022-11-13,Lillestrom,Ham-Kam,3.0,1.0,NOR,NO1
+2018-11-02,Limerick,Finn Harps,0.0,2.0,IRL,IR1
+2022-12-30,Lincoln,Bolton,1.0,1.0,E2,GB3
+2022-12-30,Liverpool,Leicester,2.0,1.0,E0,GB1
+2022-12-28,Livingston,St Mirren,1.0,1.0,SC0,SC1
+2020-07-31,Livorno,Empoli,0.0,2.0,I2,IT2
+2014-11-06,Ljungskile,Gefle,1.0,3.0,SWE,SE1
+2019-04-28,Lobos BUAP,Cruz Azul,1.0,4.0,MEX,MEX1
+2021-05-30,Logrones,Las Palmas,0.0,1.0,SP2,ES2
+2019-03-17,Lokeren,Cercle Brugge,3.0,1.0,B1,BE1
+2022-11-12,Lokomotiv Moscow,Spartak Moscow,1.0,2.0,RUS,RU1
+2021-11-13,Longford,Waterford,1.0,1.0,IRL,IR1
+2022-12-29,Lorient,Montpellier,0.0,2.0,F1,FR1
+2022-11-05,Los Angeles FC,Philadelphia Union,3.0,3.0,USA,MLS1
+2022-10-15,Los Angeles Galaxy,Nashville SC,1.0,0.0,USA,MLS1
+2022-11-13,Lugano,Winterthur,3.0,1.0,SWZ,C1
+2022-12-17,Lugo,Granada,1.0,0.0,SP2,ES2
+2022-12-26,Luton,Norwich,2.0,1.0,E1,GB2
+2022-11-09,Luzern,Basel,0.0,2.0,SWZ,C1
+2022-10-30,Lyngby,Aarhus,0.0,1.0,DNK,DK1
+2022-11-11,Lyon,Nice,1.0,1.0,F1,FR1
+2022-11-11,M'gladbach,Dortmund,4.0,2.0,D1,L1
+2016-05-11,M. Saransk,Zenit,0.0,3.0,RUS,RU1
+2020-02-29,Macclesfield,Salford,0.0,2.0,E3,GB4
+2022-11-10,Magdeburg,Darmstadt,0.0,1.0,D2,L2
+2022-11-13,Mainz,Ein Frankfurt,1.0,1.0,D1,L1
+2022-12-18,Malaga,Alaves,1.0,0.0,SP2,ES2
+2022-11-09,Mallorca,Ath Madrid,1.0,0.0,SP1,ES1
+2022-11-06,Malmo FF,Degerfors,2.0,2.0,SWE,SE1
+2022-12-31,Man City,Everton,1.0,1.0,E0,GB1
+2022-12-27,Man United,Nott'm Forest,3.0,0.0,E0,GB1
+2022-12-26,Mansfield,Northampton,1.0,1.0,E3,GB4
+2022-10-16,Mariehamn,VPS,2.0,2.0,FIN,FI1
+2022-11-06,Maritimo,Famalicao,0.0,0.0,P1,PO1
+2022-12-29,Marseille,Toulouse,6.0,1.0,F1,FR1
+2020-06-30,Mattersburg,Tirol,4.0,1.0,AUT,A1
+2022-09-17,Mazatlan FC,Toluca,1.0,1.0,MEX,MEX1
+2022-12-23,Mechelen,Cercle Brugge,1.0,1.0,B1,BE1
+2022-12-31,Meizhou Hakka,Guangzhou FC,1.0,0.0,CHN,CSL
+2013-10-18,Mervue,Longford,1.0,0.0,IRL,IR1
+2022-12-26,Metz,Niort,0.0,0.0,F2,FR2
+2022-12-26,Middlesbrough,Wigan,4.0,1.0,E1,GB2
+2022-11-07,Midtjylland,Nordsjaelland,0.0,0.0,DNK,DK1
+2022-11-13,Milan,Fiorentina,2.0,1.0,I1,IT1
+2022-12-29,Millwall,Bristol City,0.0,0.0,E1,GB2
+2022-12-26,Milton Keynes Dons,Forest Green,1.0,0.0,E2,GB3
+2022-10-09,Minnesota United,Vancouver Whitecaps,2.0,0.0,USA,MLS1
+2022-12-12,Mioveni,Univ. Craiova,0.0,1.0,ROU,RO1
+2022-12-17,Mirandes,Ponferradina,2.0,1.0,SP2,ES2
+2022-10-30,Mjallby,AIK,1.0,2.0,SWE,SE1
+2021-12-12,Mjondalen,Bodo/Glimt,0.0,3.0,NOR,NO1
+2022-12-18,Modena,Benevento,1.0,1.0,I2,IT2
+2022-11-06,Molde,Sandefjord,2.0,1.0,NOR,NO1
+2022-11-13,Monaco,Marseille,2.0,3.0,F1,FR1
+2012-06-01,Monaghan,St. Patricks,0.0,4.0,IRL,IR1
+2020-03-14,Monarcas,Queretaro,4.0,0.0,MEX,MEX1
+2015-11-07,Montedio Yamagata,Shimizu S-Pulse,1.0,2.0,JPN,JAP1
+2022-10-24,Monterrey,Pachuca,0.0,1.0,MEX,MEX1
+2022-11-13,Montpellier,Reims,1.0,1.0,F1,FR1
+2022-12-23,Montrose,Airdrie Utd,2.0,4.0,SC2,SC3
+2022-11-13,Monza,Salernitana,3.0,0.0,I1,IT1
+2022-12-29,Morecambe,Accrington,2.0,0.0,E2,GB3
+2022-05-14,Moreirense,Vizela,4.0,1.0,P1,PO1
+2022-11-12,Morton,Partick,2.0,1.0,SC1,SC2
+2022-12-23,Motherwell,Kilmarnock,2.0,2.0,SC0,SC1
+2021-04-12,Mouscron,Antwerp,2.0,3.0,B1,BE1
+2014-10-19,MyPa,Inter Turku,2.0,2.0,FIN,FI1
+2019-05-15,NAC Breda,Zwolle,0.0,0.0,N1,NL1
+2021-05-19,Nacional,Rio Ave,1.0,2.0,P1,PO1
+2022-10-29,Nagoya Grampus,FC Tokyo,2.0,1.0,JPN,JAP1
+2022-05-14,Nancy,Pau FC,2.0,3.0,F2,FR2
+2022-11-13,Nantes,Ajaccio,2.0,2.0,F1,FR1
+2022-11-12,Napoli,Udinese,3.0,2.0,I1,IT1
+2022-10-03,Nashville SC,Houston Dynamo,1.0,2.0,USA,MLS1
+2013-12-07,Nautico,Corinthians,1.0,0.0,BRA,BRA1
+2014-05-21,Navodari,CFR Cluj,2.0,1.0,ROU,RO1
+2022-09-24,Necaxa,Mazatlan FC,2.0,2.0,MEX,MEX1
+2018-05-31,Neustadt,St. Polten,0.0,2.0,AUT,A1
+2022-10-01,New England Revolution,Atlanta Utd,2.0,1.0,USA,MLS1
+2022-10-18,New York City,Inter Miami,3.0,0.0,USA,MLS1
+2022-10-15,New York Red Bulls,FC Cincinnati,1.0,2.0,USA,MLS1
+2022-12-31,Newcastle,Leeds,0.0,0.0,E0,GB1
+2022-10-16,Newells Old Boys,Boca Juniors,2.0,0.0,ARG,ARG1
+2022-12-30,Newport County,Leyton Orient,0.0,0.0,E3,GB4
+2022-12-29,Nice,Lens,0.0,0.0,F1,FR1
+2022-11-13,Nijmegen,Waalwijk,6.0,1.0,N1,NL1
+2022-12-26,Nimes,Guingamp,1.0,2.0,F2,FR2
+2022-12-30,Niort,Pau FC,2.0,1.0,F2,FR2
+2022-11-13,Nordsjaelland,Aalborg,5.0,1.0,DNK,DK1
+2022-10-31,Norrkoping,Djurgarden,0.0,1.0,SWE,SE1
+2022-12-29,Northampton,Swindon,1.0,2.0,E3,GB4
+2022-12-30,Norwich,Reading,1.0,1.0,E1,GB2
+2022-11-12,Nott'm Forest,Crystal Palace,1.0,0.0,E0,GB1
+2019-04-27,Notts County,Grimsby,2.0,1.0,E3,GB4
+2015-11-09,Nueva Chicago,Quilmes,2.0,1.0,ARG,ARG1
+2020-07-20,Numancia,Tenerife,2.0,1.0,SP2,ES2
+2022-11-13,Nurnberg,Paderborn,2.0,1.0,D2,L2
+2022-12-22,OFI Crete,Atromitos,0.0,1.0,G1,GR1
+2022-11-06,Odd,Stromsgodset,5.0,1.0,NOR,NO1
+2022-11-06,Odense,Brondby,1.0,1.0,DNK,DK1
+2021-11-27,Oita Trinita,Yokohama FC,2.0,0.0,JPN,JAP1
+2022-10-30,Okayama,Montedio Yamagata,0.0,3.0,JPN,JAP1
+2022-05-07,Oldham,Crawley Town,3.0,3.0,E3,GB4
+2018-05-12,Olimpo Bahia Blanca,Talleres Cordoba,2.0,2.0,ARG,ARG1
+2022-12-28,Olympiakos,Asteras Tripolis,5.0,0.0,G1,GR1
+2019-12-01,Omiya Ardija,Montedio Yamagata,0.0,2.0,JPN,JAP1
+2022-11-06,Oostende,Kortrijk,3.0,1.0,B1,BE1
+2021-12-04,Orebro,Elfsborg,2.0,3.0,SWE,SE1
+2022-11-13,Orenburg,Krasnodar,5.0,1.0,RUS,RU1
+2022-10-09,Orlando City,Columbus Crew,2.0,1.0,USA,MLS1
+2020-02-28,Orleans,Troyes,0.0,2.0,F2,FR2
+2022-11-08,Osasuna,Barcelona,1.0,2.0,SP1,ES1
+2021-05-16,Osnabruck,Hamburg,3.0,2.0,D2,L2
+2022-11-10,Oster,Varberg,1.0,2.0,SWE,SE1
+2013-11-03,Osters,Djurgarden,1.0,1.0,SWE,SE1
+2021-12-04,Ostersunds,Degerfors,0.0,1.0,SWE,SE1
+2015-05-23,Otelul,U. Cluj,2.0,1.0,ROU,RO1
+2022-11-11,Oud-Heverlee Leuven,Seraing,5.0,0.0,B1,BE1
+2022-12-17,Oviedo,Sp Gijon,1.0,0.0,SP2,ES2
+2022-12-29,Oxford,Charlton,3.0,1.0,E2,GB3
+2022-11-13,PAOK,Volos NFC,3.0,0.0,G1,GR1
+2016-10-23,PK-35 Vantaa,Inter Turku,2.0,1.0,FIN,FI1
+2018-10-21,PS Kemi,Mariehamn,2.0,0.0,FIN,FI1
+2022-11-12,PSV Eindhoven,AZ Alkmaar,0.0,1.0,N1,NL1
+2022-10-31,Pachuca,Toluca,3.0,1.0,MEX,MEX1
+2022-11-13,Pacos Ferreira,Vizela,0.0,2.0,P1,PO1
+2022-11-08,Paderborn,Bielefeld,0.0,2.0,D2,L2
+2019-05-11,Padova,Livorno,1.0,1.0,I2,IT2
+2022-12-18,Palermo,Cagliari,2.0,1.0,I2,IT2
+2022-11-10,Palmeiras,America MG,2.0,1.0,BRA,BRA1
+2022-12-28,Panathinaikos,OFI Crete,1.0,1.0,G1,GR1
+2017-05-26,Pandurii,Gaz Metan Medias,0.0,0.0,ROU,RO1
+2022-12-22,Panetolikos,PAOK,0.0,2.0,G1,GR1
+2020-07-11,Panionios,Panetolikos,0.0,2.0,G1,GR1
+2018-12-02,Parana,Internacional,1.0,1.0,BRA,BRA1
+2022-11-11,Pari NN,Akhmat Grozny,3.0,2.0,RUS,RU1
+2022-12-30,Paris FC,Le Havre,0.0,0.0,F2,FR2
+2022-12-28,Paris SG,Strasbourg,2.0,1.0,F1,FR1
+2022-12-18,Parma,Spal,0.0,1.0,I2,IT2
+2022-12-23,Partick,Inverness C,5.0,1.0,SC1,SC2
+2022-10-23,Patronato,Huracan,3.0,2.0,ARG,ARG1
+2022-12-26,Pau FC,Paris FC,0.0,1.0,F2,FR2
+2022-12-19,Perugia,Venezia,2.0,1.0,I2,IT2
+2021-05-10,Pescara,Salernitana,0.0,3.0,I2,IT2
+2022-12-29,Peterboro,Milton Keynes Dons,2.0,0.0,E2,GB3
+2022-11-19,Peterhead,Dunfermline,0.0,2.0,SC2,SC3
+2022-12-18,Petrolul,U Craiova 1948,1.0,1.0,ROU,RO1
+2022-10-31,Philadelphia Union,New York City,3.0,1.0,USA,MLS1
+2022-11-05,Piast Gliwice,Warta Poznan,0.0,2.0,POL,PL1
+2022-12-17,Pisa,Brescia,3.0,0.0,I2,IT2
+2022-10-26,Platense,Lanus,1.0,1.0,ARG,ARG1
+2022-12-29,Plymouth,Wycombe,1.0,0.0,E2,GB3
+2021-05-08,Podbeskidzie,Wisla Plock,1.0,1.0,POL,PL1
+2022-11-05,Pogon Szczecin,Gornik Z.,1.0,4.0,POL,PL1
+2021-05-15,Poli Iasi,FC Hermannstadt,0.0,1.0,ROU,RO1
+2018-05-28,Poli Timisoara,Din. Bucuresti,1.0,3.0,ROU,RO1
+2013-05-30,Polonia Warszawa,Piast Gliwice,1.0,1.0,POL,PL1
+2022-12-11,Ponferradina,Lugo,1.0,0.0,SP2,ES2
+2017-11-26,Ponte Preta,Vitoria,2.0,3.0,BRA,BRA1
+2022-04-30,Pordenone,Crotone,3.0,3.0,I2,IT2
+2022-12-26,Port Vale,Morecambe,1.0,0.0,E2,GB3
+2022-12-28,Portimonense,Casa Pia,1.0,2.0,P1,PO1
+2022-10-02,Portland Timbers,Los Angeles FC,1.0,2.0,USA,MLS1
+2022-12-28,Porto,Arouca,5.0,1.0,P1,PO1
+2022-12-29,Portsmouth,Ipswich,2.0,2.0,E2,GB3
+2013-12-08,Portuguesa,Gremio,0.0,0.0,BRA,BRA1
+2022-12-26,Preston,Huddersfield,1.0,2.0,E1,GB2
+2022-10-13,Puebla,Club America,1.0,6.0,MEX,MEX1
+2022-12-29,QPR,Luton,0.0,3.0,E1,GB2
+2022-01-08,Qingdao FC,Zhejiang Professional,0.0,1.0,CHN,CSL
+2022-12-31,Queen of Sth,Clyde,1.0,0.0,SC2,SC3
+2022-12-03,Queens Park,Hamilton,4.0,0.0,SC1,SC2
+2022-09-10,Queretaro,Santos Laguna,3.0,3.0,MEX,MEX1
+2022-12-26,Quevilly Rouen,Grenoble,2.0,0.0,F2,FR2
+2017-06-21,Quilmes,Arsenal Sarandi,2.0,2.0,ARG,ARG1
+2021-05-01,R. Volgograd,Akhmat Grozny,1.0,0.0,RUS,RU1
+2022-11-09,RB Leipzig,Freiburg,3.0,1.0,D1,L1
+2022-10-23,Racing Club,River Plate,1.0,2.0,ARG,ARG1
+2022-11-13,Radomiak Radom,Pogon Szczecin,1.0,2.0,POL,PL1
+2022-12-23,Raith Rvs,Morton,2.0,2.0,SC1,SC2
+2022-11-05,Rakow,Wisla Plock,7.0,1.0,POL,PL1
+2022-11-13,Randers FC,Midtjylland,0.0,0.0,DNK,DK1
+2022-12-28,Rangers,Motherwell,3.0,0.0,SC0,SC1
+2019-11-24,Ranheim,Lillestrom,2.0,1.0,NOR,NO1
+2019-06-08,Rayo Majadahonda,Reus Deportiu,1.0,0.0,SP2,ES2
+2022-12-27,Reading,Swansea,2.0,1.0,E1,GB2
+2022-11-10,Real Madrid,Cadiz,2.0,1.0,SP1,ES1
+2022-10-09,Real Salt Lake,Portland Timbers,3.0,1.0,USA,MLS1
+2019-05-10,Red Star,Paris FC,0.0,1.0,F2,FR2
+2022-11-09,Regensburg,Braunschweig,1.0,1.0,D2,L2
+2021-05-07,Reggiana,Spal,1.0,2.0,I2,IT2
+2022-12-17,Reggina,Bari,0.0,0.0,I2,IT2
+2022-12-29,Reims,Rennes,3.0,1.0,F1,FR1
+2022-11-12,Rennes,Toulouse,2.0,1.0,F1,FR1
+2019-06-02,Reus Deportiu,Sp Gijon,0.0,1.0,SP2,ES2
+2022-11-05,Ried,A. Klagenfurt,2.0,2.0,AUT,A1
+2022-12-23,Rio Ave,Maritimo,1.0,1.0,P1,PO1
+2022-10-17,River Plate,Rosario Central,1.0,2.0,ARG,ARG1
+2022-05-16,Rizespor,Sivasspor,1.0,2.0,T1,TR1
+2022-12-26,Rochdale,Hartlepool,1.0,2.0,E3,GB4
+2022-12-30,Rodez,Dijon,2.0,1.0,F2,FR2
+2022-11-13,Roma,Torino,1.0,1.0,I1,IT1
+2022-10-24,Rosario Central,Colon Santa Fe,1.0,1.0,ARG,ARG1
+2022-11-13,Rosenborg,Sarpsborg 08,2.0,3.0,NOR,NO1
+2022-12-23,Ross County,Rangers,0.0,1.0,SC0,SC1
+2022-12-26,Rotherham,Stoke,2.0,2.0,E1,GB2
+2021-11-03,Rovaniemi,AC Oulu,2.0,1.0,FIN,FI1
+2022-05-21,Rubin Kazan,Ufa,1.0,2.0,RUS,RU1
+2017-06-02,Ruch,Leczna,2.0,2.0,POL,PL1
+2022-10-19,SJK,AC Oulu,0.0,1.0,FIN,FI1
+2022-11-06,SK Rapid,LASK,1.0,0.0,AUT,A1
+2022-05-25,SKA Khabarovsk,Khimki,1.0,0.0,RUS,RU1
+2021-05-24,Sabadell,Ponferradina,2.0,0.0,SP2,ES2
+2022-11-05,Sagan Tosu,Sanfrecce Hiroshima,2.0,2.0,JPN,JAP1
+2022-11-05,Salernitana,Cremonese,2.0,2.0,I1,IT1
+2022-12-26,Salford,Barrow,1.0,1.0,E3,GB4
+2022-10-29,Salzburg,Hartberg,1.0,0.0,AUT,A1
+2022-11-12,Sampdoria,Lecce,0.0,2.0,I1,IT1
+2022-10-02,San Jose Earthquakes,Minnesota United,2.0,0.0,USA,MLS1
+2022-10-22,San Lorenzo,Aldosivi,3.0,0.0,ARG,ARG1
+2019-04-07,San Martin S.J.,Talleres Cordoba,2.0,1.0,ARG,ARG1
+2019-04-06,San Martin T.,San Lorenzo,0.0,0.0,ARG,ARG1
+2018-05-12,Sandecja Nowy S.,Cracovia,0.0,1.0,POL,PL1
+2022-11-16,Sandefjord,Kongsvinger,4.0,0.0,NOR,NO1
+2022-11-09,Sandhausen,Heidenheim,3.0,4.0,D2,L2
+2014-11-09,Sandnes,Aalesund,1.0,2.0,NOR,NO1
+2022-10-29,Sanfrecce Hiroshima,Hokkaido Consadole Sapporo,1.0,2.0,JPN,JAP1
+2022-11-14,Santa Clara,Estoril,3.0,1.0,P1,PO1
+2016-11-27,Santa Cruz,Gremio,5.0,1.0,BRA,BRA1
+2022-12-11,Santander,Mirandes,1.0,2.0,SP2,ES2
+2022-11-13,Santos,Fortaleza,0.0,2.0,BRA,BRA1
+2022-10-17,Santos Laguna,Toluca,1.0,2.0,MEX,MEX1
+2022-11-09,Sao Paulo,Internacional,0.0,1.0,BRA,BRA1
+2022-10-18,Sarmiento Junin,San Lorenzo,2.0,4.0,ARG,ARG1
+2022-11-06,Sarpsborg 08,Kristiansund,2.0,2.0,NOR,NO1
+2022-11-09,Sassuolo,Roma,1.0,1.0,I1,IT1
+2022-11-12,Schalke 04,Bayern Munich,0.0,2.0,D1,L1
+2022-04-30,Scunthorpe,Hartlepool,1.0,1.0,E3,GB4
+2022-10-09,Seattle Sounders,San Jose Earthquakes,2.0,2.0,USA,MLS1
+2022-12-17,Sepsi Sf. Gheorghe,U. Cluj,2.0,1.0,ROU,RO1
+2022-12-23,Seraing,Eupen,0.0,1.0,B1,BE1
+2022-11-06,Servette,Young Boys,0.0,0.0,SWZ,C1
+2020-07-26,Setubal,Belenenses,2.0,0.0,P1,PO1
+2022-11-09,Sevilla,Sociedad,1.0,2.0,SP1,ES1
+2022-10-30,Shamrock Rovers,Derry City,1.0,0.0,IRL,IR1
+2020-11-10,Shandong Luneng,Chongqing Liangjiang Athletic,2.0,1.0,CHN,CSL
+2022-12-31,Shandong Taishan,Beijing Guoan,3.0,0.0,CHN,CSL
+2022-12-31,Shanghai Port,Changchun Yatai,4.0,0.0,CHN,CSL
+2020-11-07,Shanghai SIPG,Beijing Guoan,1.0,2.0,CHN,CSL
+2022-12-30,Shanghai Shenhua,Shenzhen,2.0,0.0,CHN,CSL
+2015-10-25,Shanghai Shenxin,Henan Songshan Longmen,1.0,2.0,CHN,CSL
+2022-12-26,Sheffield United,Coventry,3.0,1.0,E1,GB2
+2022-12-29,Sheffield Weds,Port Vale,2.0,0.0,E2,GB3
+2022-10-28,Shelbourne,Drogheda,6.0,0.0,IRL,IR1
+2022-12-27,Shenzhen,Guangzhou City,0.0,3.0,CHN,CSL
+2020-11-11,Shijiazhuang,Wuhan FC,1.0,2.0,CHN,CSL
+2022-10-29,Shimizu S-Pulse,Kashima Antlers,0.0,1.0,JPN,JAP1
+2022-10-29,Shonan Bellmare,Sagan Tosu,3.0,0.0,JPN,JAP1
+2022-12-29,Shrewsbury,Cheltenham,0.0,1.0,E2,GB3
+2022-11-12,Silkeborg,Lyngby,0.0,2.0,DNK,DK1
+2022-11-12,Sion,St. Gallen,2.0,7.0,SWZ,C1
+2022-11-06,Sirius,Varberg,2.0,3.0,SWE,SE1
+2022-12-29,Sivasspor,Galatasaray,1.0,2.0,T1,TR1
+2022-11-13,Slask Wroclaw,Legia,0.0,0.0,POL,PL1
+2022-10-28,Sligo Rovers,St. Patricks,1.0,0.0,IRL,IR1
+2022-12-26,Sochaux,Rodez,1.0,0.0,F2,FR2
+2022-11-05,Sochi,Spartak Moscow,1.0,1.0,RUS,RU1
+2022-12-31,Sociedad,Osasuna,2.0,0.0,SP1,ES1
+2022-05-27,Sociedad B,Zaragoza,1.0,2.0,SP2,ES2
+2017-11-29,Sogndal,Ranheim,1.0,0.0,NOR,NO1
+2022-05-21,Sonderjyske,Viborg,0.0,2.0,DNK,DK1
+2022-12-26,Southampton,Brighton,1.0,3.0,E0,GB1
+2021-05-08,Southend,Newport County,1.0,1.0,E3,GB4
+2022-12-30,Sp Braga,Benfica,3.0,0.0,P1,PO1
+2022-12-11,Sp Gijon,Cartagena,0.0,0.0,SP2,ES2
+2022-12-29,Sp Lisbon,Pacos Ferreira,3.0,0.0,P1,PO1
+2022-12-26,Spal,Pisa,0.0,1.0,I2,IT2
+2022-11-11,Sparta Rotterdam,Twente,1.0,1.0,N1,NL1
+2022-10-30,Spartak Moscow,Torpedo Moscow,1.0,0.0,RUS,RU1
+2013-06-03,Spartak Nalchik,Krylya Sovetov,2.0,5.0,RUS,RU1
+2022-11-08,Spezia,Udinese,1.0,1.0,I1,IT1
+2021-12-10,Sport Recife,Athletico-PR,1.0,1.0,BRA,BRA1
+2022-10-02,Sporting Kansas City,Seattle Sounders,1.0,0.0,USA,MLS1
+2022-12-30,St Etienne,Caen,1.0,1.0,F2,FR2
+2022-12-28,St Johnstone,Hearts,2.0,3.0,SC0,SC1
+2022-12-24,St Mirren,Aberdeen,3.0,1.0,SC0,SC1
+2022-11-08,St Pauli,Holstein Kiel,0.0,0.0,D2,L2
+2022-12-27,St Truiden,Waregem,2.0,0.0,B1,BE1
+2022-11-05,St. Gallen,Grasshoppers,2.0,1.0,SWZ,C1
+2022-12-26,St. Gilloise,Oostende,3.0,0.0,B1,BE1
+2022-11-06,St. Patricks,Shelbourne,4.0,0.0,IRL,IR1
+2021-05-29,St. Polten,A. Klagenfurt,0.0,1.0,AUT,A1
+2021-12-05,Stabaek,Rosenborg,1.0,3.0,NOR,NO1
+2022-11-04,Stal Mielec,Zaglebie,3.0,0.0,POL,PL1
+2022-11-13,Standard,St. Gilloise,2.0,3.0,B1,BE1
+2020-12-09,Start,Brann,1.0,1.0,NOR,NO1
+2019-04-27,Stenhousemuir,East Fife,1.0,1.0,SC2,SC3
+2022-12-30,Stevenage,Crawley Town,3.0,1.0,E3,GB4
+2022-12-26,Stockport,Crewe,2.0,0.0,E3,GB4
+2022-12-30,Stoke,Burnley,0.0,1.0,E1,GB2
+2020-03-10,Stranraer,Montrose,0.0,1.0,SC2,SC3
+2022-11-13,Strasbourg,Lorient,1.0,1.0,F1,FR1
+2022-11-13,Stromsgodset,Bodo/Glimt,2.0,4.0,NOR,NO1
+2022-10-30,Sturm Graz,Ried,2.0,1.0,AUT,A1
+2022-11-08,Stuttgart,Hertha,2.0,1.0,D1,L1
+2022-12-26,Sudtirol,Modena,0.0,2.0,I2,IT2
+2022-12-26,Sunderland,Blackburn,2.0,1.0,E1,GB2
+2022-10-30,Sundsvall,Sirius,2.0,3.0,SWE,SE1
+2022-12-29,Sutton,Gillingham,2.0,1.0,E3,GB4
+2022-12-30,Swansea,Watford,4.0,0.0,E1,GB2
+2022-12-26,Swindon,Walsall,1.0,2.0,E3,GB4
+2013-10-27,Syrianska,Atvidabergs,4.0,1.0,SWE,SE1
+2015-05-30,T. Moscow,M. Saransk,2.0,0.0,RUS,RU1
+2022-10-20,TPS,Lahti,1.0,1.0,FIN,FI1
+2022-10-23,Talleres Cordoba,Gimnasia L.P.,2.0,1.0,ARG,ARG1
+2021-05-16,Tambov,Zenit,1.0,5.0,RUS,RU1
+2017-06-05,Targu Mures,Poli Iasi,1.0,1.0,ROU,RO1
+2018-05-06,Temperley,Patronato,1.0,2.0,ARG,ARG1
+2022-12-16,Tenerife,Andorra,1.0,1.0,SP2,ES2
+2022-05-14,Termalica B-B.,Piast Gliwice,0.0,1.0,POL,PL1
+2022-12-18,Ternana,Como,0.0,3.0,I2,IT2
+2021-05-27,Thun,Sion,1.0,4.0,SWZ,C1
+2022-12-27,Tianjin Jinmen Tiger,Dalian Pro,0.0,3.0,CHN,CSL
+2018-11-11,Tianjin Quanjian,Shanghai SIPG,3.0,2.0,CHN,CSL
+2019-11-27,Tianjin Tianhai,Dalian Yifang F.C.,5.0,1.0,CHN,CSL
+2022-10-25,Tigre,Arsenal Sarandi,1.0,4.0,ARG,ARG1
+2022-10-14,Tigres UANL,Pachuca,1.0,0.0,MEX,MEX1
+2022-11-12,Tirol,Ried,2.0,0.0,AUT,A1
+2021-12-04,Tokushima,Sanfrecce Hiroshima,2.0,4.0,JPN,JAP1
+2022-10-28,Toluca,Pachuca,1.0,5.0,MEX,MEX1
+2019-06-02,Tomsk,Ufa,1.0,0.0,RUS,RU1
+2022-05-14,Tondela,Boavista,2.0,2.0,P1,PO1
+2022-11-09,Torino,Sampdoria,2.0,0.0,I1,IT1
+2022-10-01,Toronto FC,Inter Miami,0.0,1.0,USA,MLS1
+2022-11-12,Torpedo Moscow,Zenit,0.0,2.0,RUS,RU1
+2018-05-05,Tosno,Dynamo Moscow,1.0,2.0,RUS,RU1
+2022-11-12,Tottenham,Leeds,4.0,3.0,E0,GB1
+2022-11-06,Toulouse,Monaco,0.0,2.0,F1,FR1
+2022-12-24,Trabzonspor,Fenerbahce,2.0,0.0,T1,TR1
+2022-12-26,Tranmere,Doncaster,3.0,0.0,E3,GB4
+2020-07-31,Trapani,Crotone,2.0,0.0,I2,IT2
+2021-11-03,Treaty United,UC Dublin,0.0,3.0,IRL,IR1
+2018-11-05,Trelleborgs,Ostersunds,0.0,1.0,SWE,SE1
+2022-11-13,Tromso,Aalesund,2.0,2.0,NOR,NO1
+2022-12-28,Troyes,Nantes,0.0,0.0,F1,FR1
+2022-11-06,Twente,Go Ahead Eagles,1.0,1.0,N1,NL1
+2021-02-06,U Craiova,Din. Bucuresti,1.0,0.0,ROU,RO1
+2022-12-12,U Craiova 1948,FC Arges,1.0,0.0,ROU,RO1
+2022-12-11,U. Cluj,UTA Arad,0.0,0.0,ROU,RO1
+2022-11-11,UC Dublin,Waterford,1.0,0.0,IRL,IR1
+2022-09-18,UNAM Pumas,Cruz Azul,1.0,2.0,MEX,MEX1
+2022-12-18,UTA Arad,FC Rapid Bucuresti,1.0,1.0,ROU,RO1
+2022-11-04,Udinese,Lecce,1.0,1.0,I1,IT1
+2022-05-28,Ufa,Orenburg,1.0,2.0,RUS,RU1
+2012-11-21,Ull/Kisa,Sandnes,0.0,4.0,NOR,NO1
+2022-12-23,Umraniyespor,Buyuksehyr,1.0,3.0,T1,TR1
+2022-11-09,Union Berlin,Augsburg,2.0,2.0,D1,L1
+2022-10-22,Union de Santa Fe,Central Cordoba,1.0,4.0,ARG,ARG1
+2022-12-17,Univ. Craiova,Chindia Targoviste,3.0,0.0,ROU,RO1
+2022-11-12,Ural,Fakel Voronezh,2.0,0.0,RUS,RU1
+2022-11-05,Urawa Reds,Avispa Fukuoka,1.0,1.0,JPN,JAP1
+2022-11-06,Utrecht,Groningen,2.0,1.0,N1,NL1
+2018-12-01,V-Varen Nagasaki,Shimizu S-Pulse,4.0,4.0,JPN,JAP1
+2022-10-26,VPS,Haka,0.0,3.0,FIN,FI1
+2021-05-16,VVV Venlo,FC Emmen,0.0,4.0,N1,NL1
+2021-05-15,Vaduz,Servette,1.0,3.0,SWZ,C1
+2022-11-10,Valencia,Betis,3.0,0.0,SP1,ES1
+2022-12-26,Valenciennes,Amiens,1.0,1.0,F2,FR2
+2022-11-13,Valerenga,Molde,1.0,2.0,NOR,NO1
+2022-12-30,Valladolid,Real Madrid,0.0,2.0,SP1,ES1
+2022-11-10,Vallecano,Celta,0.0,0.0,SP1,ES1
+2022-10-02,Vancouver Whitecaps,Austin FC,2.0,0.0,USA,MLS1
+2022-11-13,Varberg,Oster,2.0,1.0,SWE,SE1
+2022-11-06,Varnamo,Goteborg,1.0,4.0,SWE,SE1
+2021-02-26,Vasco,Goias,3.0,2.0,BRA,BRA1
+2014-05-19,Vaslui,Astra,1.0,4.0,ROU,RO1
+2021-12-04,Vegalta Sendai,Kashima Antlers,0.0,1.0,JPN,JAP1
+2022-05-21,Vejle,Odense,2.0,1.0,DNK,DK1
+2022-10-25,Velez Sarsfield,Central Cordoba,3.0,1.0,ARG,ARG1
+2019-06-02,Vendsyssel,Lyngby,2.0,2.0,DNK,DK1
+2022-12-26,Venezia,Parma,2.0,2.0,I2,IT2
+2019-11-09,Veracruz,Club America,0.0,5.0,MEX,MEX1
+2022-11-13,Verona,Spezia,1.0,2.0,I1,IT1
+2015-06-07,Vestsjaelland,Silkeborg,3.0,1.0,DNK,DK1
+2022-11-06,Viborg,Aarhus,1.0,1.0,DNK,DK1
+2022-04-30,Vicenza,Lecce,2.0,1.0,I2,IT2
+2021-05-19,Viitorul Constanta,Astra,1.0,0.0,ROU,RO1
+2022-11-13,Viking,Odd,1.0,1.0,NOR,NO1
+2022-12-31,Villarreal,Valencia,2.0,1.0,SP1,ES1
+2022-12-17,Villarreal B,Las Palmas,0.0,1.0,SP2,ES2
+2021-05-07,Virtus Entella,Chievo,1.0,3.0,I2,IT2
+2022-11-05,Vissel Kobe,Yokohama F. Marinos,1.0,3.0,JPN,JAP1
+2022-11-05,Vitesse,Sparta Rotterdam,0.0,4.0,N1,NL1
+2018-11-25,Vitoria,Gremio,0.0,0.0,BRA,BRA1
+2022-12-30,Vizela,Guimaraes,3.0,0.0,P1,PO1
+2013-05-19,Vladikavkaz,Dynamo Moscow,1.0,0.0,RUS,RU1
+2022-11-12,Volendam,Utrecht,0.0,4.0,N1,NL1
+2014-05-15,Volga N. Novgorod,Ural,1.0,2.0,RUS,RU1
+2016-05-24,Volgar-Astrakhan,FK Anzi Makhackala,0.0,1.0,RUS,RU1
+2022-12-28,Volos NFC,AEK,0.0,4.0,G1,GR1
+2022-11-06,Waalwijk,AZ Alkmaar,3.0,1.0,N1,NL1
+2021-04-11,Waasland-Beveren,Kortrijk,3.0,4.0,B1,BE1
+2019-05-25,Wacker Innsbruck,Mattersburg,4.0,0.0,AUT,A1
+2022-12-29,Walsall,Stockport,0.0,2.0,E3,GB4
+2022-11-12,Waregem,Eupen,5.0,5.0,B1,BE1
+2022-11-11,Warta Poznan,Stal Mielec,1.0,1.0,POL,PL1
+2021-11-26,Waterford,UC Dublin,1.0,2.0,IRL,IR1
+2022-12-26,Watford,Millwall,0.0,2.0,E1,GB2
+2020-06-28,Wehen,St Pauli,5.0,3.0,D2,L2
+2022-11-12,Werder Bremen,RB Leipzig,1.0,2.0,D1,L1
+2022-12-29,West Brom,Preston,2.0,0.0,E1,GB2
+2022-12-30,West Ham,Brentford,0.0,2.0,E0,GB1
+2022-12-27,Westerlo,Antwerp,3.0,3.0,B1,BE1
+2016-10-31,Wexford,Drogheda,2.0,0.0,IRL,IR1
+2022-11-06,Widzew Lodz,Radomiak Radom,1.0,3.0,POL,PL1
+2022-12-29,Wigan,Sunderland,1.0,4.0,E1,GB2
+2022-05-15,Willem II,Utrecht,3.0,0.0,N1,NL1
+2022-10-30,Winterthur,St. Gallen,1.0,0.0,SWZ,C1
+2022-05-21,Wisla,Warta Poznan,0.0,1.0,POL,PL1
+2022-11-11,Wisla Plock,Cracovia,1.0,0.0,POL,PL1
+2022-11-05,Wolfsberger AC,Salzburg,1.0,2.0,AUT,A1
+2022-11-08,Wolfsburg,Dortmund,2.0,0.0,D1,L1
+2022-12-31,Wolves,Man United,0.0,1.0,E0,GB1
+2022-12-23,Wuhan FC,Dalian Pro,3.0,0.0,CHN,CSL
+2022-12-31,Wuhan Three Towns,Tianjin Jinmen Tiger,3.0,0.0,CHN,CSL
+2021-05-23,Wurzburger Kickers,Paderborn,1.0,1.0,D2,L2
+2022-12-26,Wycombe,Bristol Rvs,2.0,1.0,E2,GB3
+2020-08-03,Xamax,Lugano,0.0,1.0,SWZ,C1
+2020-07-11,Xanthi,Asteras Tripolis,1.0,2.0,G1,GR1
+2019-12-07,Yamaga,Shonan Bellmare,1.0,1.0,JPN,JAP1
+2017-11-04,Yanbian,Guizhou Zhicheng,3.0,0.0,CHN,CSL
+2022-05-21,Yeni Malatyaspor,Fenerbahce,0.0,5.0,T1,TR1
+2019-05-19,Yenisey,Dynamo Moscow,2.0,2.0,RUS,RU1
+2019-05-04,Yeovil,Carlisle,0.0,0.0,E3,GB4
+2022-10-29,Yokohama F. Marinos,Urawa Reds,4.0,1.0,JPN,JAP1
+2021-12-04,Yokohama FC,Hokkaido Consadole Sapporo,0.0,1.0,JPN,JAP1
+2022-11-13,Young Boys,Luzern,3.0,0.0,SWZ,C1
+2022-11-12,Zaglebie,Rakow,1.0,2.0,POL,PL1
+2019-05-14,Zaglebie Sosnowiec,Korona Kielce,2.0,4.0,POL,PL1
+2022-12-10,Zaragoza,Huesca,3.0,0.0,SP2,ES2
+2015-06-02,Zawisza,Piast Gliwice,0.0,0.0,POL,PL1
+2022-11-05,Zenit,Akhmat Grozny,1.0,2.0,RUS,RU1
+2020-11-18,Zhejiang Greentown,Wuhan FC,2.0,2.0,CHN,CSL
+2022-12-31,Zhejiang Professional,Wuhan FC,4.0,0.0,CHN,CSL
+2014-10-19,Zhejiang Yiteng,Shanghai SIPG,1.0,1.0,CHN,CSL
+2022-11-13,Zurich,Servette,4.0,1.0,SWZ,C1
+2022-05-15,Zwolle,PSV Eindhoven,1.0,2.0,N1,NL1
