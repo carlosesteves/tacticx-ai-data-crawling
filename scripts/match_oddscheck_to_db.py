@@ -22,10 +22,7 @@ import csv
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from config.football_data_league_mapping import get_league_info
-
-# Supabase credentials
-SUPABASE_URL = 'https://owdayzmhxpsfpyshwtxc.supabase.co'
-SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im93ZGF5em1oeHBzZnB5c2h3dHhjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM3Mzc4MDAsImV4cCI6MjA2OTMxMzgwMH0.0mzxqkGi18QJXODxiXMKH5waZGruiFsi56elHxNyPks'
+from config.settings import SUPABASE_URL, SUPABASE_KEY
 
 
 def get_supabase_client():

@@ -5,14 +5,16 @@ Matches on: date, home_club_id, away_club_id, home_team_score, away_team_score
 Updates: odds_home, odds_away, odds_draw
 """
 
+import sys
+from pathlib import Path
 import pandas as pd
 from supabase import create_client, Client
 import time
-import sys
 
-# Supabase configuration (Production)
-SUPABASE_URL = "https://owdayzmhxpsfpyshwtxc.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im93ZGF5em1oeHBzZnB5c2h3dHhjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM3Mzc4MDAsImV4cCI6MjA2OTMxMzgwMH0.0mzxqkGi18QJXODxiXMKH5waZGruiFsi56elHxNyPks"
+# Allow imports from repo root
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from config.settings import SUPABASE_URL, SUPABASE_KEY
 
 def retry_operation(func, max_retries=3, delay=2):
     """Retry an operation with exponential backoff"""

@@ -1,3 +1,5 @@
+from typing import Any, Dict, List, Optional
+
 import pandas as pd
 from supabase import Client
 
@@ -33,6 +35,46 @@ def get_league_id_by_code(client: Client, league_code: int) -> int:
         .execute()
     )
     return response.data[0]['tm_league_id']
+
+
+def get_seasons_for_club(
+    client: Client,
+    club_id: int,
+    start_year: Optional[int] = None,
+    end_year: Optional[int] = None,
+) -> List[Dict[str, Any]]:
+    """Return all (league_id, season_id, tm_code) rows for a given club.
+
+    Optionally filtered to seasons whose season_id (start year) falls within
+    [start_year, end_year] inclusive. Used to build the list of league fixture
+    pages to crawl when computing a club's 5-year pre-arrival baseline.
+    """
+    query = (
+        client.table("Season")
+        .select("season_id, league_id, League(tm_code)")
+        .eq("club_id", club_id)
+        .order("season_id", desc=False)
+    )
+    if start_year is not None:
+        query = query.gte("season_id", start_year)
+    if end_year is not None:
+        query = query.lte("season_id", end_year)
+
+    response = query.execute()
+    rows = response.data or []
+
+    result: List[Dict[str, Any]] = []
+    for row in rows:
+        league_info = row.get("League") or {}
+        tm_code = league_info.get("tm_code") if isinstance(league_info, dict) else None
+        result.append(
+            {
+                "season_id": row.get("season_id"),
+                "league_id": row.get("league_id"),
+                "tm_code": tm_code,
+            }
+        )
+    return result
 
 
 def get_league_seasons(client: Client, league_id: int) -> pd.DataFrame:
