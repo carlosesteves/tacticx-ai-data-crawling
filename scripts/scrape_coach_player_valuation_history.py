@@ -920,7 +920,7 @@ def ensure_matches_in_db(
             page = MatchPage(match_id=match_id, session=http_session)
             match = MatchService.parse(league_id, int(season_id), page)
             db_client.table("Match").upsert(
-                match.model_dump(), on_conflict="tm_match_id"
+                match.model_dump(mode="json"), on_conflict="tm_match_id"
             ).execute()
             # Mutate the shared set so subsequent windows skip this match too.
             existing_match_ids.add(match_id)
