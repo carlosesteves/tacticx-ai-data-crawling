@@ -9,18 +9,19 @@ from config.constants import HEADERS, PROXIES
 from lxml import etree
 
 def get_soup(url, session) -> etree._Element:
-    """Fetches and parses the HTML page with retry logic for timeouts."""
-    retries = 3  # Maximum retries
+    """Fetches and parses the HTML page with retry logic for timeouts.
+
+    Transfermarkt blocks datacenter proxy IPs at the CDN level (405).
+    Requests are made directly without a proxy.
+    """
+    retries = 3
     sleep_time = 3
     for attempt in range(retries):
-        # sleep_time = sleep_time*(attempt+1)*(attempt+1)
-        # sleep_time = 3
         try:
-            proxy = {"http": random.choice(PROXIES), "https": random.choice(PROXIES)}
-            print(f"Fetching {url} using proxy {proxy['http']}")
+            print(f"Fetching {url}")
             session = requests.session()
             session.verify = False
-            response = session.get(url, proxies=proxy, headers=HEADERS, timeout=60)
+            response = session.get(url, headers=HEADERS, timeout=60)
             response.raise_for_status()
             return convert_bsoup_to_page(BeautifulSoup(response.text, "html.parser"))
         except requests.Timeout as e:

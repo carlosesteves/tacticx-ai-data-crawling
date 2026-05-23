@@ -493,6 +493,31 @@ class PlayerDatabaseWriter:
             raise
 
 
+def _bootstrap_coach(db_client: Any, coach_id: int) -> None:
+    """Scrape coach info from Transfermarkt and insert into the DB."""
+    import ssl
+    ssl._create_default_https_context = ssl._create_unverified_context  # noqa: S323
+
+    from pipelines.coach_pipeline import run_coach_pipeline
+    from repositories.coach.supabase_coach_repository import SupabaseCoachRepository
+    from repositories.tenure.supabase_coach_tenure_repository import SupabaseCoachTenureRepository
+    from repositories.pipeline_context import PipelineContext
+
+    session = requests.Session()
+    session.verify = False
+
+    context = PipelineContext(
+        coach_repo=SupabaseCoachRepository(client=db_client),
+        match_repo=None,
+        tenure_repo=SupabaseCoachTenureRepository(client=db_client),
+        state_repo=None,
+        coach_cache=set(),
+        match_cache=set(),
+        tenure_cache=set(),
+    )
+    run_coach_pipeline(session=session, coach_id=str(coach_id), context=context)
+
+
 def resolve_coach_by_name(client: Any, coach_name: str) -> Dict[str, Any]:
     query = client.table("Coach").select("tm_coach_id,name").ilike("name", f"%{coach_name}%").limit(50).execute()
     candidates = query.data or []
@@ -562,11 +587,16 @@ def get_match_rows_for_coach(
     return rows
 
 
+MANAGER_ROLE = "Manager"
+
+
 def get_coached_clubs(client: Any, coach_id: int) -> Dict[int, List[Dict[str, Optional[str]]]]:
+    """Return clubs where the coach held a Manager role (excludes Assistant Manager etc.)."""
     response = (
         client.table("Coach_tenure")
-        .select("club_id,start_date,end_date")
+        .select("club_id,start_date,end_date,role")
         .eq("coach_id", coach_id)
+        .eq("role", MANAGER_ROLE)
         .order("start_date", desc=False)
         .execute()
     )
@@ -919,6 +949,21 @@ def ensure_matches_in_db(
         try:
             page = MatchPage(match_id=match_id, session=http_session)
             match = MatchService.parse(league_id, int(season_id), page)
+
+            # Ensure both coaches exist in the DB before inserting the match
+            # (FK constraint on home_coach_id / away_coach_id).
+            for coach_id_str in page.get_coaches_ids():
+                cid = _to_int(coach_id_str)
+                if cid is None:
+                    continue
+                exists = db_client.table("Coach").select("tm_coach_id").eq("tm_coach_id", cid).limit(1).execute().data
+                if not exists:
+                    print(f"  [baseline] Coach {cid} missing — bootstrapping from Transfermarkt...")
+                    try:
+                        _bootstrap_coach(db_client, cid)
+                    except Exception as coach_exc:
+                        print(f"  [baseline] Failed to bootstrap coach {cid}: {coach_exc}")
+
             db_client.table("Match").upsert(
                 match.model_dump(mode="json"), on_conflict="tm_match_id"
             ).execute()
@@ -1075,7 +1120,11 @@ def scrape_by_coach(
         if row:
             resolved_name = row[0].get("name")
         else:
-            resolved_name = f"coach_{resolved_id}"
+            # Coach not in DB — scrape and insert now.
+            print(f"[coach] coach_id {resolved_id} not found in DB — scraping from Transfermarkt...")
+            _bootstrap_coach(db_client, resolved_id)
+            row = db_client.table("Coach").select("name").eq("tm_coach_id", resolved_id).limit(1).execute().data
+            resolved_name = row[0].get("name") if row else f"coach_{resolved_id}"
 
     if resolved_id is None:
         raise ValueError(f"Unable to resolve coach id from input: {coach_name}")
@@ -1126,13 +1175,17 @@ def scrape_by_coach(
         match_date = row.get("date", "unknown date")
         print(f"\n[{idx}/{len(match_rows)}] Match {match_id}  ({match_date})  coach={resolved_name}")
 
-        match_data = scrape_by_match_id(
-            match_id=match_id,
-            tm_client=tm_client,
-            team_filter_club_id=coached_club_id,
-            db_writer=db_writer,
-            processed_match_ids=processed_match_ids,
-        )
+        try:
+            match_data = scrape_by_match_id(
+                match_id=match_id,
+                tm_client=tm_client,
+                team_filter_club_id=coached_club_id,
+                db_writer=db_writer,
+                processed_match_ids=processed_match_ids,
+            )
+        except Exception as exc:
+            print(f"  [error] Skipping match {match_id}: {exc}")
+            continue
         # After a successful (non-skipped) scrape, mark as processed so the
         # baseline loop won't re-scrape the same match in this session.
         if processed_match_ids is not None and not match_data.get("skipped"):
@@ -1167,6 +1220,21 @@ def scrape_by_coach(
         if not windows:
             print("[baseline] No tenure windows found — skipping club baseline scrape")
         else:
+            # Print a summary of all clubs and baseline windows before any scraping begins.
+            print(f"\n[baseline] Clubs to baseline ({len(windows)} tenure window(s)):")
+            for w_idx, w in enumerate(windows, start=1):
+                w_club_id = w["club_id"]
+                try:
+                    w_club_name = tm_client.get_club_name(w_club_id) or str(w_club_id)
+                except Exception:
+                    w_club_name = str(w_club_id)
+                print(
+                    f"  {w_idx}. {w_club_name} (id={w_club_id})  "
+                    f"tenure_start={w['tenure_start']}  "
+                    f"baseline={w['window_start'].isoformat()} → {w['window_end'].isoformat()}"
+                )
+            print()
+
             # One shared HTTP session for all league fixture page scrapes
             baseline_http_session = requests.Session()
             baseline_http_session.headers.update(HEADERS)
@@ -1467,8 +1535,8 @@ def main() -> None:
         output_path = Path(args.output_dir)
         output_path.mkdir(parents=True, exist_ok=True)
         match_file = output_path / f"match_{args.match_id}.json"
-        match_file.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
-        print(f"Saved match output to: {match_file}")
+        # match_file.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
+        # print(f"Saved match output to: {match_file}")
         return
 
     coach_names = parse_coach_names(args.coach_name)
